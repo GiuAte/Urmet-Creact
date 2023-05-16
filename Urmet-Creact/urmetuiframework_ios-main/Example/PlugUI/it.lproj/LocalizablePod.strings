@@ -1,0 +1,128 @@
+/* 
+  Localizable.strings
+  CallMe
+
+  Created by Luca Lancellotti on 18/07/22.
+  
+*/
+
+// MARK: COMMON
+"OK" = "OK";
+"PassworRequirements" = "Almeno 7 caratteri, una lettera maiuscola, una lettera minuscola, un numero ed un carattere speciale tra $&+,:;=?@#|'<>.^*()%!-";
+// MARK: GENERIC.ERROR
+"Generic.Error.Title" = "Errore di sistema";
+"Generic.Error.Description" = "Ci dispiace ma al momento non è stato possibile completare la richiesta. Ti preghiamo di riprovare più tardi.";
+// MARK: LOGIN
+"Login.Title" = "Benvenuti in CallMe";
+"Login.Description" = "Inserisci le tue credenziali per accedere al servizio";
+"Login.Email" = "Inserisci la tua mail";
+"Login.Password" = "Inserisci la tua password";
+"Login.RecoveryPassword" = "Password dimenticata?";
+"Login.RememberMe" = "Ricordami al prossimo accesso";
+"Login.NewAccount" = "Non hai ancora un account CallMe?";
+"Login.SignUp" = "Registrati";
+"Login.SignIn" = "Accedi";
+"Login.Error" = "Le credenziali non sono corrette";
+"Login.ErrorMessage" = "La mail associata alla tua utenza o la password inserite sono sbagliate. Ricontrolla le tue credenziali e ritenta il Login.";
+
+// MARK: FORGOT PASSWORD
+"ForgotPassword.Title" = "Password dimenticata?";
+"ForgotPassword.Description" = "Inserisci la mail collegata all’account di cui vuoi recuperare la password e procedi.";
+"ForgotPassword.Email" = "Inserisci la tua mail";
+"ForgotPassword.Reset" = "Resetta la mia password";
+"ForgotPassword.Error" = "Email sconosciuta";
+"ForgotPassword.ErrorDescription" = "La mail che hai indicato non è presente nei nostri sistemi, ti preghiamo di ricontrollare e riprovare.";
+"ForgotPassword.Success" = "Controlla l’e-mail!";
+"ForgotPassword.SuccessDescription" = "Ti abbiamo inviato una mail all’indirizzo collegato al tuo account con una password temporanea che sarà valida per 24h.
+
+Inseriscila nella pagina, dopodichè provvedi a reimpostarla.";
+
+// MARK: REGISTRATION
+"Registration.Welcome" = "Benvenuti in CallMe";
+"Registration.Description" = "Per accedere al servizio abbiamo bisogno di pochi dati personali:";
+"Registration.Name" = "Come ti chiami?";
+"Registration.Surname" = "Qual è il tuo cognome?";
+"Registration.Country" = "In che paese utilizzi l’app?";
+"Registration.Email" = "Qual è la tua migliore e-mail?";
+"Registration.EmailError" = "L'email inserita non è valida";
+"Registration.Password" = "Scegli una password";
+"Registration.PasswordError" = "La password inserita non è valida";
+"Registration.RepeatPassword" = "Ripeti la password";
+"Registration.RepeatPasswordError" = "Le password inserite non corrispondono";
+"Registration.RememberMe" = "Ricordami al prossimo accesso";
+"Registration.AlmostDone" = "Abbiamo quasi finito";
+"Registration.ThirdStep.Description" = "Per utilizzare il servizio leggi ed accetta le seguenti condizioni:";
+"Registration.Accept" = "Accetta";
+"Registration.Deny" = "Rifiuta";
+"Registration.PrivacyInfo" = "Dichiaro di aver letto e accettato interamente le seguenti prescrizioni sulla privacy";
+"Registration.ConditionsText" = "TOU8902-001
+
+CONDIZIONI GENERALI DI UTILIZZO DELL'APPLICAZIONE VIDEOCITOFONICA CALLME DA PARTE DELL’UTENTE:
+
+Introduzione
+  ·         Editore dell'APPLICAZIONE VIDEOCITOFONICA CALLME: Società URMET S.p.A., P.IVA intracomunitaria: IT 06888290019, sede legale in Via Bologna n. 188/C, 10154 Torino, ITALIA.
+
+  ·         Servizio Assistenza URMET: orario 8:30 – 13:00; 14:00 17:50 (dal lunedì al venerdì, esclusi i festivi), Tel. 011.23.39.800, E-mail / modulo di contatto: cs.asa1@urmet.com;
+
+  ·         Hosting dell’APPLICAZIONE VIDEOCITOFONICA CALLME: server cloud.urmet.com gestito presso una region Europea di Google Cloud Platform. Maggiori informazioni sono consultabili su: https://cloud.google.com/security/gdpr?hl=it
+
+  1.        Articolo 1 - Applicazione delle presenti Condizioni Generali di utilizzo.
+
+  1.1        Le presenti Condizioni Generali disciplinano le relazioni tra URMET e l’UTENTE in merito all'utilizzo dell'APPLICAZIONE VIDEOCITOFONICA CALLME e dei Servizi associati.
+
+  1.2         L'utilizzo dell'APPLICAZIONE VIDEOCITOFONICA CALLME implica la piena e totale applicazione delle presenti Condizioni Generali che prevalgono su tutte le condizioni previste dall'UTENTE e su tutti gli altri documenti non espressamente accettati da URMET.
+";
+"Registration.PrivacyText" = "
+    PRIVACY POLICY E COOKIES
+
+    I dati pubblicati in questo sito, relativi alla società Urmet  S.p.A. (nel seguito indicata come “Titolare” o “Contitolare” di trattamento) e alle persone che con essa collaborano, possono essere liberamente utilizzati da tutti coloro che sono interessati ai prodotti venduti dalla società stessa o dalle altre società facenti parte del Gruppo Urmet,
+
+    Non possono essere utilizzati da potenziali fornitori o da altri soggetti per finalità di invio di materiale pubblicitario o di vendita diretta o per il compimento di ricerche di mercato o di comunicazione commerciale.
+
+    Di seguito riportiamo le nostre informative rese ai sensi dell’articolo 13 GDPR 679/16";
+"Registration.Link" = "Ti abbiamo inviato una mail con il link di conferma.";
+"Registration.Activation" = "Dopo averlo cliccato la tua CallME sarà operativa.";
+"Registration.Continue" = "Continua";
+"Registration.EndRegistration" = "Termina registrazione";
+
+// MARK: ACKNOWLEDGMENT
+"Acknowledgment.Done" = "OK, ho capito";
+
+
+// MARK: PROFILE
+"Profile.Title" = "Il mio profilo";
+"Profile.Name" = "Nome";
+"Profile.Surname" = "Cognome";
+"Profile.Email" = "Email";
+"Profile.ID" = "My CallMe ID";
+"Profile.Terms" = "Termini d’uso";
+"Profile.Privacy" = "Condizioni generali di utilizzo, Privacy Policy";
+"Profile.ResetPassword" = "Reimposta password CallME";
+"Profile.Delete" = "Elimina account";
+"Profile.DeleteInfo" = "Eliminazione del profilo in corso. Puoi continuare ad usare il servizio fino alla rimozione definitiva.";
+
+// MARK: PROFILE.RESETPASSWORD
+"Profile.ResetPassword.Title" = "Reimposta password";
+"Profile.ResetPassword.CurrentPassword" = "Inserisci la password attuale";
+"Profile.ResetPassword.CurrentPasswordError" = "La password inserita non è quella attuale";
+"Profile.ResetPassword.NewPassword" = "Scegli una nuova password";
+"Profile.ResetPassword.NewPasswordError" = "La password inserita non è valida";
+"Profile.ResetPassword.RepeatNewPassword" = "Ripeti la nuova password";
+"Profile.ResetPassword.RepeatNewPasswordError" = "La password ripetuta non coincide";
+"Profile.ResetPassword.Save" = "Salva le modifiche";
+"Profile.ResetPassword.Success.Title" = "La password è stata reimpostata con successo";
+
+
+// MARK: ONBOARDING
+"Onboarding.Title" = "Benvenuti in CallMe";
+"Onboarding.1.Title" = "Ovunque in una sola app";
+"Onboarding.1.Description" = "Gestisci contemporaneamente più citofoni da remoto, ciascuno connesso ad un tuo luogo";
+"Onboarding.2.Title" = "Tutto a portata di mano";
+"Onboarding.2.Description" = "Rispondi al citofono, apri porte e cancelli, accendi le luci e attiva le telecamere esterne";
+"Onboarding.3.Title" = "Anche quando non ci sei";
+"Onboarding.3.Description" = "Vedi la cronologia delle chiamate perse e degli allarmi ricevuti ed effettua chiamate d’emergenza";
+"Onboarding.4.Title" = "Anche senza internet";
+"Onboarding.4.Description" = "Puoi scegliere di ricevere le chiamate sul telefono in caso di assenza di rete.";
+"Onboarding.Start" = "Iniziamo";
+
+

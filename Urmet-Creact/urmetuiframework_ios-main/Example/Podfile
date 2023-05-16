@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '12.5'
+source 'https://github.com/CocoaPods/Specs.git'
+target 'PlugUI_Example' do
+  pod 'PlugUI', :path => '../'
+  pod 'UserSdk', :path => '../UserSdk/'
+
+  target 'PlugUI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

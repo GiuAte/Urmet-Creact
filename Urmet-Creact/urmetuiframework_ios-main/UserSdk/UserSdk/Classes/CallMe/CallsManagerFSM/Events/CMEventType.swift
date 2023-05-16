@@ -1,0 +1,48 @@
+//
+//  CMEventType.swift
+//  CallMeSdk
+//
+//  Created by RaffaeleApetino on 08/11/22.
+//
+
+import Foundation
+
+enum CMEventType: Equatable {
+    case IPERCOM_AUTO_INS_REQ
+    case IPERCOM_EMERG_CALL_REQ
+    case IPERCOM_INTERCOM_CALL_REQ
+    case SIP_INCOMING_CALL
+    case MESSAGE_ERROR
+    case SIP_CONNECTED
+    case ON_HOOK
+    case OFF_HOOK
+    case CANCEL_CALL_RES_SUCCESS
+    case CALL_DEVICE_RES_SUCCESS
+    case CALL_DEVICE_RES_REFUSED
+    case CALL_DEVICE_RES_UNKNOWN_TOPOLOGICAL
+    case CALL_DEVICE_RES_TIMED_OUT
+    case CALL_DEVICE_RES_BUSY
+    case CALL_DEVICE_RES_UNREACHABLE
+    case CALL_DEVICE_RES_DEVICE_NOT_FOUND
+    case SIP_CALL_RELEASED
+    case IDLING
+    case CALLEEINFO_MISSING_ERROR
+    case URI_MISSING_ERROR
+    case SIP_DEPENDENCY_CALL_ERROR
+    case URI_MISMATCH
+    case BEGIN_CALL_ME_BACK
+    case CONFIGURE_VIDEO_RECEIVER_VIEW
+    case ACTIVATE_EARLY_MEDIA
+    case REQUEST_IN_CALL_ACTION(toneAction: InCallToneAction)
+    case REQUEST_TOGGLE_MUTE
+    case SIP_MICROPHONE_MUTED
+    case SIP_MICROPHONE_UNMUTED
+    case REQUEST_AUDIO_ROUTE_SPEAKER
+    case SIP_SPEAKER_OUTPUT
+    case REQUEST_AUDIO_ROUTE_EARPIECE
+    case SIP_EARPIECE_OUTPUT
+
+    var rawValue: String {
+        return String(describing: self)
+    }
+}

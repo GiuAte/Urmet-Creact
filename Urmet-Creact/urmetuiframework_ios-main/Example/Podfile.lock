@@ -1,0 +1,34 @@
+PODS:
+  - CryptoSwift (1.6.0)
+  - PlugUI (0.1.0):
+    - ToastViewSwift
+    - UserSdk
+  - ToastViewSwift (1.3.1)
+  - UserSdk (0.1.0):
+    - CryptoSwift (~> 1.6.0)
+
+DEPENDENCIES:
+  - PlugUI (from `../`)
+  - UserSdk (from `../UserSdk/`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CryptoSwift
+  trunk:
+    - ToastViewSwift
+
+EXTERNAL SOURCES:
+  PlugUI:
+    :path: "../"
+  UserSdk:
+    :path: "../UserSdk/"
+
+SPEC CHECKSUMS:
+  CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
+  PlugUI: 4b6ff26c7246bf8238bc7584caa56094be159995
+  ToastViewSwift: 10655357b87fbe1070a14ae89c146b2335e4628a
+  UserSdk: 5a2b69cd2857c7c8a6ba0dad2e7de26533b60ea1
+
+PODFILE CHECKSUM: 1e37454189beb78e05241cb2580197513b9ad0fb
+
+COCOAPODS: 1.11.3

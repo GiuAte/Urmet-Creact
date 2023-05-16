@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationSecondStepView" customModule="PlugUI" customModuleProvider="target">
+            <connections>
+                <outlet property="labelDescription" destination="UU4-ta-AwF" id="UUN-6V-ttY"/>
+                <outlet property="labelRememberMe" destination="D3P-gq-173" id="5Jr-4q-cVs"/>
+                <outlet property="labelTitle" destination="q1O-fg-Qco" id="6gA-gy-jEZ"/>
+                <outlet property="switchRememberMe" destination="ljF-mh-kKk" id="HDx-yQ-89T"/>
+                <outlet property="textFieldEmail" destination="PgO-WS-0TV" id="p1m-nG-1In"/>
+                <outlet property="textFieldPassword" destination="1gd-Hp-N8X" id="1eQ-Y2-JdV"/>
+                <outlet property="textFieldRepeatPassword" destination="WBV-Rd-oIt" id="HgX-ir-Q8F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="67u-kM-CbN">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="577"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benvenuti in CallMe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1O-fg-Qco">
+                    <rect key="frame" x="16" y="32" width="382" height="46.5"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="36"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Per accedere al servizio abbiamo bisogno di pochi dati personali:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UU4-ta-AwF">
+                    <rect key="frame" x="16" y="94.5" width="382" height="62"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" name="TextWhite70"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Qual è la tua migliore e-mail?" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PgO-WS-0TV" customClass="InputTextField" customModule="PlugUI" customModuleProvider="target">
+                    <rect key="frame" x="16" y="220.5" width="382" height="32.5"/>
+                    <color key="tintColor" name="TextWhite"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                    <connections>
+                        <action selector="editingChanged:" destination="-1" eventType="editingChanged" id="QQe-Zf-y2u"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Scegli una password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1gd-Hp-N8X" customClass="InputTextField" customModule="PlugUI" customModuleProvider="target">
+                    <rect key="frame" x="16" y="285" width="382" height="32.5"/>
+                    <color key="tintColor" name="TextWhite"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="passwordRequirements" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="editingChanged:" destination="-1" eventType="editingChanged" id="hLV-Fl-59l"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ripeti la password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WBV-Rd-oIt" customClass="InputTextField" customModule="PlugUI" customModuleProvider="target">
+                    <rect key="frame" x="16" y="349.5" width="382" height="148.5"/>
+                    <color key="tintColor" name="TextWhite"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <textInputTraits key="textInputTraits" textContentType="one-time-code"/>
+                    <connections>
+                        <action selector="editingChanged:" destination="-1" eventType="editingChanged" id="OkN-sI-zQR"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="751" text="Ricordami al prossimo accesso" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3P-gq-173">
+                    <rect key="frame" x="16" y="530" width="301" height="31"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ljF-mh-kKk">
+                    <rect key="frame" x="349" y="530" width="51" height="31"/>
+                    <connections>
+                        <action selector="switchChanged:" destination="-1" eventType="valueChanged" id="NDw-uC-KKY"/>
+                    </connections>
+                </switch>
+            </subviews>
+            <constraints>
+                <constraint firstItem="PgO-WS-0TV" firstAttribute="trailing" secondItem="UU4-ta-AwF" secondAttribute="trailing" id="0Xh-Zk-1NW"/>
+                <constraint firstItem="D3P-gq-173" firstAttribute="leading" secondItem="WBV-Rd-oIt" secondAttribute="leading" id="61D-pA-BuW"/>
+                <constraint firstItem="UU4-ta-AwF" firstAttribute="leading" secondItem="q1O-fg-Qco" secondAttribute="leading" id="7Nh-fP-lfg"/>
+                <constraint firstItem="UU4-ta-AwF" firstAttribute="top" secondItem="q1O-fg-Qco" secondAttribute="bottom" constant="16" id="9Po-oX-01g"/>
+                <constraint firstItem="ljF-mh-kKk" firstAttribute="leading" secondItem="D3P-gq-173" secondAttribute="trailing" constant="32" id="9vF-OM-mcA"/>
+                <constraint firstItem="PgO-WS-0TV" firstAttribute="leading" secondItem="UU4-ta-AwF" secondAttribute="leading" id="Duj-OX-I2e"/>
+                <constraint firstItem="q1O-fg-Qco" firstAttribute="top" secondItem="67u-kM-CbN" secondAttribute="top" constant="32" id="Egj-wF-6ft"/>
+                <constraint firstItem="D3P-gq-173" firstAttribute="top" secondItem="WBV-Rd-oIt" secondAttribute="bottom" constant="32" id="Z5M-Md-uxX"/>
+                <constraint firstItem="WBV-Rd-oIt" firstAttribute="leading" secondItem="1gd-Hp-N8X" secondAttribute="leading" id="ab1-EP-eJC"/>
+                <constraint firstItem="WBV-Rd-oIt" firstAttribute="trailing" secondItem="1gd-Hp-N8X" secondAttribute="trailing" id="ah3-SF-Ijb"/>
+                <constraint firstItem="UU4-ta-AwF" firstAttribute="trailing" secondItem="q1O-fg-Qco" secondAttribute="trailing" id="bc8-4Y-uh1"/>
+                <constraint firstItem="1gd-Hp-N8X" firstAttribute="top" secondItem="PgO-WS-0TV" secondAttribute="bottom" constant="32" id="bxD-ws-gX4"/>
+                <constraint firstAttribute="bottom" secondItem="D3P-gq-173" secondAttribute="bottom" constant="16" id="cYU-vy-BCy"/>
+                <constraint firstItem="WBV-Rd-oIt" firstAttribute="top" secondItem="1gd-Hp-N8X" secondAttribute="bottom" constant="32" id="d2o-Iu-Sf9"/>
+                <constraint firstItem="q1O-fg-Qco" firstAttribute="leading" secondItem="67u-kM-CbN" secondAttribute="leading" constant="16" id="idU-0b-oQA"/>
+                <constraint firstItem="ljF-mh-kKk" firstAttribute="centerY" secondItem="D3P-gq-173" secondAttribute="centerY" id="mpf-4Y-gdh"/>
+                <constraint firstAttribute="trailing" secondItem="q1O-fg-Qco" secondAttribute="trailing" constant="16" id="o0S-qe-szd"/>
+                <constraint firstItem="1gd-Hp-N8X" firstAttribute="trailing" secondItem="PgO-WS-0TV" secondAttribute="trailing" id="qb7-fp-Obn"/>
+                <constraint firstItem="1gd-Hp-N8X" firstAttribute="leading" secondItem="PgO-WS-0TV" secondAttribute="leading" id="rUk-mr-YDc"/>
+                <constraint firstItem="PgO-WS-0TV" firstAttribute="top" secondItem="UU4-ta-AwF" secondAttribute="bottom" constant="64" id="tdk-sT-OSC"/>
+                <constraint firstItem="ljF-mh-kKk" firstAttribute="trailing" secondItem="WBV-Rd-oIt" secondAttribute="trailing" id="vHJ-VN-zTg"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="72.463768115942031" y="34.486607142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="1gd-Hp-N8X">
+            <size key="intrinsicContentSize" width="192.5" height="32.5"/>
+        </designable>
+        <designable name="PgO-WS-0TV">
+            <size key="intrinsicContentSize" width="278" height="32.5"/>
+        </designable>
+        <designable name="WBV-Rd-oIt">
+            <size key="intrinsicContentSize" width="170.5" height="32.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite70">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

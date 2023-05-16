@@ -1,0 +1,33 @@
+PODS:
+  - CryptoSwift (1.6.0)
+  - PlugUI (0.1.5):
+    - UserSdk
+  - QRCode (2.0)
+  - UserSdk (0.1.0):
+    - CryptoSwift (~> 1.6.0)
+
+DEPENDENCIES:
+  - PlugUI (from `/Users/giulioaterno/Downloads/urmetuiframework_ios-main`)
+  - QRCode
+  - UserSdk (from `/Users/giulioaterno/Downloads/urmetuiframework_ios-main/UserSdk`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CryptoSwift
+    - QRCode
+
+EXTERNAL SOURCES:
+  PlugUI:
+    :path: "/Users/giulioaterno/Downloads/urmetuiframework_ios-main"
+  UserSdk:
+    :path: "/Users/giulioaterno/Downloads/urmetuiframework_ios-main/UserSdk"
+
+SPEC CHECKSUMS:
+  CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
+  PlugUI: 0d1a8341c83c9eb93a7dce9483de4bb7cab58579
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
+  UserSdk: 5a2b69cd2857c7c8a6ba0dad2e7de26533b60ea1
+
+PODFILE CHECKSUM: 8572dde6af754c89a88848fb472c83c8bf7d055c
+
+COCOAPODS: 1.12.0

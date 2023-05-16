@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationVideoQualityStepView" customModule="CallMe" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Tv1-p5-LNr" id="yym-YF-jV2"/>
+                <outlet property="labelDescription" destination="eVG-Wx-fuU" id="WDO-bt-TBy"/>
+                <outlet property="labelTitle" destination="5rm-14-JNu" id="HCt-BC-4Di"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Dgt-I8-dev">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="478"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qualità del video" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rm-14-JNu">
+                    <rect key="frame" x="16" y="0.0" width="382" height="46.5"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="36"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleziona la qualità del flusso multimediale" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVG-Wx-fuU">
+                    <rect key="frame" x="16" y="62.5" width="382" height="62"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" name="TextWhite70"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Tv1-p5-LNr">
+                    <rect key="frame" x="0.0" y="156.5" width="414" height="321.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nvL-rm-56V">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xNh-9Q-S6T"/>
+                        <outlet property="delegate" destination="-1" id="vkN-Sz-pDD"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="sod-wx-Erk"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="sod-wx-Erk" firstAttribute="trailing" secondItem="Tv1-p5-LNr" secondAttribute="trailing" id="2Gk-EC-dC1"/>
+                <constraint firstItem="Tv1-p5-LNr" firstAttribute="top" secondItem="eVG-Wx-fuU" secondAttribute="bottom" constant="32" id="3mM-1F-cP9"/>
+                <constraint firstItem="eVG-Wx-fuU" firstAttribute="leading" secondItem="5rm-14-JNu" secondAttribute="leading" id="5y1-Rf-srl"/>
+                <constraint firstAttribute="trailing" secondItem="5rm-14-JNu" secondAttribute="trailing" constant="16" id="8qC-ju-hxy"/>
+                <constraint firstItem="Tv1-p5-LNr" firstAttribute="leading" secondItem="sod-wx-Erk" secondAttribute="leading" id="Fef-2l-6mO"/>
+                <constraint firstItem="eVG-Wx-fuU" firstAttribute="top" secondItem="5rm-14-JNu" secondAttribute="bottom" constant="16" id="I0T-wn-wRZ"/>
+                <constraint firstItem="sod-wx-Erk" firstAttribute="bottom" secondItem="Tv1-p5-LNr" secondAttribute="bottom" id="hlU-ws-qBL"/>
+                <constraint firstItem="5rm-14-JNu" firstAttribute="top" secondItem="Dgt-I8-dev" secondAttribute="top" id="iml-T4-17A"/>
+                <constraint firstItem="eVG-Wx-fuU" firstAttribute="trailing" secondItem="5rm-14-JNu" secondAttribute="trailing" id="sMm-Wr-7he"/>
+                <constraint firstItem="5rm-14-JNu" firstAttribute="leading" secondItem="Dgt-I8-dev" secondAttribute="leading" constant="16" id="xe8-6U-yeG"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="115.94202898550725" y="-102.45535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite70">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

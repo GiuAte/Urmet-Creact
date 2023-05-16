@@ -7,15 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A36632FDC9DF69DB72EC6699 /* Pods_Urmet_Creact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B8621996967EA02F85906 /* Pods_Urmet_Creact.framework */; };
+		C31AB69A2A0B90DD00407B70 /* ButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31AB6992A0B90DD00407B70 /* ButtonData.swift */; };
+		C332D2552A0A9B1F005D4FD9 /* CustomButtonHomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = C332D2542A0A9B1F005D4FD9 /* CustomButtonHomePage.xib */; };
+		C332D2572A0A9D7B005D4FD9 /* CustomButtonHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */; };
+		C37C990B2A0D41BE004B21EF /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37C990A2A0D41BE004B21EF /* ButtonDelegate.swift */; };
+		C3AA69442A123CCA00648BAF /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */; };
+		C3AA69462A123E2A00648BAF /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */; };
+		C3AA69482A12679B00648BAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69472A12679B00648BAF /* Constants.swift */; };
+		C3AA694B2A127EE200648BAF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA694A2A127EE200648BAF /* Array+Extensions.swift */; };
+		C3D95CFD2A0D1A7A0058DA32 /* PopupDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95CFC2A0D1A7A0058DA32 /* PopupDisplayer.swift */; };
+		C3D95D032A0D1EB50058DA32 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D022A0D1EB50058DA32 /* UIViewController.swift */; };
+		C3D95D0B2A0D22300058DA32 /* Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D0A2A0D22300058DA32 /* Present.swift */; };
+		C3D95D0D2A0D22D90058DA32 /* UIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D0C2A0D22D90058DA32 /* UIController.swift */; };
+		C3D95D162A0D34080058DA32 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D142A0D34080058DA32 /* PopUpViewController.swift */; };
+		C3D95D172A0D34080058DA32 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D95D152A0D34080058DA32 /* PopUpViewController.xib */; };
 		C3E375002A08DDB900D5B3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E374FF2A08DDB900D5B3BA /* AppDelegate.swift */; };
 		C3E375022A08DDB900D5B3BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E375012A08DDB900D5B3BA /* SceneDelegate.swift */; };
 		C3E375042A08DDB900D5B3BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E375032A08DDB900D5B3BA /* ViewController.swift */; };
 		C3E375072A08DDB900D5B3BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E375052A08DDB900D5B3BA /* Main.storyboard */; };
 		C3E375092A08DDBA00D5B3BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E375082A08DDBA00D5B3BA /* Assets.xcassets */; };
 		C3E3750C2A08DDBA00D5B3BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E3750A2A08DDBA00D5B3BA /* LaunchScreen.storyboard */; };
+		C3E3751D2A090F1300D5B3BA /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E3751C2A090F1300D5B3BA /* CustomCell.xib */; };
+		C3E3751F2A09103E00D5B3BA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3751E2A09103E00D5B3BA /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3708299FAEAF9B99AA11153B /* Pods-Urmet-Creact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urmet-Creact.release.xcconfig"; path = "Target Support Files/Pods-Urmet-Creact/Pods-Urmet-Creact.release.xcconfig"; sourceTree = "<group>"; };
+		427B8621996967EA02F85906 /* Pods_Urmet_Creact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urmet_Creact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80EB3BFACA3BD117F91454B6 /* Pods-Urmet-Creact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urmet-Creact.debug.xcconfig"; path = "Target Support Files/Pods-Urmet-Creact/Pods-Urmet-Creact.debug.xcconfig"; sourceTree = "<group>"; };
+		C31AB6992A0B90DD00407B70 /* ButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonData.swift; sourceTree = "<group>"; };
+		C332D2542A0A9B1F005D4FD9 /* CustomButtonHomePage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButtonHomePage.xib; sourceTree = "<group>"; };
+		C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonHomePage.swift; sourceTree = "<group>"; };
+		C37C990A2A0D41BE004B21EF /* ButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
+		C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		C3AA69472A12679B00648BAF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C3AA694A2A127EE200648BAF /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		C3D95CFC2A0D1A7A0058DA32 /* PopupDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDisplayer.swift; sourceTree = "<group>"; };
+		C3D95D022A0D1EB50058DA32 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C3D95D0A2A0D22300058DA32 /* Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Present.swift; sourceTree = "<group>"; };
+		C3D95D0C2A0D22D90058DA32 /* UIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIController.swift; sourceTree = "<group>"; };
+		C3D95D142A0D34080058DA32 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		C3D95D152A0D34080058DA32 /* PopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
 		C3E374FC2A08DDB900D5B3BA /* Urmet-Creact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urmet-Creact.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E374FF2A08DDB900D5B3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E375012A08DDB900D5B3BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +58,8 @@
 		C3E375082A08DDBA00D5B3BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3E3750B2A08DDBA00D5B3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3E3750D2A08DDBA00D5B3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3E3751C2A090F1300D5B3BA /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		C3E3751E2A09103E00D5B3BA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +67,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36632FDC9DF69DB72EC6699 /* Pods_Urmet_Creact.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		754FC51B42EEB6DE7D443150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80EB3BFACA3BD117F91454B6 /* Pods-Urmet-Creact.debug.xcconfig */,
+				3708299FAEAF9B99AA11153B /* Pods-Urmet-Creact.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83E242C3AF33E048421AF544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				427B8621996967EA02F85906 /* Pods_Urmet_Creact.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3AA693F2A12368700648BAF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C37C990A2A0D41BE004B21EF /* ButtonDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C3AA69422A123C9900648BAF /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */,
+				C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		C3D95D122A0D30D00058DA32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3D95D0C2A0D22D90058DA32 /* UIController.swift */,
+				C3AA694A2A127EE200648BAF /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3D95D132A0D31290058DA32 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C3D95CFC2A0D1A7A0058DA32 /* PopupDisplayer.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		C3E374F32A08DDB900D5B3BA = {
 			isa = PBXGroup;
 			children = (
 				C3E374FE2A08DDB900D5B3BA /* Urmet-Creact */,
 				C3E374FD2A08DDB900D5B3BA /* Products */,
+				754FC51B42EEB6DE7D443150 /* Pods */,
+				83E242C3AF33E048421AF544 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +148,51 @@
 			children = (
 				C3E374FF2A08DDB900D5B3BA /* AppDelegate.swift */,
 				C3E375012A08DDB900D5B3BA /* SceneDelegate.swift */,
-				C3E375032A08DDB900D5B3BA /* ViewController.swift */,
-				C3E375052A08DDB900D5B3BA /* Main.storyboard */,
+				C3E375172A08DE8400D5B3BA /* Controllers */,
+				C3E375162A08DE7F00D5B3BA /* Views */,
+				C3E375152A08DE7A00D5B3BA /* Models */,
+				C3D95D122A0D30D00058DA32 /* Extensions */,
+				C3D95D132A0D31290058DA32 /* Protocol */,
+				C3AA693F2A12368700648BAF /* Delegates */,
+				C3AA69422A123C9900648BAF /* Data Source */,
 				C3E375082A08DDBA00D5B3BA /* Assets.xcassets */,
-				C3E3750A2A08DDBA00D5B3BA /* LaunchScreen.storyboard */,
 				C3E3750D2A08DDBA00D5B3BA /* Info.plist */,
+				C3D95D0A2A0D22300058DA32 /* Present.swift */,
+				C3AA69472A12679B00648BAF /* Constants.swift */,
 			);
 			path = "Urmet-Creact";
+			sourceTree = "<group>";
+		};
+		C3E375152A08DE7A00D5B3BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C31AB6992A0B90DD00407B70 /* ButtonData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3E375162A08DE7F00D5B3BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3E3750A2A08DDBA00D5B3BA /* LaunchScreen.storyboard */,
+				C3E375052A08DDB900D5B3BA /* Main.storyboard */,
+				C3D95D152A0D34080058DA32 /* PopUpViewController.xib */,
+				C332D2542A0A9B1F005D4FD9 /* CustomButtonHomePage.xib */,
+				C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */,
+				C3E3751C2A090F1300D5B3BA /* CustomCell.xib */,
+				C3E3751E2A09103E00D5B3BA /* CustomCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3E375172A08DE8400D5B3BA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3E375032A08DDB900D5B3BA /* ViewController.swift */,
+				C3D95D022A0D1EB50058DA32 /* UIViewController.swift */,
+				C3D95D142A0D34080058DA32 /* PopUpViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3E375102A08DDBA00D5B3BA /* Build configuration list for PBXNativeTarget "Urmet-Creact" */;
 			buildPhases = (
+				2EC313EA68753BC5D9B3DD68 /* [CP] Check Pods Manifest.lock */,
 				C3E374F82A08DDB900D5B3BA /* Sources */,
 				C3E374F92A08DDB900D5B3BA /* Frameworks */,
 				C3E374FA2A08DDB900D5B3BA /* Resources */,
+				F4383384FE13310107352C26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C332D2552A0A9B1F005D4FD9 /* CustomButtonHomePage.xib in Resources */,
+				C3E3751D2A090F1300D5B3BA /* CustomCell.xib in Resources */,
 				C3E3750C2A08DDBA00D5B3BA /* LaunchScreen.storyboard in Resources */,
+				C3D95D172A0D34080058DA32 /* PopUpViewController.xib in Resources */,
 				C3E375092A08DDBA00D5B3BA /* Assets.xcassets in Resources */,
 				C3E375072A08DDB900D5B3BA /* Main.storyboard in Resources */,
 			);
@@ -133,14 +266,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EC313EA68753BC5D9B3DD68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Urmet-Creact-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4383384FE13310107352C26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Urmet-Creact/Pods-Urmet-Creact-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Urmet-Creact/Pods-Urmet-Creact-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Urmet-Creact/Pods-Urmet-Creact-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3E374F82A08DDB900D5B3BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D95CFD2A0D1A7A0058DA32 /* PopupDisplayer.swift in Sources */,
+				C3D95D0B2A0D22300058DA32 /* Present.swift in Sources */,
 				C3E375042A08DDB900D5B3BA /* ViewController.swift in Sources */,
+				C3D95D162A0D34080058DA32 /* PopUpViewController.swift in Sources */,
 				C3E375002A08DDB900D5B3BA /* AppDelegate.swift in Sources */,
+				C3AA69482A12679B00648BAF /* Constants.swift in Sources */,
+				C37C990B2A0D41BE004B21EF /* ButtonDelegate.swift in Sources */,
+				C3AA69462A123E2A00648BAF /* TableViewDataSource.swift in Sources */,
 				C3E375022A08DDB900D5B3BA /* SceneDelegate.swift in Sources */,
+				C3D95D0D2A0D22D90058DA32 /* UIController.swift in Sources */,
+				C332D2572A0A9D7B005D4FD9 /* CustomButtonHomePage.swift in Sources */,
+				C3AA694B2A127EE200648BAF /* Array+Extensions.swift in Sources */,
+				C3AA69442A123CCA00648BAF /* CollectionViewDataSource.swift in Sources */,
+				C3E3751F2A09103E00D5B3BA /* CustomCell.swift in Sources */,
+				C3D95D032A0D1EB50058DA32 /* UIViewController.swift in Sources */,
+				C31AB69A2A0B90DD00407B70 /* ButtonData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +470,7 @@
 		};
 		C3E375112A08DDBA00D5B3BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80EB3BFACA3BD117F91454B6 /* Pods-Urmet-Creact.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +499,7 @@
 		};
 		C3E375122A08DDBA00D5B3BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3708299FAEAF9B99AA11153B /* Pods-Urmet-Creact.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

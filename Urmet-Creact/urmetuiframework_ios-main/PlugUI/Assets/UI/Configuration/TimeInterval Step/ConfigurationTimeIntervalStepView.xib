@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationTimeIntervalStepView" customModule="CallMe" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="JOJ-3L-d33" id="8jI-o2-nSy"/>
+                <outlet property="labelDescription" destination="EGr-m2-NqU" id="zHd-OE-5mU"/>
+                <outlet property="labelTitle" destination="VTe-zF-Odp" id="vBV-Nz-IhS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5eE-m0-Au5">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="478"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervallo orario WiFi" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTe-zF-Odp">
+                    <rect key="frame" x="16" y="0.0" width="382" height="46.5"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="36"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scegliere quando disconnettere il videocitofono dalla rete WiFi" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGr-m2-NqU">
+                    <rect key="frame" x="16" y="62.5" width="382" height="62"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" name="TextWhite70"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JOJ-3L-d33">
+                    <rect key="frame" x="0.0" y="146.5" width="414" height="331.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wMb-0G-faf">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="iLN-7r-Lzm"/>
+                        <outlet property="delegate" destination="-1" id="FXU-rh-CMF"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fgI-uM-5L7"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JOJ-3L-d33" firstAttribute="leading" secondItem="fgI-uM-5L7" secondAttribute="leading" id="5P0-jx-58H"/>
+                <constraint firstAttribute="trailing" secondItem="VTe-zF-Odp" secondAttribute="trailing" constant="16" id="6Oa-t4-rPh"/>
+                <constraint firstItem="EGr-m2-NqU" firstAttribute="trailing" secondItem="VTe-zF-Odp" secondAttribute="trailing" id="8a8-Kq-gtB"/>
+                <constraint firstItem="EGr-m2-NqU" firstAttribute="leading" secondItem="VTe-zF-Odp" secondAttribute="leading" id="E9V-uv-d74"/>
+                <constraint firstItem="VTe-zF-Odp" firstAttribute="leading" secondItem="5eE-m0-Au5" secondAttribute="leading" constant="16" id="Oxf-9Y-eu2"/>
+                <constraint firstItem="EGr-m2-NqU" firstAttribute="top" secondItem="VTe-zF-Odp" secondAttribute="bottom" constant="16" id="Vlq-pl-P7x"/>
+                <constraint firstItem="VTe-zF-Odp" firstAttribute="top" secondItem="5eE-m0-Au5" secondAttribute="top" id="XRg-8p-JyU"/>
+                <constraint firstItem="JOJ-3L-d33" firstAttribute="top" secondItem="EGr-m2-NqU" secondAttribute="bottom" constant="22" id="fOA-ET-zFW"/>
+                <constraint firstItem="fgI-uM-5L7" firstAttribute="bottom" secondItem="JOJ-3L-d33" secondAttribute="bottom" id="iBP-0l-4mS"/>
+                <constraint firstItem="fgI-uM-5L7" firstAttribute="trailing" secondItem="JOJ-3L-d33" secondAttribute="trailing" id="sgI-xF-hv0"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="115.94202898550725" y="-102.45535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite70">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

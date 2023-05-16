@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ConfigurationVideoQualityStepCollectionViewCell" id="gTV-IL-0wX" customClass="ConfigurationVideoQualityStepCollectionViewCell" customModule="CallMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="63"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bassa" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ck8-qC-6V7">
+                        <rect key="frame" x="16" y="0.0" width="278" height="31"/>
+                        <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                        <color key="textColor" name="TextWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEk-Hs-xiA">
+                        <rect key="frame" x="326" y="3.5" width="24" height="24"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="RadioButtonOff"/>
+                        <state key="selected" image="RadioButtonOn"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Velocità &lt; 300 Kbit/sec" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pvz-2S-ksn">
+                        <rect key="frame" x="16" y="39" width="334" height="24"/>
+                        <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="18"/>
+                        <color key="textColor" name="TextWhite70"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Pvz-2S-ksn" firstAttribute="top" secondItem="Ck8-qC-6V7" secondAttribute="bottom" constant="8" id="5CF-iY-hKf"/>
+                <constraint firstAttribute="trailing" secondItem="Pvz-2S-ksn" secondAttribute="trailing" constant="16" id="BUI-5z-J9B"/>
+                <constraint firstItem="Pvz-2S-ksn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Bsc-OJ-UUQ"/>
+                <constraint firstItem="Ck8-qC-6V7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DfD-Uo-2s0"/>
+                <constraint firstItem="Ck8-qC-6V7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="FFK-bG-TAm"/>
+                <constraint firstItem="SEk-Hs-xiA" firstAttribute="leading" secondItem="Ck8-qC-6V7" secondAttribute="trailing" constant="32" id="Xug-zy-8jF"/>
+                <constraint firstAttribute="bottom" secondItem="Pvz-2S-ksn" secondAttribute="bottom" id="irV-7b-R93"/>
+                <constraint firstItem="SEk-Hs-xiA" firstAttribute="centerY" secondItem="Ck8-qC-6V7" secondAttribute="centerY" id="vf2-tM-Yv5"/>
+                <constraint firstAttribute="trailing" secondItem="SEk-Hs-xiA" secondAttribute="trailing" constant="16" id="wdS-21-2Rx"/>
+            </constraints>
+            <size key="customSize" width="366" height="63"/>
+            <connections>
+                <outlet property="button" destination="SEk-Hs-xiA" id="RFu-HZ-WX6"/>
+                <outlet property="labelDescription" destination="Pvz-2S-ksn" id="nIL-Sg-hPe"/>
+                <outlet property="labelName" destination="Ck8-qC-6V7" id="cjH-vW-V4e"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="47.209821428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="RadioButtonOff" width="24" height="24"/>
+        <image name="RadioButtonOn" width="24" height="24"/>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite70">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

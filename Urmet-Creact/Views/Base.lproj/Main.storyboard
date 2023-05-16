@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Urmet_Creact" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnS-XX-9TZ" userLabel="UsernamesCollectionView">
+                                <rect key="frame" x="114.5" y="114" width="260.5" height="105"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yX4-GO-HEy" userLabel="UsersAlredyIn">
+                                        <rect key="frame" x="0.0" y="0.0" width="253" height="105"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sLD-2N-0CV">
+                                            <size key="itemSize" width="72" height="71"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="Hf8-gO-DkX"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="ETg-NH-H4B"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yX4-GO-HEy" firstAttribute="leading" secondItem="QnS-XX-9TZ" secondAttribute="leading" id="8wx-6v-IF8"/>
+                                    <constraint firstItem="yX4-GO-HEy" firstAttribute="top" secondItem="QnS-XX-9TZ" secondAttribute="top" id="CDp-WN-YOA"/>
+                                    <constraint firstAttribute="bottom" secondItem="yX4-GO-HEy" secondAttribute="bottom" id="hhh-1A-S6m"/>
+                                    <constraint firstAttribute="trailing" secondItem="yX4-GO-HEy" secondAttribute="trailing" constant="7.5" id="z1S-Ta-Fwu"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t70-Kk-s7d">
+                                <rect key="frame" x="0.0" y="241" width="375" height="406"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aggiungi utente" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-tP-xim">
+                                <rect key="frame" x="20" y="192" width="72" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="OVc-Sp-Bwh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="16"/>
+                                <color key="textColor" name="TextWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvC-le-ZvJ">
+                                <rect key="frame" x="20" y="117" width="72" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="58w-Pk-yZu"/>
+                                    <constraint firstAttribute="width" constant="72" id="jIa-rV-VRj"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WallBox Garage" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gv-Eq-xcc">
+                                <rect key="frame" x="16" y="36" width="260" height="47"/>
+                                <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="36"/>
+                                <color key="textColor" name="TextWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Gv-Eq-xcc" secondAttribute="trailing" constant="99" id="7mv-gr-7Jv"/>
+                            <constraint firstItem="XvC-le-ZvJ" firstAttribute="top" secondItem="1Gv-Eq-xcc" secondAttribute="bottom" constant="34" id="AwL-Mr-ENX"/>
+                            <constraint firstAttribute="trailing" secondItem="QnS-XX-9TZ" secondAttribute="trailing" id="Ayd-s8-QcN"/>
+                            <constraint firstItem="QnS-XX-9TZ" firstAttribute="leading" secondItem="XvC-le-ZvJ" secondAttribute="trailing" constant="22.5" id="DNp-iC-Fwv"/>
+                            <constraint firstItem="QnS-XX-9TZ" firstAttribute="trailing" secondItem="t70-Kk-s7d" secondAttribute="trailing" id="Num-cZ-3oU"/>
+                            <constraint firstAttribute="bottom" secondItem="t70-Kk-s7d" secondAttribute="bottom" constant="20" symbolic="YES" id="SDv-Vm-HsX"/>
+                            <constraint firstItem="QnS-XX-9TZ" firstAttribute="top" secondItem="1Gv-Eq-xcc" secondAttribute="bottom" constant="31" id="WlH-gb-E4X"/>
+                            <constraint firstItem="5jk-tP-xim" firstAttribute="top" secondItem="XvC-le-ZvJ" secondAttribute="bottom" constant="3" id="Ws6-U5-5rO"/>
+                            <constraint firstItem="1Gv-Eq-xcc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XK1-b1-Xjp"/>
+                            <constraint firstItem="t70-Kk-s7d" firstAttribute="top" secondItem="QnS-XX-9TZ" secondAttribute="bottom" constant="22" id="XoT-zl-w1a"/>
+                            <constraint firstItem="XvC-le-ZvJ" firstAttribute="leading" secondItem="5jk-tP-xim" secondAttribute="leading" id="bkb-k1-DMX"/>
+                            <constraint firstItem="XvC-le-ZvJ" firstAttribute="trailing" secondItem="5jk-tP-xim" secondAttribute="trailing" id="eg6-bU-5BF"/>
+                            <constraint firstItem="t70-Kk-s7d" firstAttribute="top" secondItem="5jk-tP-xim" secondAttribute="bottom" constant="8" symbolic="YES" id="fBr-rg-Hm7"/>
+                            <constraint firstItem="1Gv-Eq-xcc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="jOB-tb-Oen"/>
+                            <constraint firstItem="t70-Kk-s7d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vKB-GV-10f"/>
+                            <constraint firstItem="XvC-le-ZvJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xAH-kF-k1P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addNewUserButton" destination="XvC-le-ZvJ" id="Am7-4F-8dC"/>
+                        <outlet property="addUserText" destination="5jk-tP-xim" id="qgL-HY-23F"/>
+                        <outlet property="collectionView" destination="yX4-GO-HEy" id="Inf-vR-Cr3"/>
+                        <outlet property="tableView" destination="t70-Kk-s7d" id="KE6-S9-r48"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2248.8000000000002" y="-67.916041979010501"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

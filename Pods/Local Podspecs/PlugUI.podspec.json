@@ -1,0 +1,26 @@
+{
+  "name": "PlugUI",
+  "version": "0.1.5",
+  "summary": "PlugUI urmet",
+  "homepage": "https://www.urmet.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Silvio fosso": "silviofosso72@gmail.com"
+  },
+  "source": {
+    "git": "http://gitlab.urmet.com/appunica/urmetuiframework_ios.git"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": "PlugUI/Classes/**/*",
+  "resources": "PlugUI/Assets/**/*",
+  "dependencies": {
+    "UserSdk": [
+
+    ]
+  }
+}

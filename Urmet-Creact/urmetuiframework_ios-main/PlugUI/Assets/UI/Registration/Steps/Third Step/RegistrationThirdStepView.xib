@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationThirdStepView">
+            <connections>
+                <outlet property="collectionView" destination="GmT-oE-pNn" id="L5p-ul-K9o"/>
+                <outlet property="collectionViewHeight" destination="T1L-h0-82a" id="QzP-cV-V4E"/>
+                <outlet property="labelDescription" destination="vGt-SK-6sd" id="xqe-XP-vMt"/>
+                <outlet property="labelPrivacyInfo" destination="efE-9A-PRr" id="crt-7m-BoG"/>
+                <outlet property="labelTitle" destination="IQk-fO-87j" id="qfi-Kj-6uB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wmG-yk-FMR">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="579"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abbiamo quasi finito" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-fO-87j">
+                    <rect key="frame" x="16" y="32" width="382" height="46.5"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="36"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per utilizzare il servizio leggi ed accetta le seguenti condizioni:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGt-SK-6sd">
+                    <rect key="frame" x="16" y="94.5" width="382" height="62"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" name="TextWhite70"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="GmT-oE-pNn">
+                    <rect key="frame" x="0.0" y="220.5" width="414" height="293"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="293" id="T1L-h0-82a"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vE2-dt-j8D">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6L8-ik-Hgy"/>
+                        <outlet property="delegate" destination="-1" id="qfS-HZ-9lu"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Dichiaro di aver letto e accettato interamente le seguenti prescrizioni sulla privacy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efE-9A-PRr">
+                    <rect key="frame" x="16" y="529.5" width="382" height="33.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" name="TextWhite70"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vGt-SK-6sd" firstAttribute="top" secondItem="IQk-fO-87j" secondAttribute="bottom" constant="16" id="1vw-oI-jIB"/>
+                <constraint firstAttribute="bottom" secondItem="efE-9A-PRr" secondAttribute="bottom" constant="16" id="4mY-b1-orF"/>
+                <constraint firstItem="GmT-oE-pNn" firstAttribute="top" secondItem="vGt-SK-6sd" secondAttribute="bottom" constant="64" id="5VT-BF-mbF"/>
+                <constraint firstItem="efE-9A-PRr" firstAttribute="leading" secondItem="wmG-yk-FMR" secondAttribute="leading" constant="16" id="9qd-jb-n0a"/>
+                <constraint firstItem="IQk-fO-87j" firstAttribute="leading" secondItem="wmG-yk-FMR" secondAttribute="leading" constant="16" id="Act-AL-8sL"/>
+                <constraint firstItem="efE-9A-PRr" firstAttribute="top" secondItem="GmT-oE-pNn" secondAttribute="bottom" constant="16" id="Cy0-6o-0uX"/>
+                <constraint firstItem="vGt-SK-6sd" firstAttribute="trailing" secondItem="IQk-fO-87j" secondAttribute="trailing" id="PfS-7v-amD"/>
+                <constraint firstItem="GmT-oE-pNn" firstAttribute="leading" secondItem="wmG-yk-FMR" secondAttribute="leading" id="Rsh-UP-G8V"/>
+                <constraint firstItem="IQk-fO-87j" firstAttribute="top" secondItem="wmG-yk-FMR" secondAttribute="top" constant="32" id="bzG-bO-gDL"/>
+                <constraint firstAttribute="trailing" secondItem="GmT-oE-pNn" secondAttribute="trailing" id="dau-Xd-xHq"/>
+                <constraint firstAttribute="trailing" secondItem="efE-9A-PRr" secondAttribute="trailing" constant="16" id="etE-Vj-RHT"/>
+                <constraint firstItem="vGt-SK-6sd" firstAttribute="leading" secondItem="IQk-fO-87j" secondAttribute="leading" id="qa1-bm-AYB"/>
+                <constraint firstAttribute="trailing" secondItem="IQk-fO-87j" secondAttribute="trailing" constant="16" id="zfj-89-NVa"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="72.463768115942031" y="35.15625"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite70">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

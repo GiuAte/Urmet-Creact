@@ -1,0 +1,23 @@
+PODS:
+  - CryptoSwift (1.6.0)
+  - UserSdk (0.1.0):
+    - CryptoSwift (~> 1.6.0)
+
+DEPENDENCIES:
+  - UserSdk (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CryptoSwift
+
+EXTERNAL SOURCES:
+  UserSdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
+  UserSdk: 5a2b69cd2857c7c8a6ba0dad2e7de26533b60ea1
+
+PODFILE CHECKSUM: 47e131d73b85b059647ef0c8bbf48208c3d32008
+
+COCOAPODS: 1.11.3

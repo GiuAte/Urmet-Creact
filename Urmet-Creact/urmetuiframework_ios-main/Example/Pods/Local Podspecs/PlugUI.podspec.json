@@ -1,0 +1,31 @@
+{
+  "name": "PlugUI",
+  "version": "0.1.0",
+  "summary": "A short description of PlugUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Silvio fosso/PlugUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Silvio fosso": "silviofosso72@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Silvio fosso/PlugUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "12.5"
+  },
+  "source_files": "PlugUI/Classes/**/*",
+  "resources": "PlugUI/Assets/**/*",
+  "dependencies": {
+    "ToastViewSwift": [
+
+    ],
+    "UserSdk": [
+
+    ]
+  }
+}

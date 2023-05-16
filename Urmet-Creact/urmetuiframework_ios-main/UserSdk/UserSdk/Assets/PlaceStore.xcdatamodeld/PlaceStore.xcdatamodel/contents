@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManagedAccount" representedClassName="ManagedAccount" syncable="YES">
+        <attribute name="channelNumber" attributeType="Integer 64" usesScalarValueType="NO"/>
+        <attribute name="direction" attributeType="String"/>
+        <attribute name="password" attributeType="String"/>
+        <attribute name="realm" attributeType="String"/>
+        <attribute name="username" attributeType="String"/>
+        <relationship name="place" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedPlace" inverseName="accounts" inverseEntity="ManagedPlace"/>
+    </entity>
+    <entity name="ManagedAlarm" representedClassName="ManagedAlarm" syncable="YES">
+        <attribute name="mac" optional="YES" attributeType="String"/>
+        <attribute name="placeId" optional="YES" attributeType="String"/>
+        <attribute name="sender" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="topological_code" optional="YES" attributeType="String"/>
+        <attribute name="ts" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="vds_types" optional="YES" attributeType="String"/>
+        <relationship name="place" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedPlace" inverseName="alarms" inverseEntity="ManagedPlace"/>
+    </entity>
+    <entity name="ManagedDevice" representedClassName="ManagedDevice" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="placeId" optional="YES" attributeType="String"/>
+        <attribute name="topological_code" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="vds_types" optional="YES" attributeType="String"/>
+        <relationship name="place" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedPlace" inverseName="devices" inverseEntity="ManagedPlace"/>
+    </entity>
+    <entity name="ManagedMissedCall" representedClassName="ManagedMissedCall" syncable="YES">
+        <attribute name="call_type" optional="YES" attributeType="String"/>
+        <attribute name="caller" optional="YES" attributeType="String"/>
+        <attribute name="caller_code" optional="YES" attributeType="String"/>
+        <attribute name="hasSnapshot" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="mac" optional="YES" attributeType="String"/>
+        <attribute name="placeId" optional="YES" attributeType="String"/>
+        <attribute name="ts" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="place" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedPlace" inverseName="missedCalls" inverseEntity="ManagedPlace"/>
+    </entity>
+    <entity name="ManagedPlace" representedClassName="ManagedPlace" syncable="YES">
+        <attribute name="capabilities" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="enabled" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="family" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="ipercomGatewayUri" optional="YES" attributeType="String"/>
+        <attribute name="mac" optional="YES" attributeType="String"/>
+        <attribute name="model" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="strategies" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
+        <attribute name="uid" optional="YES" attributeType="String"/>
+        <relationship name="accounts" toMany="YES" deletionRule="Cascade" destinationEntity="ManagedAccount" inverseName="place" inverseEntity="ManagedAccount"/>
+        <relationship name="alarms" toMany="YES" deletionRule="Cascade" destinationEntity="ManagedAlarm" inverseName="place" inverseEntity="ManagedAlarm"/>
+        <relationship name="devices" toMany="YES" deletionRule="Cascade" destinationEntity="ManagedDevice" inverseName="place" inverseEntity="ManagedDevice"/>
+        <relationship name="missedCalls" toMany="YES" deletionRule="Cascade" destinationEntity="ManagedMissedCall" inverseName="place" inverseEntity="ManagedMissedCall"/>
+    </entity>
+</model>

@@ -1,0 +1,6 @@
+framework module UserSdk {
+  umbrella header "UserSdk-umbrella.h"
+
+  export *
+  module * { export * }
+}

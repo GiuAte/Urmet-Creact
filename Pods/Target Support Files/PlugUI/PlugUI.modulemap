@@ -1,0 +1,6 @@
+framework module PlugUI {
+  umbrella header "PlugUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,13 @@
+use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '12.5'
+
+target 'UserSdk_Example' do
+  pod 'UserSdk', :path => '../'
+
+  target 'UserSdk_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationRoutingStepModalView" customModule="CallMe" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonSet" destination="7Po-wC-r87" id="eoj-rz-zbL"/>
+                <outlet property="labelTitle" destination="3Rj-hD-zdx" id="TMT-OH-hBR"/>
+                <outlet property="scrollView" destination="aFC-LZ-aMW" id="ceO-NF-Ml3"/>
+                <outlet property="scrollViewHeight" destination="Z2C-v7-TX3" id="NNe-a1-V38"/>
+                <outlet property="textFieldDNS" destination="Mgd-8d-7Ye" id="usm-Lo-51c"/>
+                <outlet property="textFieldGateway" destination="P5P-Ti-xUf" id="IiO-jj-Eye"/>
+                <outlet property="textFieldIPV4" destination="SMI-4d-5fD" id="jPb-ic-95h"/>
+                <outlet property="textFieldSubnetMask" destination="Zmq-g6-UVZ" id="La7-p0-IFh"/>
+                <outlet property="view" destination="AEf-dr-Zlo" id="H6v-Dc-w0f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AEf-dr-Zlo">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zko-yY-8w9">
+                    <rect key="frame" x="0.0" y="171.5" width="414" height="748.5"/>
+                    <color key="backgroundColor" name="BackgroundAlert"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Impostazioni avanzate di connessione" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rj-hD-zdx">
+                    <rect key="frame" x="32" y="211.5" width="350" height="77.5"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="30"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFC-LZ-aMW">
+                    <rect key="frame" x="0.0" y="305" width="414" height="396"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPs-j7-d8E">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="396"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="jL6-Hw-taL">
+                                    <rect key="frame" x="32" y="0.0" width="350" height="396"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="inserisci l’indirizzo IP (IPV4)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMI-4d-5fD" customClass="InputTextField" customModule="CallMe" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="75"/>
+                                            <color key="tintColor" name="TextWhite"/>
+                                            <color key="textColor" name="TextWhite"/>
+                                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                            <connections>
+                                                <action selector="textFieldChanged:" destination="-1" eventType="editingChanged" id="Iai-aJ-sNf"/>
+                                                <action selector="textFieldEditEnded:" destination="-1" eventType="editingDidEnd" id="tMy-gk-dhU"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inserisci la subnet mask" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-g6-UVZ" customClass="InputTextField" customModule="CallMe" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="107" width="350" height="75"/>
+                                            <color key="tintColor" name="TextWhite"/>
+                                            <color key="textColor" name="TextWhite"/>
+                                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                            <connections>
+                                                <action selector="textFieldChanged:" destination="-1" eventType="editingChanged" id="QQO-G2-tN9"/>
+                                                <action selector="textFieldEditEnded:" destination="-1" eventType="editingDidEnd" id="7K0-FJ-mnF"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inserisci l’indirizzo gateway" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P5P-Ti-xUf" customClass="InputTextField" customModule="CallMe" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="214" width="350" height="75"/>
+                                            <color key="tintColor" name="TextWhite"/>
+                                            <color key="textColor" name="TextWhite"/>
+                                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                            <connections>
+                                                <action selector="textFieldChanged:" destination="-1" eventType="editingChanged" id="RfH-5f-JYU"/>
+                                                <action selector="textFieldEditEnded:" destination="-1" eventType="editingDidEnd" id="uel-wS-Fcz"/>
+                                            </connections>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inserisci il DNS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgd-8d-7Ye" customClass="InputTextField" customModule="CallMe" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="321" width="350" height="75"/>
+                                            <color key="tintColor" name="TextWhite"/>
+                                            <color key="textColor" name="TextWhite"/>
+                                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                            <connections>
+                                                <action selector="textFieldChanged:" destination="-1" eventType="editingChanged" id="als-vV-WVF"/>
+                                                <action selector="textFieldEditEnded:" destination="-1" eventType="editingDidEnd" id="oPZ-u7-4OZ"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="jL6-Hw-taL" secondAttribute="trailing" constant="32" id="6MP-WS-UX7"/>
+                                <constraint firstItem="jL6-Hw-taL" firstAttribute="leading" secondItem="yPs-j7-d8E" secondAttribute="leading" constant="32" id="9oO-eY-KlH"/>
+                                <constraint firstAttribute="bottom" secondItem="jL6-Hw-taL" secondAttribute="bottom" id="Dhr-xA-iFW"/>
+                                <constraint firstItem="jL6-Hw-taL" firstAttribute="top" secondItem="yPs-j7-d8E" secondAttribute="top" id="zNs-T2-fNn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="yPs-j7-d8E" secondAttribute="trailing" id="4dJ-Gv-VYP"/>
+                        <constraint firstItem="yPs-j7-d8E" firstAttribute="leading" secondItem="aFC-LZ-aMW" secondAttribute="leading" id="EcV-g3-z0P"/>
+                        <constraint firstAttribute="height" priority="100" constant="396" id="Z2C-v7-TX3"/>
+                        <constraint firstItem="yPs-j7-d8E" firstAttribute="top" secondItem="aFC-LZ-aMW" secondAttribute="top" id="bjh-g4-n76"/>
+                        <constraint firstAttribute="bottom" secondItem="yPs-j7-d8E" secondAttribute="bottom" id="cMn-Tg-S4x"/>
+                        <constraint firstItem="yPs-j7-d8E" firstAttribute="width" secondItem="aFC-LZ-aMW" secondAttribute="width" id="scj-Ze-7xA"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Po-wC-r87" customClass="PrimaryButton" customModule="CallMe" customModuleProvider="target">
+                    <rect key="frame" x="32" y="733" width="350" height="57"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Imposta">
+                        <color key="titleColor" name="TextBlack"/>
+                    </state>
+                    <connections>
+                        <action selector="setTapped:" destination="-1" eventType="touchUpInside" id="Glm-Nm-NeS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEz-MO-KeZ">
+                    <rect key="frame" x="358" y="171.5" width="56" height="56"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="IconClose"/>
+                    <connections>
+                        <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="HcW-Mt-psc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="we6-tS-iaw"/>
+            <constraints>
+                <constraint firstItem="aFC-LZ-aMW" firstAttribute="leading" secondItem="zko-yY-8w9" secondAttribute="leading" id="1jI-kj-RCL"/>
+                <constraint firstItem="we6-tS-iaw" firstAttribute="bottom" secondItem="7Po-wC-r87" secondAttribute="bottom" constant="72" id="1on-eK-1Z4"/>
+                <constraint firstItem="we6-tS-iaw" firstAttribute="trailing" secondItem="zko-yY-8w9" secondAttribute="trailing" id="7tt-tW-D5T"/>
+                <constraint firstItem="zko-yY-8w9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="we6-tS-iaw" secondAttribute="top" constant="32" id="E7g-x2-TKs"/>
+                <constraint firstItem="aFC-LZ-aMW" firstAttribute="trailing" secondItem="zko-yY-8w9" secondAttribute="trailing" id="I1V-bS-fwr"/>
+                <constraint firstItem="UEz-MO-KeZ" firstAttribute="top" secondItem="zko-yY-8w9" secondAttribute="top" id="JPl-8P-d6F"/>
+                <constraint firstItem="we6-tS-iaw" firstAttribute="trailing" secondItem="3Rj-hD-zdx" secondAttribute="trailing" constant="32" id="SaX-MM-V3a"/>
+                <constraint firstItem="UEz-MO-KeZ" firstAttribute="trailing" secondItem="zko-yY-8w9" secondAttribute="trailing" id="VSa-we-Vfk"/>
+                <constraint firstItem="3Rj-hD-zdx" firstAttribute="top" secondItem="zko-yY-8w9" secondAttribute="top" constant="40" id="a3l-Mw-KnL"/>
+                <constraint firstItem="we6-tS-iaw" firstAttribute="trailing" secondItem="7Po-wC-r87" secondAttribute="trailing" constant="32" id="dOw-Yq-fEg"/>
+                <constraint firstItem="7Po-wC-r87" firstAttribute="leading" secondItem="we6-tS-iaw" secondAttribute="leading" constant="32" id="ger-8V-HGU"/>
+                <constraint firstItem="3Rj-hD-zdx" firstAttribute="leading" secondItem="we6-tS-iaw" secondAttribute="leading" constant="32" id="mpR-Dr-bBo"/>
+                <constraint firstItem="7Po-wC-r87" firstAttribute="top" secondItem="aFC-LZ-aMW" secondAttribute="bottom" constant="32" id="q4L-GX-HzR"/>
+                <constraint firstItem="zko-yY-8w9" firstAttribute="leading" secondItem="we6-tS-iaw" secondAttribute="leading" id="rH0-3O-RVL"/>
+                <constraint firstAttribute="bottom" secondItem="zko-yY-8w9" secondAttribute="bottom" constant="-24" id="wwe-vL-m8V"/>
+                <constraint firstItem="aFC-LZ-aMW" firstAttribute="top" secondItem="3Rj-hD-zdx" secondAttribute="bottom" constant="16" id="yvT-03-dYS"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="7Po-wC-r87">
+            <size key="intrinsicContentSize" width="77" height="57"/>
+        </designable>
+        <designable name="Mgd-8d-7Ye">
+            <size key="intrinsicContentSize" width="140.5" height="75"/>
+        </designable>
+        <designable name="P5P-Ti-xUf">
+            <size key="intrinsicContentSize" width="249.5" height="75"/>
+        </designable>
+        <designable name="SMI-4d-5fD">
+            <size key="intrinsicContentSize" width="255" height="75"/>
+        </designable>
+        <designable name="Zmq-g6-UVZ">
+            <size key="intrinsicContentSize" width="225.5" height="75"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="IconClose" width="56" height="56"/>
+        <namedColor name="BackgroundAlert">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

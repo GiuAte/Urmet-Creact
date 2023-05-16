@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationModalViewController" customModule="PlugUI" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonContinue" destination="Lza-2r-sTc" id="lhH-3w-eyE"/>
+                <outlet property="labelDescription" destination="jPS-It-KU0" id="hpM-2p-Ced"/>
+                <outlet property="labelTitle" destination="3Rj-hD-zdx" id="TMT-OH-hBR"/>
+                <outlet property="view" destination="AEf-dr-Zlo" id="H6v-Dc-w0f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="AEf-dr-Zlo">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zko-yY-8w9">
+                    <rect key="frame" x="0.0" y="459" width="414" height="461"/>
+                    <color key="backgroundColor" name="BackgroundAlert"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Inizializzazione sistema" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rj-hD-zdx">
+                    <rect key="frame" x="32" y="499" width="350" height="35"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="30"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFC-LZ-aMW">
+                    <rect key="frame" x="32" y="550" width="350" height="154"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPS-It-KU0">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="154"/>
+                            <string key="text">Verifica che il dispositivo sia acceso ed il LED rosso lampeggi.
+Se il LED non dovesse lampeggiare, premi il tasto reset per 3 secondi e attendi il riavvio del dispositivo.</string>
+                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="22"/>
+                            <color key="textColor" name="TextWhite70"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jPS-It-KU0" secondAttribute="trailing" id="4f6-9v-3gU"/>
+                        <constraint firstAttribute="bottom" secondItem="jPS-It-KU0" secondAttribute="bottom" id="J90-gN-4h2"/>
+                        <constraint firstAttribute="height" secondItem="jPS-It-KU0" secondAttribute="height" priority="250" id="Roj-20-B6A"/>
+                        <constraint firstItem="jPS-It-KU0" firstAttribute="width" secondItem="aFC-LZ-aMW" secondAttribute="width" id="aYj-xx-GGc"/>
+                        <constraint firstItem="jPS-It-KU0" firstAttribute="top" secondItem="aFC-LZ-aMW" secondAttribute="top" id="bWn-cr-XpO"/>
+                        <constraint firstItem="jPS-It-KU0" firstAttribute="leading" secondItem="aFC-LZ-aMW" secondAttribute="leading" id="qis-XA-27A"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="dqd-76-QtD"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="tYi-XV-KDp"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEz-MO-KeZ">
+                    <rect key="frame" x="358" y="459" width="56" height="56"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="IconClose"/>
+                    <connections>
+                        <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="HcW-Mt-psc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lza-2r-sTc" customClass="PrimaryButton" customModule="PlugUI" customModuleProvider="target">
+                    <rect key="frame" x="32" y="736" width="350" height="54"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                    <state key="normal" title="Continua" image="ArrowRight">
+                        <color key="titleColor" name="TextBlack"/>
+                    </state>
+                    <connections>
+                        <action selector="continueTapped:" destination="-1" eventType="touchUpInside" id="xD0-Ro-U9M"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="we6-tS-iaw"/>
+            <constraints>
+                <constraint firstItem="aFC-LZ-aMW" firstAttribute="trailing" secondItem="3Rj-hD-zdx" secondAttribute="trailing" id="4ox-bR-WZT"/>
+                <constraint firstItem="Lza-2r-sTc" firstAttribute="trailing" secondItem="aFC-LZ-aMW" secondAttribute="trailing" id="5cF-Rr-vIp"/>
+                <constraint firstItem="we6-tS-iaw" firstAttribute="trailing" secondItem="zko-yY-8w9" secondAttribute="trailing" id="7tt-tW-D5T"/>
+                <constraint firstItem="zko-yY-8w9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="we6-tS-iaw" secondAttribute="top" constant="32" id="E7g-x2-TKs"/>
+                <constraint firstItem="UEz-MO-KeZ" firstAttribute="top" secondItem="zko-yY-8w9" secondAttribute="top" id="JPl-8P-d6F"/>
+                <constraint firstItem="Lza-2r-sTc" firstAttribute="leading" secondItem="aFC-LZ-aMW" secondAttribute="leading" id="QKc-Gc-5X4"/>
+                <constraint firstItem="we6-tS-iaw" firstAttribute="trailing" secondItem="3Rj-hD-zdx" secondAttribute="trailing" constant="32" id="SaX-MM-V3a"/>
+                <constraint firstItem="UEz-MO-KeZ" firstAttribute="trailing" secondItem="zko-yY-8w9" secondAttribute="trailing" id="VSa-we-Vfk"/>
+                <constraint firstItem="3Rj-hD-zdx" firstAttribute="top" secondItem="zko-yY-8w9" secondAttribute="top" constant="40" id="a3l-Mw-KnL"/>
+                <constraint firstItem="we6-tS-iaw" firstAttribute="bottom" secondItem="Lza-2r-sTc" secondAttribute="bottom" constant="72" id="eiA-fh-qN2"/>
+                <constraint firstItem="Lza-2r-sTc" firstAttribute="top" secondItem="aFC-LZ-aMW" secondAttribute="bottom" constant="32" id="esW-tf-qOG"/>
+                <constraint firstItem="aFC-LZ-aMW" firstAttribute="leading" secondItem="3Rj-hD-zdx" secondAttribute="leading" id="lCr-Ct-aaT"/>
+                <constraint firstItem="3Rj-hD-zdx" firstAttribute="leading" secondItem="we6-tS-iaw" secondAttribute="leading" constant="32" id="mpR-Dr-bBo"/>
+                <constraint firstItem="zko-yY-8w9" firstAttribute="leading" secondItem="we6-tS-iaw" secondAttribute="leading" id="rH0-3O-RVL"/>
+                <constraint firstAttribute="bottom" secondItem="zko-yY-8w9" secondAttribute="bottom" constant="-24" id="wwe-vL-m8V"/>
+                <constraint firstItem="aFC-LZ-aMW" firstAttribute="top" secondItem="3Rj-hD-zdx" secondAttribute="bottom" constant="16" id="yvT-03-dYS"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Lza-2r-sTc">
+            <size key="intrinsicContentSize" width="121" height="54"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ArrowRight" width="24" height="24"/>
+        <image name="IconClose" width="56" height="56"/>
+        <namedColor name="BackgroundAlert">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite70">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationWiFiViewController" customModule="PlugUI" customModuleProvider="target">
+            <connections>
+                <outlet property="labelDescription" destination="Qhb-hh-P6k" id="pQU-8B-YiJ"/>
+                <outlet property="labelSelectWifi" destination="oOq-zR-v2C" id="14L-TW-nir"/>
+                <outlet property="labelTitle" destination="SXV-6w-MvK" id="RPm-oN-nkA"/>
+                <outlet property="labelWiFi" destination="EzM-fb-A8s" id="iRg-ko-fUz"/>
+                <outlet property="tableView" destination="YTx-aw-hDW" id="2bR-ed-Toh"/>
+                <outlet property="tableViewHeight" destination="38J-pc-2qB" id="8Fs-ZP-5cY"/>
+                <outlet property="textFieldPassword" destination="Jqq-Ye-hPt" id="tHf-mM-GGl"/>
+                <outlet property="view" destination="B2s-ab-WAl" id="GX4-yu-Kd8"/>
+                <outlet property="viewInfo" destination="K5G-Sy-7ag" id="clc-cG-hoZ"/>
+                <outlet property="viewList" destination="3mc-8E-3lI" id="1pZ-3K-7KZ"/>
+                <outlet property="viewPassword" destination="Ubi-LN-MNt" id="yLG-Mc-Cdm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="B2s-ab-WAl">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ND2-wC-y5d">
+                    <rect key="frame" x="0.0" y="505" width="414" height="415"/>
+                    <color key="backgroundColor" name="BackgroundAlert"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AbI-RT-KCk">
+                    <rect key="frame" x="32" y="545" width="361" height="245"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5G-Sy-7ag">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="245"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Connettività tramite Wi-Fi" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXV-6w-MvK">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="30"/>
+                                    <color key="textColor" name="TextWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleziona la rete Wi-Fi a cui vuoi connettere il dispositivo associato a questo luogo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhb-hh-P6k">
+                                    <rect key="frame" x="0.0" y="66" width="350" height="77"/>
+                                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="22"/>
+                                    <color key="textColor" name="TextWhite70"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleziona Wi-Fi" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZ9-Yk-Xc1">
+                                    <rect key="frame" x="0.0" y="212" width="310" height="28"/>
+                                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                                    <color key="textColor" name="TextWhite50"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snG-GD-zcd">
+                                    <rect key="frame" x="0.0" y="202" width="350" height="48"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="DropdownDown"/>
+                                    <connections>
+                                        <action selector="selectWifiTapped:" destination="-1" eventType="touchUpInside" id="wnb-cg-h8b"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="SXV-6w-MvK" firstAttribute="leading" secondItem="K5G-Sy-7ag" secondAttribute="leading" id="08n-fk-eb4"/>
+                                <constraint firstItem="OZ9-Yk-Xc1" firstAttribute="top" secondItem="snG-GD-zcd" secondAttribute="top" constant="10" id="1ys-QN-S3x"/>
+                                <constraint firstItem="snG-GD-zcd" firstAttribute="trailing" secondItem="Qhb-hh-P6k" secondAttribute="trailing" id="98p-4e-eVw"/>
+                                <constraint firstItem="Qhb-hh-P6k" firstAttribute="top" secondItem="SXV-6w-MvK" secondAttribute="bottom" constant="16" id="CXp-Tv-hWF"/>
+                                <constraint firstAttribute="trailing" secondItem="SXV-6w-MvK" secondAttribute="trailing" constant="11" id="FnJ-OD-TVO"/>
+                                <constraint firstItem="Qhb-hh-P6k" firstAttribute="trailing" secondItem="SXV-6w-MvK" secondAttribute="trailing" id="Gbx-tH-HRB"/>
+                                <constraint firstItem="SXV-6w-MvK" firstAttribute="top" secondItem="K5G-Sy-7ag" secondAttribute="top" id="LL9-A1-EhN"/>
+                                <constraint firstAttribute="bottom" secondItem="OZ9-Yk-Xc1" secondAttribute="bottom" constant="5" id="Nzn-RU-beb"/>
+                                <constraint firstItem="snG-GD-zcd" firstAttribute="bottom" secondItem="OZ9-Yk-Xc1" secondAttribute="bottom" constant="10" id="dvX-bw-Pmm"/>
+                                <constraint firstAttribute="trailing" secondItem="OZ9-Yk-Xc1" secondAttribute="trailing" constant="51" id="eN4-m7-qyJ"/>
+                                <constraint firstItem="Qhb-hh-P6k" firstAttribute="leading" secondItem="SXV-6w-MvK" secondAttribute="leading" id="fTY-VR-xXL"/>
+                                <constraint firstItem="OZ9-Yk-Xc1" firstAttribute="leading" secondItem="Qhb-hh-P6k" secondAttribute="leading" id="h7z-qC-PY9"/>
+                                <constraint firstItem="OZ9-Yk-Xc1" firstAttribute="top" secondItem="Qhb-hh-P6k" secondAttribute="bottom" constant="69" id="lh5-um-5IZ"/>
+                                <constraint firstItem="snG-GD-zcd" firstAttribute="leading" secondItem="OZ9-Yk-Xc1" secondAttribute="leading" id="o8X-ZX-lss"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mc-8E-3lI">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="35"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YTx-aw-hDW">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="0.0"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="250" constant="128" id="38J-pc-2qB"/>
+                                    </constraints>
+                                    <inset key="scrollIndicatorInsets" minX="0.0" minY="24" maxX="0.0" maxY="24"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="BTB-Ad-zwC"/>
+                                        <outlet property="delegate" destination="-1" id="vTz-ZS-wHh"/>
+                                    </connections>
+                                </tableView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5up-JU-Xnc">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="1"/>
+                                    <color key="backgroundColor" name="TextWhite30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="tE1-Pk-VWc"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleziona Wi-Fi" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOq-zR-v2C">
+                                    <rect key="frame" x="0.0" y="30" width="310" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                                    <color key="textColor" name="TextWhite50"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHH-Qo-yQ9">
+                                    <rect key="frame" x="0.0" y="20" width="353" height="20"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="DropdownUp"/>
+                                    <connections>
+                                        <action selector="closeWifiTapped:" destination="-1" eventType="touchUpInside" id="c5r-MP-ts2"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="YTx-aw-hDW" secondAttribute="trailing" id="5y4-pL-dln"/>
+                                <constraint firstItem="YTx-aw-hDW" firstAttribute="top" secondItem="3mc-8E-3lI" secondAttribute="top" id="65B-Aq-q5n"/>
+                                <constraint firstItem="5up-JU-Xnc" firstAttribute="leading" secondItem="3mc-8E-3lI" secondAttribute="leading" id="92m-48-afx"/>
+                                <constraint firstItem="PHH-Qo-yQ9" firstAttribute="leading" secondItem="oOq-zR-v2C" secondAttribute="leading" id="HOh-Zw-Xhp"/>
+                                <constraint firstAttribute="trailing" secondItem="5up-JU-Xnc" secondAttribute="trailing" id="Lmt-t9-6bW"/>
+                                <constraint firstAttribute="trailing" secondItem="PHH-Qo-yQ9" secondAttribute="trailing" constant="8" id="Zgx-Yq-Eex"/>
+                                <constraint firstItem="oOq-zR-v2C" firstAttribute="top" secondItem="5up-JU-Xnc" secondAttribute="bottom" constant="29" id="lMO-cb-Fqa"/>
+                                <constraint firstItem="YTx-aw-hDW" firstAttribute="bottom" secondItem="5up-JU-Xnc" secondAttribute="top" id="oDj-yc-4mu"/>
+                                <constraint firstItem="oOq-zR-v2C" firstAttribute="leading" secondItem="3mc-8E-3lI" secondAttribute="leading" id="pmR-ao-iKR"/>
+                                <constraint firstItem="YTx-aw-hDW" firstAttribute="leading" secondItem="3mc-8E-3lI" secondAttribute="leading" id="sdU-5l-Jy3"/>
+                                <constraint firstAttribute="bottom" secondItem="oOq-zR-v2C" secondAttribute="bottom" constant="5" id="t4W-zQ-PXb"/>
+                                <constraint firstItem="PHH-Qo-yQ9" firstAttribute="bottom" secondItem="oOq-zR-v2C" secondAttribute="bottom" constant="10" id="vVW-zC-bIy"/>
+                                <constraint firstItem="oOq-zR-v2C" firstAttribute="top" secondItem="PHH-Qo-yQ9" secondAttribute="top" constant="10" id="vZO-dx-b5s"/>
+                                <constraint firstAttribute="trailing" secondItem="oOq-zR-v2C" secondAttribute="trailing" constant="51" id="vop-Ml-RXB"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubi-LN-MNt">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="64"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EbP-Qe-g1h">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="0.0"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="WifiButtonIcon" translatesAutoresizingMaskIntoConstraints="NO" id="oVP-iz-hDM">
+                                            <rect key="frame" x="0.0" y="-24" width="48" height="48"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wifi casa" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzM-fb-A8s">
+                                            <rect key="frame" x="59" y="0.0" width="302" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="30"/>
+                                            <color key="textColor" name="TextWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="oVP-iz-hDM" firstAttribute="leading" secondItem="EbP-Qe-g1h" secondAttribute="leading" id="FkB-9p-g13"/>
+                                        <constraint firstItem="oVP-iz-hDM" firstAttribute="centerY" secondItem="EzM-fb-A8s" secondAttribute="centerY" id="Jtq-ma-I6a"/>
+                                        <constraint firstItem="EzM-fb-A8s" firstAttribute="leading" secondItem="oVP-iz-hDM" secondAttribute="trailing" constant="11" id="QRV-i2-98U"/>
+                                        <constraint firstItem="oVP-iz-hDM" firstAttribute="top" secondItem="EbP-Qe-g1h" secondAttribute="top" priority="250" id="RVw-Ao-UKq"/>
+                                        <constraint firstItem="EzM-fb-A8s" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EbP-Qe-g1h" secondAttribute="top" id="ZD5-gl-gAU"/>
+                                        <constraint firstAttribute="trailing" secondItem="EzM-fb-A8s" secondAttribute="trailing" id="nuS-tZ-2OG"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EzM-fb-A8s" secondAttribute="bottom" id="orE-Mv-4Mq"/>
+                                        <constraint firstItem="EzM-fb-A8s" firstAttribute="centerY" secondItem="EbP-Qe-g1h" secondAttribute="centerY" id="pcO-nV-Fnv"/>
+                                        <constraint firstAttribute="bottom" secondItem="oVP-iz-hDM" secondAttribute="bottom" priority="250" id="rwf-b7-j6i"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inserisci la password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jqq-Ye-hPt" customClass="InputTextField" customModule="PlugUI" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="32" width="361" height="0.0"/>
+                                    <color key="tintColor" name="TextWhite"/>
+                                    <color key="textColor" name="TextWhite"/>
+                                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaX-9B-PGm" customClass="PrimaryButton" customModule="PlugUI" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="64" width="361" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Imposta">
+                                        <color key="titleColor" name="TextBlack"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="setUpTapped:" destination="-1" eventType="touchUpInside" id="BJQ-nG-c25"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="EbP-Qe-g1h" firstAttribute="top" secondItem="Ubi-LN-MNt" secondAttribute="top" id="DLF-v5-bWN"/>
+                                <constraint firstAttribute="bottom" secondItem="IaX-9B-PGm" secondAttribute="bottom" id="DoA-WW-YK4"/>
+                                <constraint firstItem="Jqq-Ye-hPt" firstAttribute="leading" secondItem="Ubi-LN-MNt" secondAttribute="leading" id="Ev4-1X-x8d"/>
+                                <constraint firstAttribute="trailing" secondItem="Jqq-Ye-hPt" secondAttribute="trailing" id="FFV-H3-cCn"/>
+                                <constraint firstItem="IaX-9B-PGm" firstAttribute="leading" secondItem="Ubi-LN-MNt" secondAttribute="leading" id="G6u-3n-dfG"/>
+                                <constraint firstItem="EbP-Qe-g1h" firstAttribute="leading" secondItem="Ubi-LN-MNt" secondAttribute="leading" id="GOX-d1-wOd"/>
+                                <constraint firstItem="Jqq-Ye-hPt" firstAttribute="top" secondItem="EbP-Qe-g1h" secondAttribute="bottom" constant="32" id="IsP-GX-aKW"/>
+                                <constraint firstAttribute="trailing" secondItem="EbP-Qe-g1h" secondAttribute="trailing" id="NSh-0z-43p"/>
+                                <constraint firstAttribute="trailing" secondItem="IaX-9B-PGm" secondAttribute="trailing" id="O9k-Rf-VgB"/>
+                                <constraint firstItem="IaX-9B-PGm" firstAttribute="top" secondItem="Jqq-Ye-hPt" secondAttribute="bottom" constant="32" id="OOx-1y-nCL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiM-7O-oli">
+                    <rect key="frame" x="358" y="505" width="56" height="56"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="IconClose"/>
+                    <connections>
+                        <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="m2W-ME-6Eo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="muV-q7-3bu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ND2-wC-y5d" secondAttribute="bottom" constant="-24" id="AUU-b2-IM8"/>
+                <constraint firstItem="ND2-wC-y5d" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AbI-RT-KCk" secondAttribute="bottom" id="FjO-vi-jpq"/>
+                <constraint firstItem="QiM-7O-oli" firstAttribute="top" secondItem="ND2-wC-y5d" secondAttribute="top" id="QmC-c9-fbn"/>
+                <constraint firstItem="muV-q7-3bu" firstAttribute="trailing" secondItem="AbI-RT-KCk" secondAttribute="trailing" constant="21" id="beF-OB-bf9"/>
+                <constraint firstItem="ND2-wC-y5d" firstAttribute="leading" secondItem="muV-q7-3bu" secondAttribute="leading" id="cAS-Wx-Thc"/>
+                <constraint firstItem="muV-q7-3bu" firstAttribute="bottom" secondItem="AbI-RT-KCk" secondAttribute="bottom" constant="72" id="d9y-4e-qEa"/>
+                <constraint firstItem="AbI-RT-KCk" firstAttribute="top" secondItem="ND2-wC-y5d" secondAttribute="top" constant="40" id="lpW-i0-s7r"/>
+                <constraint firstItem="ND2-wC-y5d" firstAttribute="top" relation="greaterThanOrEqual" secondItem="muV-q7-3bu" secondAttribute="top" constant="32" id="reH-2K-egI"/>
+                <constraint firstItem="muV-q7-3bu" firstAttribute="trailing" secondItem="ND2-wC-y5d" secondAttribute="trailing" id="s0T-di-tyf"/>
+                <constraint firstItem="QiM-7O-oli" firstAttribute="trailing" secondItem="ND2-wC-y5d" secondAttribute="trailing" id="snG-e5-56e"/>
+                <constraint firstItem="AbI-RT-KCk" firstAttribute="leading" secondItem="muV-q7-3bu" secondAttribute="leading" constant="32" id="tYE-qV-6Rh"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="IaX-9B-PGm">
+            <size key="intrinsicContentSize" width="88" height="54"/>
+        </designable>
+        <designable name="Jqq-Ye-hPt">
+            <size key="intrinsicContentSize" width="224.5" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="DropdownDown" width="24" height="24"/>
+        <image name="DropdownUp" width="24" height="24"/>
+        <image name="IconClose" width="56" height="56"/>
+        <image name="WifiButtonIcon" width="48" height="48"/>
+        <namedColor name="BackgroundAlert">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite30">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite50">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite70">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

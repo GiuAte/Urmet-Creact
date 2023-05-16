@@ -1,0 +1,6 @@
+framework module Pods_Urmet_Creact {
+  umbrella header "Pods-Urmet-Creact-umbrella.h"
+
+  export *
+  module * { export * }
+}
