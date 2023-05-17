@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomePageViewController: UIViewController {
     
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var addUserText: UILabel!
@@ -86,17 +86,21 @@ class ViewController: UIViewController {
     }
     
     private func setupTableView() {
-            tableViewDataSource = TableViewDataSource(tableView: tableView)
-            tableViewDataSource?.showAlertClosure = { [weak self] message in
-                self?.showAlert(message: message)
-            }
+        tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { indexPath in
+            let viewController = TransferDataViewController(nibName: "TransferDataViewController2", bundle: nil)
+            viewController.sheetPresentationController?.detents = [.medium(), .large()]
+            self.present(viewController, animated: true)
+        })
+        tableViewDataSource?.showAlertClosure = { [weak self] message in
+            self?.showAlert(message: message)
         }
-}
-
-//MARK: - POPUP DELEGATE
-
-extension ViewController: ButtonDelegate {
-    func isClosingView() {
-        popUpView?.dismiss(animated: true, completion: nil)
     }
 }
+    
+    //MARK: - POPUP DELEGATE
+    
+    extension HomePageViewController: ButtonDelegate {
+        func isClosingView() {
+            popUpView?.dismiss(animated: true, completion: nil)
+        }
+    }

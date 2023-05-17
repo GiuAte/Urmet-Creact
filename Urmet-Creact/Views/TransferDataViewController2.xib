@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransferDataViewController" customModule="Urmet_Creact" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonView" destination="6dW-mq-Yyd" id="kQv-tW-X7c"/>
+                <outlet property="checkButton" destination="4m9-62-rBS" id="QfF-Kt-hqo"/>
+                <outlet property="continueButton" destination="vFe-jG-gNr" id="v20-0r-7vC"/>
+                <outlet property="dismissButton" destination="lRA-6W-urF" id="oU7-CX-1ZH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="659"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="u8h-y8-eng">
+                    <rect key="frame" x="0.0" y="0.0" width="376" height="659"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stai per trasferire i diritti di amministratore su questa WallBox" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hNL-Kt-k3r">
+                            <rect key="frame" x="8" y="7.0000000000000071" width="360" height="115.66666666666669"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="115.66666666666669" id="PzS-17-86r"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="30"/>
+                            <color key="textColor" name="TextWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRA-6W-urF">
+                            <rect key="frame" x="8" y="302" width="144" height="34.333333333333314"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="144" id="naL-Bv-nVT"/>
+                            </constraints>
+                            <buttonConfiguration key="configuration" style="plain" title="Annulla"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dW-mq-Yyd">
+                            <rect key="frame" x="21" y="239" width="24" height="32.333333333333314"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m9-62-rBS">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="32.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <imageReference key="image" image="checkmark" catalog="system" renderingMode="template" variableValue="1"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="checkButtonStatus:" destination="-1" eventType="touchUpInside" id="APE-x7-me2"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="4m9-62-rBS" secondAttribute="trailing" id="bE0-ud-y6h"/>
+                                <constraint firstItem="4m9-62-rBS" firstAttribute="centerY" secondItem="6dW-mq-Yyd" secondAttribute="centerY" id="plR-Vc-saw"/>
+                                <constraint firstItem="4m9-62-rBS" firstAttribute="top" secondItem="6dW-mq-Yyd" secondAttribute="top" id="rKY-wG-DOL"/>
+                                <constraint firstItem="4m9-62-rBS" firstAttribute="leading" secondItem="6dW-mq-Yyd" secondAttribute="leading" id="ygZ-rL-sic"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conferma sulla spunta per rimuovere la condivisione di questo luogo con l’utente selezionato." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WAq-0n-87G">
+                            <rect key="frame" x="8" y="130.66666666666666" width="360" height="92.666666666666657"/>
+                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                            <color key="textColor" name="TextWhite70"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFe-jG-gNr">
+                            <rect key="frame" x="210" y="298" width="144" height="42"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Continua"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ho capito, confermo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yV6-1Z-G3M">
+                            <rect key="frame" x="73" y="235" width="270" height="41.333333333333314"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="270" id="Lua-Fl-coh"/>
+                                <constraint firstAttribute="height" constant="41.333333333333343" id="Piy-9i-Fqj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                            <color key="textColor" name="TextWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="RrZ-mm-FGD"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="yV6-1Z-G3M" firstAttribute="top" secondItem="WAq-0n-87G" secondAttribute="bottom" constant="11.666666666666686" id="1iK-cW-2eS"/>
+                        <constraint firstItem="hNL-Kt-k3r" firstAttribute="leading" secondItem="u8h-y8-eng" secondAttribute="leadingMargin" id="4OL-83-bcZ"/>
+                        <constraint firstItem="lRA-6W-urF" firstAttribute="baseline" secondItem="vFe-jG-gNr" secondAttribute="firstBaseline" id="Bw4-Rx-s5U"/>
+                        <constraint firstItem="RrZ-mm-FGD" firstAttribute="trailing" secondItem="yV6-1Z-G3M" secondAttribute="trailing" constant="33" id="JwM-xW-dRN"/>
+                        <constraint firstItem="vFe-jG-gNr" firstAttribute="baseline" secondItem="lRA-6W-urF" secondAttribute="firstBaseline" id="MB0-em-tWz"/>
+                        <constraint firstItem="WAq-0n-87G" firstAttribute="top" secondItem="hNL-Kt-k3r" secondAttribute="bottom" constant="8" symbolic="YES" id="NKu-bX-zWy"/>
+                        <constraint firstItem="hNL-Kt-k3r" firstAttribute="leading" secondItem="WAq-0n-87G" secondAttribute="leading" id="QfR-ki-kCO"/>
+                        <constraint firstItem="hNL-Kt-k3r" firstAttribute="trailing" secondItem="WAq-0n-87G" secondAttribute="trailing" id="QvU-wx-gGG"/>
+                        <constraint firstItem="WAq-0n-87G" firstAttribute="leading" secondItem="lRA-6W-urF" secondAttribute="leading" id="SLv-VU-0zX"/>
+                        <constraint firstItem="lRA-6W-urF" firstAttribute="top" secondItem="6dW-mq-Yyd" secondAttribute="bottom" constant="30.666666666666686" id="SXW-aG-9a9"/>
+                        <constraint firstItem="hNL-Kt-k3r" firstAttribute="trailing" secondItem="u8h-y8-eng" secondAttribute="trailingMargin" id="V0E-qg-Mwp"/>
+                        <constraint firstItem="vFe-jG-gNr" firstAttribute="top" secondItem="yV6-1Z-G3M" secondAttribute="bottom" constant="21.666666666666686" id="Yox-bZ-6Eb"/>
+                        <constraint firstItem="hNL-Kt-k3r" firstAttribute="top" secondItem="u8h-y8-eng" secondAttribute="top" constant="7" id="ar9-1T-q4a"/>
+                        <constraint firstItem="vFe-jG-gNr" firstAttribute="leading" secondItem="lRA-6W-urF" secondAttribute="trailing" constant="58" id="dy0-kg-N9e"/>
+                        <constraint firstItem="lRA-6W-urF" firstAttribute="baseline" secondItem="vFe-jG-gNr" secondAttribute="baseline" id="llD-Ss-erO"/>
+                        <constraint firstItem="6dW-mq-Yyd" firstAttribute="centerY" secondItem="yV6-1Z-G3M" secondAttribute="centerY" constant="-0.5" id="lum-lt-899"/>
+                        <constraint firstItem="RrZ-mm-FGD" firstAttribute="trailing" secondItem="vFe-jG-gNr" secondAttribute="trailing" constant="22" id="rpN-GC-eID"/>
+                        <constraint firstItem="6dW-mq-Yyd" firstAttribute="leading" secondItem="RrZ-mm-FGD" secondAttribute="leading" constant="21" id="srd-8G-aUA"/>
+                        <constraint firstItem="yV6-1Z-G3M" firstAttribute="leading" secondItem="6dW-mq-Yyd" secondAttribute="trailing" constant="28" id="tqw-zA-Qeg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="102.29007633587786" y="-127.11267605633803"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite70">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

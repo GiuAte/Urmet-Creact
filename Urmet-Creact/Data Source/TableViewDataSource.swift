@@ -14,6 +14,7 @@ class TableViewDataSource: NSObject {
     
     private var tableView: UITableView?
     var showAlertClosure: ((String) -> Void)?
+    var onRowSelected: ((IndexPath) -> Void)?
     
     var cellViewModels: [CustomButtonHomePage]? {
         didSet {
@@ -23,13 +24,15 @@ class TableViewDataSource: NSObject {
     
     // MARK: - Initialization
     
-    init(tableView: UITableView) {
+    init(tableView: UITableView, clousure: @escaping ((IndexPath) -> Void)) {
         self.tableView = tableView
         super.init()
+        self.onRowSelected = clousure
         setupTableView()
+        
     }
     
-    // MARK: METHODS
+    // MARK: - METHODS
     
     private func setupTableView() {
         tableView?.dataSource = self
@@ -72,10 +75,9 @@ extension TableViewDataSource: UITableViewDataSource {
 extension TableViewDataSource: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let message = Constants.righeTableView[indexPath.row].0
-        showAlert(message: message)
-        
+        onRowSelected?(indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
+        print("ciao")
     }
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
@@ -88,7 +90,6 @@ extension TableViewDataSource: UITableViewDelegate {
                 cell?.transform = CGAffineTransform.identity
             }
         }
-        
         return indexPath
     }
 }

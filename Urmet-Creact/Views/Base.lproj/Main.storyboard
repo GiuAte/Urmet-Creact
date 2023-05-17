@@ -14,16 +14,16 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Urmet_Creact" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomePageViewController" customModule="Urmet_Creact" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnS-XX-9TZ" userLabel="UsernamesCollectionView">
-                                <rect key="frame" x="114.5" y="114" width="260.5" height="105"/>
+                                <rect key="frame" x="114.5" y="109" width="260.5" height="105"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yX4-GO-HEy" userLabel="UsersAlredyIn">
                                         <rect key="frame" x="0.0" y="0.0" width="253" height="105"/>
@@ -50,12 +50,12 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t70-Kk-s7d">
-                                <rect key="frame" x="0.0" y="241" width="375" height="406"/>
+                                <rect key="frame" x="0.0" y="236" width="375" height="411"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <sections/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aggiungi utente" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-tP-xim">
-                                <rect key="frame" x="20" y="192" width="72" height="41"/>
+                                <rect key="frame" x="20" y="187" width="72" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="OVc-Sp-Bwh"/>
                                 </constraints>
@@ -64,7 +64,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvC-le-ZvJ">
-                                <rect key="frame" x="20" y="117" width="72" height="72"/>
+                                <rect key="frame" x="20" y="112" width="72" height="72"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="58w-Pk-yZu"/>
@@ -77,7 +77,7 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WallBox Garage" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gv-Eq-xcc">
-                                <rect key="frame" x="16" y="36" width="260" height="47"/>
+                                <rect key="frame" x="16" y="36" width="260" height="42"/>
                                 <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="36"/>
                                 <color key="textColor" name="TextWhite"/>
                                 <nil key="highlightedColor"/>

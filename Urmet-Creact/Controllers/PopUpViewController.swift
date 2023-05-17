@@ -10,7 +10,6 @@ import QRCode
 
 class PopUpViewController: UIViewController {
     
-    
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subTitleLabel: UILabel!
     @IBOutlet private var qrCodeView: UIView!
