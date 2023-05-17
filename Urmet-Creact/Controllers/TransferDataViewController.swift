@@ -10,10 +10,10 @@ import UIKit
 class TransferDataViewController: UIViewController {
     
     
-    @IBOutlet var continueButton: UIButton!
-    @IBOutlet var buttonView: UIView!
-    @IBOutlet var dismissButton: UIButton!
-    @IBOutlet var checkButton: UIButton!
+    @IBOutlet private var continueButton: UIButton!
+    @IBOutlet private var buttonView: UIView!
+    @IBOutlet private var dismissButton: UIButton!
+    @IBOutlet private var checkButton: UIButton!
     
     public weak var delegate: TableViewDelegate?
     
@@ -28,7 +28,7 @@ class TransferDataViewController: UIViewController {
         customizecheckButtonView()
         customizeDismissButton()
         customizeContinueButton()
-        checkButton.imageView?.alpha = 0 
+        checkButton.imageView?.alpha = 0
     }
     
     private func customizecheckButtonView() {

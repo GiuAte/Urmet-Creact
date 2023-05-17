@@ -15,6 +15,7 @@ class HomePageViewController: UIViewController {
     @IBOutlet private var collectionView: UICollectionView!
     
     private var popUpView: PopUpViewController?
+    private var associateWallBoxViewController: AssociateWallBoxViewController?
     private var collectionViewDataSource: CollectionViewDataSource?
     private var tableViewDataSource: TableViewDataSource?
     
@@ -87,13 +88,19 @@ class HomePageViewController: UIViewController {
     
     private func setupTableView() {
         tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { indexPath in
-            let viewController = TransferDataViewController(nibName: "TransferDataViewController2", bundle: nil)
-            viewController.sheetPresentationController?.detents = [.medium(), .large()]
-            self.present(viewController, animated: true)
+            self.associateWallBoxViewController = AssociateWallBoxViewController(delegate: self, nibName: "AssociateWallBoxViewController", bundle: nil)
+            guard let associateWallBoxViewController = self.associateWallBoxViewController else { return }
+            associateWallBoxViewController.sheetPresentationController?.detents = [.medium(), .medium()]
+            self.present(associateWallBoxViewController, animated: true)
+            
         })
         tableViewDataSource?.showAlertClosure = { [weak self] message in
             self?.showAlert(message: message)
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
 }
     
@@ -102,5 +109,6 @@ class HomePageViewController: UIViewController {
     extension HomePageViewController: ButtonDelegate {
         func isClosingView() {
             popUpView?.dismiss(animated: true, completion: nil)
+            associateWallBoxViewController?.dismiss(animated: true, completion: nil)
         }
     }

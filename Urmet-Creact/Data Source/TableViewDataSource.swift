@@ -76,21 +76,6 @@ extension TableViewDataSource: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         onRowSelected?(indexPath)
-        tableView.deselectRow(at: indexPath, animated: true)
-        print("ciao")
-    }
-    
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        let cell = tableView.cellForRow(at: indexPath)
-        
-        UIView.animate(withDuration: 0.2, animations: {
-            cell?.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
-        }) { _ in
-            UIView.animate(withDuration: 0.2) {
-                cell?.transform = CGAffineTransform.identity
-            }
-        }
-        return indexPath
     }
 }
 

@@ -12,13 +12,15 @@
 		C31AB69A2A0B90DD00407B70 /* ButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31AB6992A0B90DD00407B70 /* ButtonData.swift */; };
 		C332D2552A0A9B1F005D4FD9 /* CustomButtonHomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = C332D2542A0A9B1F005D4FD9 /* CustomButtonHomePage.xib */; };
 		C332D2572A0A9D7B005D4FD9 /* CustomButtonHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */; };
+		C33583F32A1504700002517B /* AssociateWallBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */; };
+		C33583F42A1504700002517B /* AssociateWallBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33583F22A1504700002517B /* AssociateWallBoxViewController.xib */; };
 		C37C990B2A0D41BE004B21EF /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37C990A2A0D41BE004B21EF /* ButtonDelegate.swift */; };
 		C3AA69442A123CCA00648BAF /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */; };
 		C3AA69462A123E2A00648BAF /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */; };
 		C3AA69482A12679B00648BAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69472A12679B00648BAF /* Constants.swift */; };
 		C3AA694B2A127EE200648BAF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA694A2A127EE200648BAF /* Array+Extensions.swift */; };
 		C3B2902C2A14BEC400D06037 /* TransferDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */; };
-		C3B2902D2A14BEC400D06037 /* TransferDataViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B2902B2A14BEC400D06037 /* TransferDataViewController2.xib */; };
+		C3B2902D2A14BEC400D06037 /* TransferDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B2902B2A14BEC400D06037 /* TransferDataViewController.xib */; };
 		C3D95CFD2A0D1A7A0058DA32 /* PopupDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95CFC2A0D1A7A0058DA32 /* PopupDisplayer.swift */; };
 		C3D95D032A0D1EB50058DA32 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D022A0D1EB50058DA32 /* UIViewController.swift */; };
 		C3D95D0B2A0D22300058DA32 /* Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D0A2A0D22300058DA32 /* Present.swift */; };
@@ -43,13 +45,15 @@
 		C31AB6992A0B90DD00407B70 /* ButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonData.swift; sourceTree = "<group>"; };
 		C332D2542A0A9B1F005D4FD9 /* CustomButtonHomePage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButtonHomePage.xib; sourceTree = "<group>"; };
 		C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonHomePage.swift; sourceTree = "<group>"; };
+		C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociateWallBoxViewController.swift; sourceTree = "<group>"; };
+		C33583F22A1504700002517B /* AssociateWallBoxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssociateWallBoxViewController.xib; sourceTree = "<group>"; };
 		C37C990A2A0D41BE004B21EF /* ButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
 		C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		C3AA69472A12679B00648BAF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3AA694A2A127EE200648BAF /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDataViewController.swift; sourceTree = "<group>"; };
-		C3B2902B2A14BEC400D06037 /* TransferDataViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferDataViewController2.xib; sourceTree = "<group>"; };
+		C3B2902B2A14BEC400D06037 /* TransferDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferDataViewController.xib; sourceTree = "<group>"; };
 		C3D95CFC2A0D1A7A0058DA32 /* PopupDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDisplayer.swift; sourceTree = "<group>"; };
 		C3D95D022A0D1EB50058DA32 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C3D95D0A2A0D22300058DA32 /* Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Present.swift; sourceTree = "<group>"; };
@@ -185,8 +189,9 @@
 				C3E375052A08DDB900D5B3BA /* Main.storyboard */,
 				C3D95D152A0D34080058DA32 /* PopUpViewController.xib */,
 				C332D2542A0A9B1F005D4FD9 /* CustomButtonHomePage.xib */,
-				C3B2902B2A14BEC400D06037 /* TransferDataViewController2.xib */,
+				C3B2902B2A14BEC400D06037 /* TransferDataViewController.xib */,
 				C3E3751C2A090F1300D5B3BA /* CustomCell.xib */,
+				C33583F22A1504700002517B /* AssociateWallBoxViewController.xib */,
 				C3E3751E2A09103E00D5B3BA /* CustomCell.swift */,
 				C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */,
 			);
@@ -200,6 +205,7 @@
 				C3D95D022A0D1EB50058DA32 /* UIViewController.swift */,
 				C3D95D142A0D34080058DA32 /* PopUpViewController.swift */,
 				C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */,
+				C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -264,9 +270,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B2902D2A14BEC400D06037 /* TransferDataViewController2.xib in Resources */,
+				C3B2902D2A14BEC400D06037 /* TransferDataViewController.xib in Resources */,
 				C332D2552A0A9B1F005D4FD9 /* CustomButtonHomePage.xib in Resources */,
 				C3E3751D2A090F1300D5B3BA /* CustomCell.xib in Resources */,
+				C33583F42A1504700002517B /* AssociateWallBoxViewController.xib in Resources */,
 				C3E3750C2A08DDBA00D5B3BA /* LaunchScreen.storyboard in Resources */,
 				C3D95D172A0D34080058DA32 /* PopUpViewController.xib in Resources */,
 				C3E375092A08DDBA00D5B3BA /* Assets.xcassets in Resources */,
@@ -335,6 +342,7 @@
 				C3E375022A08DDB900D5B3BA /* SceneDelegate.swift in Sources */,
 				C3D95D0D2A0D22D90058DA32 /* UIController.swift in Sources */,
 				C332D2572A0A9D7B005D4FD9 /* CustomButtonHomePage.swift in Sources */,
+				C33583F32A1504700002517B /* AssociateWallBoxViewController.swift in Sources */,
 				C3AA694B2A127EE200648BAF /* Array+Extensions.swift in Sources */,
 				C3AA69442A123CCA00648BAF /* CollectionViewDataSource.swift in Sources */,
 				C3E3751F2A09103E00D5B3BA /* CustomCell.swift in Sources */,

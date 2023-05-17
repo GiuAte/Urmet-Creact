@@ -3,4 +3,86 @@
    uuid = "3C2D61C5-20CA-4583-A4FA-A5D25ED577E4"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9AECFBE-93F6-4A3B-89D9-04E59F4095ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Urmet-Creact/Controllers/AssociateWallBoxViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "dismissButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BE4822B-2775-4135-A81B-19D02C8DD78F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Urmet-Creact/Controllers/HomePageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "isClosingView()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3BE4822B-2775-4135-A81B-19D02C8DD78F - 2dff9e8f03546ac5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Urmet_Creact.HomePageViewController.isClosingView() -&gt; ()"
+                  moduleName = "Urmet-Creact"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giulioaterno/Desktop/Urmet-Creact/Urmet-Creact/Controllers/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "3BE4822B-2775-4135-A81B-19D02C8DD78F - 2dff9e8f03546ac5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Urmet_Creact.HomePageViewController.isClosingView() -&gt; ()"
+                  moduleName = "Urmet-Creact"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giulioaterno/Desktop/Urmet-Creact/Urmet-Creact/Controllers/HomePageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C40D74A-2B25-4662-B3A7-C7BC458C9829"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Urmet-Creact/Controllers/AssociateWallBoxViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "dismissButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
