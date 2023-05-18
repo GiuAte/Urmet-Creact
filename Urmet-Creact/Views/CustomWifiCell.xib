@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LHR-aR-a9a" customClass="CustomWifiCell" customModule="Urmet_Creact" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="508" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MCC-Zi-ROH">
+                    <rect key="frame" x="13" y="17" width="24" height="24.333333333333336"/>
+                    <color key="tintColor" name="TextWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="kOV-1v-ivR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WiFi Connection Label Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JD7-Jr-8lj">
+                    <rect key="frame" x="45" y="19" width="443" height="21"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="26"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9QY-lD-Dul"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration" identifier="CustomWifiCell"/>
+            <constraints>
+                <constraint firstItem="MCC-Zi-ROH" firstAttribute="top" secondItem="LHR-aR-a9a" secondAttribute="top" constant="14.666666666666668" id="3V2-3h-5p5"/>
+                <constraint firstItem="JD7-Jr-8lj" firstAttribute="leading" secondItem="MCC-Zi-ROH" secondAttribute="trailing" constant="8" symbolic="YES" id="DKg-b0-JDi"/>
+                <constraint firstItem="JD7-Jr-8lj" firstAttribute="top" secondItem="LHR-aR-a9a" secondAttribute="top" constant="19" id="Leq-1P-YIg"/>
+                <constraint firstItem="MCC-Zi-ROH" firstAttribute="centerY" secondItem="LHR-aR-a9a" secondAttribute="centerY" id="O35-kX-zCC"/>
+                <constraint firstItem="MCC-Zi-ROH" firstAttribute="leading" secondItem="9QY-lD-Dul" secondAttribute="leading" constant="13" id="gyx-fl-ALh"/>
+                <constraint firstItem="MCC-Zi-ROH" firstAttribute="centerY" secondItem="JD7-Jr-8lj" secondAttribute="centerY" id="q7X-K8-xxe"/>
+                <constraint firstItem="JD7-Jr-8lj" firstAttribute="trailing" secondItem="LHR-aR-a9a" secondAttribute="trailingMargin" id="sZu-ln-pRk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labelTest" destination="JD7-Jr-8lj" id="ZA0-Mj-xlT"/>
+            </connections>
+            <point key="canvasLocation" x="-171" y="-161"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wifi" catalog="system" width="128" height="90"/>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

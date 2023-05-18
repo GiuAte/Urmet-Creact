@@ -16,13 +16,30 @@ class TransferDataViewController: UIViewController {
     @IBOutlet private var checkButton: UIButton!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var subTitleLabel: UILabel!
+    @IBOutlet var understandLabel: UILabel!
     
     public weak var delegate: TableViewDelegate?
     
+    private var customTitle: String
+    private var customSubTitle: String
+    
+    init(customTitle: String, customSubTitle: String) {
+        self.customTitle = customTitle
+        self.customSubTitle = customSubTitle
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.customTitle = ""
+        self.customSubTitle = ""
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPopUpView()
+        titleLabel.text = customTitle
+        subTitleLabel.text = customSubTitle
     }
     
     //MARK: - UI SETUP
@@ -47,33 +64,24 @@ class TransferDataViewController: UIViewController {
         dismissButton.layer.borderColor = UIColor.white.cgColor
         dismissButton.layer.borderWidth = 0.5
         dismissButton.tintColor = UIColor.white
-        
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = UIBezierPath(roundedRect: dismissButton.bounds, byRoundingCorners: [.topLeft, .bottomLeft, .topRight, .bottomRight], cornerRadii: CGSize(width: dismissButton.bounds.height / 2, height: dismissButton.bounds.height / 2)).cgPath
-        dismissButton.layer.mask = maskLayer
     }
     
     private func customizeContinueButton() {
-        
         continueButton.backgroundColor = UIColor.gray
         continueButton.layer.borderColor = UIColor.black.cgColor
         continueButton.layer.borderWidth = 0.5
         continueButton.tintColor = UIColor.black
-        
-        
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = UIBezierPath(roundedRect: continueButton.bounds, byRoundingCorners: [.topLeft, .bottomLeft, .topRight, .bottomRight], cornerRadii: CGSize(width: continueButton.bounds.height / 2, height: continueButton.bounds.height / 2)).cgPath
-        continueButton.layer.mask = maskLayer
     }
     
     
     @IBAction func checkButtonStatus(_ sender: Any) {
-        
         UIView.animate(withDuration: 0, animations: {
             if self.checkButton.imageView?.alpha == 0 {
                 self.checkButton.imageView?.alpha = 1
+                self.understandLabel.font = UIFont.boldSystemFont(ofSize: self.understandLabel.font.pointSize)
             } else {
                 self.checkButton.imageView?.alpha = 0
+                self.understandLabel.font = UIFont.systemFont(ofSize: self.understandLabel.font.pointSize)
             }
         })
         
@@ -85,5 +93,7 @@ class TransferDataViewController: UIViewController {
                 self.continueButton.backgroundColor = UIColor.gray
                 self.continueButton.setTitleColor(UIColor.white, for: .normal)
             }
-        })    }
+        })
+    }
+    
 }

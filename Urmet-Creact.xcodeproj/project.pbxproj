@@ -21,12 +21,18 @@
 		C3AA694B2A127EE200648BAF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA694A2A127EE200648BAF /* Array+Extensions.swift */; };
 		C3B2902C2A14BEC400D06037 /* TransferDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */; };
 		C3B2902D2A14BEC400D06037 /* TransferDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B2902B2A14BEC400D06037 /* TransferDataViewController.xib */; };
+		C3BF73562A16829900AC8F2E /* CustomWifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3BF73552A16829900AC8F2E /* CustomWifiCell.xib */; };
 		C3D95CFD2A0D1A7A0058DA32 /* PopupDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95CFC2A0D1A7A0058DA32 /* PopupDisplayer.swift */; };
 		C3D95D032A0D1EB50058DA32 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D022A0D1EB50058DA32 /* UIViewController.swift */; };
 		C3D95D0B2A0D22300058DA32 /* Present.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D0A2A0D22300058DA32 /* Present.swift */; };
 		C3D95D0D2A0D22D90058DA32 /* UIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D0C2A0D22D90058DA32 /* UIController.swift */; };
 		C3D95D162A0D34080058DA32 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D142A0D34080058DA32 /* PopUpViewController.swift */; };
 		C3D95D172A0D34080058DA32 /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D95D152A0D34080058DA32 /* PopUpViewController.xib */; };
+		C3DEEC8B2A162DF10068FDCA /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DEEC892A162DF10068FDCA /* ConnectionViewController.swift */; };
+		C3DEEC8C2A162DF10068FDCA /* ConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DEEC8A2A162DF10068FDCA /* ConnectionViewController.xib */; };
+		C3DEEC8F2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DEEC8D2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift */; };
+		C3DEEC902A164DFE0068FDCA /* WiFiConnectionSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DEEC8E2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.xib */; };
+		C3DEEC942A166A0E0068FDCA /* CustomWifiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DEEC932A166A0E0068FDCA /* CustomWifiCell.swift */; };
 		C3E375002A08DDB900D5B3BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E374FF2A08DDB900D5B3BA /* AppDelegate.swift */; };
 		C3E375022A08DDB900D5B3BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E375012A08DDB900D5B3BA /* SceneDelegate.swift */; };
 		C3E375042A08DDB900D5B3BA /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E375032A08DDB900D5B3BA /* HomePageViewController.swift */; };
@@ -54,12 +60,18 @@
 		C3AA694A2A127EE200648BAF /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDataViewController.swift; sourceTree = "<group>"; };
 		C3B2902B2A14BEC400D06037 /* TransferDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferDataViewController.xib; sourceTree = "<group>"; };
+		C3BF73552A16829900AC8F2E /* CustomWifiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomWifiCell.xib; sourceTree = "<group>"; };
 		C3D95CFC2A0D1A7A0058DA32 /* PopupDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDisplayer.swift; sourceTree = "<group>"; };
 		C3D95D022A0D1EB50058DA32 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C3D95D0A2A0D22300058DA32 /* Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Present.swift; sourceTree = "<group>"; };
 		C3D95D0C2A0D22D90058DA32 /* UIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIController.swift; sourceTree = "<group>"; };
 		C3D95D142A0D34080058DA32 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		C3D95D152A0D34080058DA32 /* PopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
+		C3DEEC892A162DF10068FDCA /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
+		C3DEEC8A2A162DF10068FDCA /* ConnectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectionViewController.xib; sourceTree = "<group>"; };
+		C3DEEC8D2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiConnectionSelectorViewController.swift; sourceTree = "<group>"; };
+		C3DEEC8E2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WiFiConnectionSelectorViewController.xib; sourceTree = "<group>"; };
+		C3DEEC932A166A0E0068FDCA /* CustomWifiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWifiCell.swift; sourceTree = "<group>"; };
 		C3E374FC2A08DDB900D5B3BA /* Urmet-Creact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urmet-Creact.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E374FF2A08DDB900D5B3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E375012A08DDB900D5B3BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,8 +204,12 @@
 				C3B2902B2A14BEC400D06037 /* TransferDataViewController.xib */,
 				C3E3751C2A090F1300D5B3BA /* CustomCell.xib */,
 				C33583F22A1504700002517B /* AssociateWallBoxViewController.xib */,
+				C3DEEC8A2A162DF10068FDCA /* ConnectionViewController.xib */,
+				C3DEEC8E2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.xib */,
 				C3E3751E2A09103E00D5B3BA /* CustomCell.swift */,
 				C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */,
+				C3DEEC932A166A0E0068FDCA /* CustomWifiCell.swift */,
+				C3BF73552A16829900AC8F2E /* CustomWifiCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +222,8 @@
 				C3D95D142A0D34080058DA32 /* PopUpViewController.swift */,
 				C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */,
 				C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */,
+				C3DEEC892A162DF10068FDCA /* ConnectionViewController.swift */,
+				C3DEEC8D2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,9 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B2902D2A14BEC400D06037 /* TransferDataViewController.xib in Resources */,
+				C3BF73562A16829900AC8F2E /* CustomWifiCell.xib in Resources */,
 				C332D2552A0A9B1F005D4FD9 /* CustomButtonHomePage.xib in Resources */,
+				C3DEEC902A164DFE0068FDCA /* WiFiConnectionSelectorViewController.xib in Resources */,
 				C3E3751D2A090F1300D5B3BA /* CustomCell.xib in Resources */,
 				C33583F42A1504700002517B /* AssociateWallBoxViewController.xib in Resources */,
+				C3DEEC8C2A162DF10068FDCA /* ConnectionViewController.xib in Resources */,
 				C3E3750C2A08DDBA00D5B3BA /* LaunchScreen.storyboard in Resources */,
 				C3D95D172A0D34080058DA32 /* PopUpViewController.xib in Resources */,
 				C3E375092A08DDBA00D5B3BA /* Assets.xcassets in Resources */,
@@ -334,6 +355,7 @@
 				C3D95D0B2A0D22300058DA32 /* Present.swift in Sources */,
 				C3E375042A08DDB900D5B3BA /* HomePageViewController.swift in Sources */,
 				C3D95D162A0D34080058DA32 /* PopUpViewController.swift in Sources */,
+				C3DEEC8F2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift in Sources */,
 				C3B2902C2A14BEC400D06037 /* TransferDataViewController.swift in Sources */,
 				C3E375002A08DDB900D5B3BA /* AppDelegate.swift in Sources */,
 				C3AA69482A12679B00648BAF /* Constants.swift in Sources */,
@@ -342,6 +364,8 @@
 				C3E375022A08DDB900D5B3BA /* SceneDelegate.swift in Sources */,
 				C3D95D0D2A0D22D90058DA32 /* UIController.swift in Sources */,
 				C332D2572A0A9D7B005D4FD9 /* CustomButtonHomePage.swift in Sources */,
+				C3DEEC8B2A162DF10068FDCA /* ConnectionViewController.swift in Sources */,
+				C3DEEC942A166A0E0068FDCA /* CustomWifiCell.swift in Sources */,
 				C33583F32A1504700002517B /* AssociateWallBoxViewController.swift in Sources */,
 				C3AA694B2A127EE200648BAF /* Array+Extensions.swift in Sources */,
 				C3AA69442A123CCA00648BAF /* CollectionViewDataSource.swift in Sources */,

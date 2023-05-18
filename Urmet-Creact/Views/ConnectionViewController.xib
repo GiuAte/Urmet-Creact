@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConnectionViewController" customModule="Urmet_Creact" customModuleProvider="target">
+            <connections>
+                <outlet property="button4G" destination="vxB-VW-F5x" id="9Yo-ZY-E33"/>
+                <outlet property="ethernetButton" destination="fgN-MB-hFb" id="BhU-QL-ThN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wiFiButton" destination="LvL-BT-Clu" id="MdZ-Ga-WZJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connettività" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSe-wY-17W">
+                    <rect key="frame" x="16" y="24" width="361" height="47"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="36"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleziona la modalità di connessione ad internet" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5M0-RN-bvS">
+                    <rect key="frame" x="16" y="79" width="361" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="F9q-K8-K9K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" name="TextWhite70"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4G" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxR-BV-MZG">
+                    <rect key="frame" x="16" y="201" width="329" height="31"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sf-4I-J8n">
+                    <rect key="frame" x="16" y="279" width="329" height="31"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ethernet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRO-MI-EaG">
+                    <rect key="frame" x="16" y="240" width="329" height="31"/>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" name="TextWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxB-VW-F5x">
+                    <rect key="frame" x="348" y="208" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="71g-7H-JTD"/>
+                        <constraint firstAttribute="width" constant="24" id="tRy-D3-MkT"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system"/>
+                    <connections>
+                        <action selector="setup4GButton:" destination="-1" eventType="touchUpInside" id="MGb-il-KQP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvL-BT-Clu">
+                    <rect key="frame" x="348" y="286" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="mC1-ob-xDp"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system"/>
+                    <connections>
+                        <action selector="setupWiFiButton:" destination="-1" eventType="touchUpInside" id="DGL-ce-XyM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgN-MB-hFb">
+                    <rect key="frame" x="348" y="247" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="vNm-Mb-DA5"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system"/>
+                    <connections>
+                        <action selector="setupEthernetButton:" destination="-1" eventType="touchUpInside" id="dIS-bQ-RZH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewS-tJ-tFe" customClass="SecondaryButton" customModule="PlugUI">
+                    <rect key="frame" x="16" y="783" width="120" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="ZWi-IH-VU5"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Annulla"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAK-Et-8iM" customClass="PrimaryButton" customModule="PlugUI">
+                    <rect key="frame" x="257" y="783" width="120" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="bbd-6f-E7j"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Continua ">
+                        <imageReference key="image" image="arrow.right" catalog="system" symbolScale="medium"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Background"/>
+            <constraints>
+                <constraint firstItem="wSe-wY-17W" firstAttribute="trailing" secondItem="5M0-RN-bvS" secondAttribute="trailing" id="0iE-oq-yEk"/>
+                <constraint firstItem="TRO-MI-EaG" firstAttribute="leading" secondItem="6sf-4I-J8n" secondAttribute="leading" id="2NL-Ve-vjU"/>
+                <constraint firstItem="fgN-MB-hFb" firstAttribute="trailing" secondItem="LvL-BT-Clu" secondAttribute="trailing" id="4DU-hd-yA6"/>
+                <constraint firstItem="rxR-BV-MZG" firstAttribute="trailing" secondItem="TRO-MI-EaG" secondAttribute="trailing" id="5II-JF-0m4"/>
+                <constraint firstItem="TRO-MI-EaG" firstAttribute="bottom" secondItem="fgN-MB-hFb" secondAttribute="bottom" id="74v-g5-OMQ"/>
+                <constraint firstItem="6sf-4I-J8n" firstAttribute="leading" secondItem="ewS-tJ-tFe" secondAttribute="leading" id="Bg0-Tc-SuE"/>
+                <constraint firstItem="rxR-BV-MZG" firstAttribute="leading" secondItem="TRO-MI-EaG" secondAttribute="leading" id="DAC-Mf-yin"/>
+                <constraint firstItem="vxB-VW-F5x" firstAttribute="trailing" secondItem="fgN-MB-hFb" secondAttribute="trailing" id="Dk7-G9-BTA"/>
+                <constraint firstItem="rxR-BV-MZG" firstAttribute="top" secondItem="5M0-RN-bvS" secondAttribute="bottom" constant="51" id="EpH-9P-oUi"/>
+                <constraint firstItem="5M0-RN-bvS" firstAttribute="leading" secondItem="rxR-BV-MZG" secondAttribute="leading" id="OD4-3r-oRV"/>
+                <constraint firstItem="rxR-BV-MZG" firstAttribute="bottom" secondItem="vxB-VW-F5x" secondAttribute="bottom" id="Sat-ON-JJw"/>
+                <constraint firstItem="6sf-4I-J8n" firstAttribute="bottom" secondItem="LvL-BT-Clu" secondAttribute="bottom" id="WDf-1S-4Tf"/>
+                <constraint firstItem="wSe-wY-17W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="Xkd-xi-9bW"/>
+                <constraint firstItem="vxB-VW-F5x" firstAttribute="leading" secondItem="fgN-MB-hFb" secondAttribute="leading" id="czq-4T-1qx"/>
+                <constraint firstItem="TRO-MI-EaG" firstAttribute="trailing" secondItem="6sf-4I-J8n" secondAttribute="trailing" id="dsq-pS-cOL"/>
+                <constraint firstItem="5M0-RN-bvS" firstAttribute="top" secondItem="wSe-wY-17W" secondAttribute="bottom" constant="8" symbolic="YES" id="e5t-g3-g1M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vxB-VW-F5x" secondAttribute="trailing" constant="21" id="e9u-34-ghf"/>
+                <constraint firstItem="6sf-4I-J8n" firstAttribute="top" secondItem="TRO-MI-EaG" secondAttribute="bottom" constant="8" symbolic="YES" id="eY0-Bh-hGH"/>
+                <constraint firstItem="vxB-VW-F5x" firstAttribute="leading" secondItem="rxR-BV-MZG" secondAttribute="trailing" constant="3" id="g5N-X3-9II"/>
+                <constraint firstItem="wSe-wY-17W" firstAttribute="leading" secondItem="5M0-RN-bvS" secondAttribute="leading" id="i8T-Z1-GRq"/>
+                <constraint firstItem="wSe-wY-17W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="iEw-R0-ONQ"/>
+                <constraint firstItem="fgN-MB-hFb" firstAttribute="leading" secondItem="LvL-BT-Clu" secondAttribute="leading" id="iFN-dh-Mcv"/>
+                <constraint firstItem="ewS-tJ-tFe" firstAttribute="baseline" secondItem="GAK-Et-8iM" secondAttribute="baseline" id="iHc-Wb-LUa"/>
+                <constraint firstItem="wSe-wY-17W" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="l6G-hK-243"/>
+                <constraint firstItem="TRO-MI-EaG" firstAttribute="top" secondItem="rxR-BV-MZG" secondAttribute="bottom" constant="8" symbolic="YES" id="lNZ-gC-0N0"/>
+                <constraint firstItem="ewS-tJ-tFe" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="o2r-ph-Yde"/>
+                <constraint firstItem="5M0-RN-bvS" firstAttribute="trailing" secondItem="GAK-Et-8iM" secondAttribute="trailing" id="r5M-nA-SBD"/>
+            </constraints>
+            <point key="canvasLocation" x="2203.8167938931297" y="40.845070422535215"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="circle" catalog="system" width="128" height="123"/>
+        <namedColor name="Background">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextWhite70">
+            <color red="0.92156862745098034" green="0.93725490196078431" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

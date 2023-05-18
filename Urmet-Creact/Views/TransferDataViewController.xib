@@ -22,6 +22,7 @@
                 <outlet property="dismissButton" destination="lRA-6W-urF" id="oU7-CX-1ZH"/>
                 <outlet property="subTitleLabel" destination="WAq-0n-87G" id="lhe-Aj-dbh"/>
                 <outlet property="titleLabel" destination="hNL-Kt-k3r" id="9RL-TQ-F24"/>
+                <outlet property="understandLabel" destination="yV6-1Z-G3M" id="2Ee-NN-wOb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -43,7 +44,7 @@
                             <color key="textColor" name="TextWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRA-6W-urF">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRA-6W-urF" customClass="SecondaryButton" customModule="PlugUI">
                             <rect key="frame" x="8" y="302" width="144" height="34.333333333333314"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="144" id="naL-Bv-nVT"/>
@@ -77,13 +78,13 @@
                                 <constraint firstItem="4m9-62-rBS" firstAttribute="leading" secondItem="6dW-mq-Yyd" secondAttribute="leading" id="ygZ-rL-sic"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conferma sulla spunta per rimuovere la condivisione di questo luogo con l’utente selezionato." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WAq-0n-87G">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conferma sulla spunta per rimuovere la condivisione di questo luogo con l’utente selezionato." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="WAq-0n-87G">
                             <rect key="frame" x="8" y="130.66666666666666" width="360" height="92.666666666666657"/>
                             <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
                             <color key="textColor" name="TextWhite70"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFe-jG-gNr">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFe-jG-gNr" customClass="PrimaryButton" customModule="PlugUI">
                             <rect key="frame" x="210" y="298" width="144" height="42"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Continua"/>

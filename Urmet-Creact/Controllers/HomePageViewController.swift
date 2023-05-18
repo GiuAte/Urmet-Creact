@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomePageViewController: UIViewController {
+class HomePageViewController: UIViewController, TableViewDelegate {
     
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var addUserText: UILabel!
@@ -18,6 +18,9 @@ class HomePageViewController: UIViewController {
     private var associateWallBoxViewController: AssociateWallBoxViewController?
     private var collectionViewDataSource: CollectionViewDataSource?
     private var tableViewDataSource: TableViewDataSource?
+    private var transferDataViewController: TransferDataViewController?
+    private var connectionViewController: ConnectionViewController?
+    private var wiFiConnectionSelectorViewController: WiFiConnectionSelectorViewController?
     
     //MARK: - LIFECYCLE METHODS
     
@@ -65,7 +68,6 @@ class HomePageViewController: UIViewController {
         }
     }
     
-    
     // MARK: - POPUP HANDLING
     
     private func actionForAddUserButton() {
@@ -87,20 +89,22 @@ class HomePageViewController: UIViewController {
         collectionViewDataSource = CollectionViewDataSource(collectionView: collectionView, with: ["Giulio Aterno", "Silvio Fosso", "Luigi Marino", "Andrea Ferrentino", "Andreana Perla", "Fabiana Chiocca", "Yehia Itani"])
     }
     
+    //Creare func privata per indexPath
+    
     private func setupTableView() {
-        
-        tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { indexPath in
-            self.associateWallBoxViewController = AssociateWallBoxViewController(delegate: self, nibName: "AssociateWallBoxViewController", bundle: nil)
-            guard let associateWallBoxViewController = self.associateWallBoxViewController else { return }
-            associateWallBoxViewController.sheetPresentationController?.detents = [.medium(), .medium()]
-            self.present(associateWallBoxViewController, animated: true)
-            
+        tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { [weak self] indexPath in
+            guard let self = self else { return }
+            self.wiFiConnectionSelectorViewController = WiFiConnectionSelectorViewController()
+            self.wiFiConnectionSelectorViewController?.delegate = self
+            self.wiFiConnectionSelectorViewController?.modalPresentationStyle = .pageSheet
+            self.present(self.wiFiConnectionSelectorViewController!, animated: true)
         })
+        
         tableViewDataSource?.showAlertClosure = { [weak self] message in
             self?.showAlert(message: message)
         }
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
     }
@@ -112,5 +116,6 @@ extension HomePageViewController: ButtonDelegate {
     func isClosingView() {
         popUpView?.dismiss(animated: true, completion: nil)
         associateWallBoxViewController?.dismiss(animated: true, completion: nil)
+        wiFiConnectionSelectorViewController?.dismiss(animated: true, completion: nil)
     }
 }

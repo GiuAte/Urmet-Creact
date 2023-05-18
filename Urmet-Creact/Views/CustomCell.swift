@@ -20,7 +20,6 @@ public class CustomCell: UICollectionViewCell {
     
     //MARK: - FUNCTIONS
     
-    // Funzione per impostare le iniziali all'interno del cerchio
     func setNames(_ firstName: String, _ lastName: String) {
         let nameLastName = firstName.split(separator: " ")
         let firstNameInitial = firstName.prefix(1)
