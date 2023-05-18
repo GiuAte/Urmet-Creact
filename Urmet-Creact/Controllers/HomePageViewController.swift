@@ -78,6 +78,7 @@ class HomePageViewController: UIViewController {
         popUpView?.delegate = self
         guard let popUpView = popUpView else { return }
         self.present(popUpView, animated: true)
+        
     }
     
     //MARK: - SETUP COLLECTIONVIEW & TABLE VIEW
@@ -87,6 +88,7 @@ class HomePageViewController: UIViewController {
     }
     
     private func setupTableView() {
+        
         tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { indexPath in
             self.associateWallBoxViewController = AssociateWallBoxViewController(delegate: self, nibName: "AssociateWallBoxViewController", bundle: nil)
             guard let associateWallBoxViewController = self.associateWallBoxViewController else { return }
@@ -103,12 +105,12 @@ class HomePageViewController: UIViewController {
         tableView.reloadData()
     }
 }
-    
-    //MARK: - POPUP DELEGATE
-    
-    extension HomePageViewController: ButtonDelegate {
-        func isClosingView() {
-            popUpView?.dismiss(animated: true, completion: nil)
-            associateWallBoxViewController?.dismiss(animated: true, completion: nil)
-        }
+
+//MARK: - POPUP DELEGATE
+
+extension HomePageViewController: ButtonDelegate {
+    func isClosingView() {
+        popUpView?.dismiss(animated: true, completion: nil)
+        associateWallBoxViewController?.dismiss(animated: true, completion: nil)
     }
+}

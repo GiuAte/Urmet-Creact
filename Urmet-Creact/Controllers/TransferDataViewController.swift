@@ -14,8 +14,11 @@ class TransferDataViewController: UIViewController {
     @IBOutlet private var buttonView: UIView!
     @IBOutlet private var dismissButton: UIButton!
     @IBOutlet private var checkButton: UIButton!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var subTitleLabel: UILabel!
     
     public weak var delegate: TableViewDelegate?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

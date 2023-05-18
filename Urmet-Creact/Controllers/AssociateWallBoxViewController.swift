@@ -10,25 +10,23 @@ import PlugUI
 
 class AssociateWallBoxViewController: UIViewController {
     
+    // MARK: - Outlets
+    
     @IBOutlet var checkButtonView: UIView!
     @IBOutlet var singleUserButton: UIButton!
     @IBOutlet var multiUsersButton: UIButton!
     @IBOutlet var saveButton: UIButton!
     
-    
-    var flag = false
-    var flag1 = false
-    
     public weak var delegate: ButtonDelegate?
-    
-    
     var blurredBackgroundView: UIImageView?
+    
+    // MARK: - Initialization
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    override required init?(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
@@ -37,12 +35,14 @@ class AssociateWallBoxViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
+    // MARK: - View Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
     
-    //MARK: - SETUP UI
+    // MARK: - UI Setup
     
     private func setupUI() {
         setupCheckButtonView()
@@ -52,19 +52,21 @@ class AssociateWallBoxViewController: UIViewController {
         checkButtonView.layer.cornerRadius = checkButtonView.bounds.width / 2
     }
     
+    // MARK: - Button Actions
+    
     
     @IBAction func setupFirstButtonRadar(_ sender: UIButton) {
         
         sender.setImage(UIImage(systemName: "circle.fill"), for: .normal)
         multiUsersButton.setImage(UIImage(systemName: "circle"), for: .normal)
-        print("test1")
+        
     }
     
     @IBAction func setupSecondButtonRadar(_ sender: UIButton) {
         
         sender.setImage(UIImage(systemName: "circle.fill"), for: .normal)
         singleUserButton.setImage(UIImage(systemName: "circle"), for: .normal)
-        print("test2")
+        
     }
     
     

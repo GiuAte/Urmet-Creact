@@ -121,13 +121,13 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="la WallBox è utilizzata da una sola utenza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sCS-ko-Nmw">
-                            <rect key="frame" x="8" y="205" width="317" height="24"/>
+                            <rect key="frame" x="8" y="205" width="317" height="23.333333333333343"/>
                             <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="18"/>
                             <color key="textColor" name="TextWhite70"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="la WallBox è condivisa tra più utenze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kb-ne-7RN">
-                            <rect key="frame" x="8" y="284" width="317" height="24"/>
+                            <rect key="frame" x="8" y="284" width="317" height="23.333333333333314"/>
                             <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="18"/>
                             <color key="textColor" name="TextWhite70"/>
                             <nil key="highlightedColor"/>

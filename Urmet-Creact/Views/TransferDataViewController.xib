@@ -20,6 +20,8 @@
                 <outlet property="checkButton" destination="4m9-62-rBS" id="QfF-Kt-hqo"/>
                 <outlet property="continueButton" destination="vFe-jG-gNr" id="v20-0r-7vC"/>
                 <outlet property="dismissButton" destination="lRA-6W-urF" id="oU7-CX-1ZH"/>
+                <outlet property="subTitleLabel" destination="WAq-0n-87G" id="lhe-Aj-dbh"/>
+                <outlet property="titleLabel" destination="hNL-Kt-k3r" id="9RL-TQ-F24"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
