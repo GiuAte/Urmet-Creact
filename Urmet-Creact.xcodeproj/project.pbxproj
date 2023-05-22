@@ -206,10 +206,10 @@
 				C33583F22A1504700002517B /* AssociateWallBoxViewController.xib */,
 				C3DEEC8A2A162DF10068FDCA /* ConnectionViewController.xib */,
 				C3DEEC8E2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.xib */,
+				C3BF73552A16829900AC8F2E /* CustomWifiCell.xib */,
 				C3E3751E2A09103E00D5B3BA /* CustomCell.swift */,
 				C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */,
 				C3DEEC932A166A0E0068FDCA /* CustomWifiCell.swift */,
-				C3BF73552A16829900AC8F2E /* CustomWifiCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";

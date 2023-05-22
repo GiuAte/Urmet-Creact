@@ -94,10 +94,10 @@ class HomePageViewController: UIViewController, TableViewDelegate {
     private func setupTableView() {
         tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { [weak self] indexPath in
             guard let self = self else { return }
-            self.wiFiConnectionSelectorViewController = WiFiConnectionSelectorViewController()
-            self.wiFiConnectionSelectorViewController?.delegate = self
-            self.wiFiConnectionSelectorViewController?.modalPresentationStyle = .pageSheet
-            self.present(self.wiFiConnectionSelectorViewController!, animated: true)
+            self.connectionViewController = ConnectionViewController()
+            //self.connectionViewController?.delegate = self
+            self.connectionViewController?.modalPresentationStyle = .pageSheet
+            self.present(self.connectionViewController!, animated: true)
         })
         
         tableViewDataSource?.showAlertClosure = { [weak self] message in
