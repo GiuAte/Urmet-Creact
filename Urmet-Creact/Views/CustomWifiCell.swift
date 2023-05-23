@@ -7,7 +7,7 @@
 
 import UIKit
 
-//Creare function per settare la scritta personalizzata + clousure per quando premi sulla cella (alert hai premuto sulla cella)
+//Creare function per settare la scritta personalizzata
 
 class CustomWifiCell: UITableViewCell {
 
@@ -17,16 +17,12 @@ class CustomWifiCell: UITableViewCell {
       
       override func awakeFromNib() {
           super.awakeFromNib()
-          
-          let tapGesture = UITapGestureRecognizer(target: self, action: #selector(cellTapped))
-          self.addGestureRecognizer(tapGesture)
       }
-      
-      func configure(withText text: String) {
-          labelTest.text = text
-      }
-      
-      @objc private func cellTapped() {
-          cellClickedClosure?()
-      }
+    
+    public func customCellLabel(title: String) {
+    
+        labelTest.text = title
+    }
+    
+    
   }

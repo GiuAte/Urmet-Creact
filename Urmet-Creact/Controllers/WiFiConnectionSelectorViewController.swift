@@ -13,6 +13,7 @@ class WiFiConnectionSelectorViewController: UIViewController {
     @IBOutlet var toggleButton: UIButton!
     @IBOutlet var dismissButton: UIButton!
     @IBOutlet var subtitleLabel: UILabel!
+    @IBOutlet var selectWiFiLabel: UILabel!
     
     // MARK: - Properties
     
@@ -48,6 +49,7 @@ class WiFiConnectionSelectorViewController: UIViewController {
         view.addSubview(dismissButton)
         view.addSubview(subtitleLabel)
         view.bringSubviewToFront(toggleButton)
+        view.bringSubviewToFront(selectWiFiLabel)
     }
     
     // MARK: - Button Actions
@@ -55,27 +57,14 @@ class WiFiConnectionSelectorViewController: UIViewController {
     @IBAction func toggleTableView(_ sender: UIButton) {
         isTableViewOpen = !isTableViewOpen
         
-        UIView.animate(withDuration: 0.3) {
-            if self.isTableViewOpen {
-                self.tableView.isHidden = false
-                let tableHeight = self.tableView.contentSize.height
-                let maxHeight = self.view.frame.height * 0.7
-                let height = min(tableHeight, maxHeight)
-                let yOffset = self.view.frame.height - height
-                self.tableView.frame.origin.y = yOffset
-                self.tableView.frame.size.height = height
-                
-                self.toggleButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-            } else {
-                self.toggleButton.frame.origin.y = self.subtitleLabel.frame.maxY + 20
-                self.tableView.frame.origin.y = self.toggleButton.frame.maxY
-                self.tableView.frame.size.height = 0
-                self.tableView.isHidden = true
-                
-                self.toggleButton.transform = .identity
-            }
-            self.view.layoutIfNeeded()
+        if isTableViewOpen {
+            tableView.isHidden = false
+            toggleButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        } else {
+            tableView.isHidden = true
+            toggleButton.transform = .identity
         }
+        view.layoutIfNeeded()
     }
     
     @IBAction func dismissButton(_ sender: UIButton) {
@@ -98,15 +87,16 @@ extension WiFiConnectionSelectorViewController: UITableViewDelegate {
 
 extension WiFiConnectionSelectorViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomWifiCell", for: indexPath) as! CustomWifiCell
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomWifiCell", for: indexPath) as? CustomWifiCell
+        cell?.customCellLabel(title: "WiFi di casa")
+        return cell ?? UITableViewCell()
     }
 }

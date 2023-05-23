@@ -55,7 +55,6 @@ class ConnectionViewController: UIViewController {
     
     
     @IBAction func modifyButton(_ sender: UIButton) {
-        
         presentController()
         print("ciao")
     }

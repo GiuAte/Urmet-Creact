@@ -21,6 +21,8 @@ class HomePageViewController: UIViewController, TableViewDelegate {
     private var transferDataViewController: TransferDataViewController?
     private var connectionViewController: ConnectionViewController?
     private var wiFiConnectionSelectorViewController: WiFiConnectionSelectorViewController?
+    private var networkAdvancedSettingsViewController: NetworkAdvancedSettingsViewController?
+    private var wallboxConfigurationViewController: WallboxConfigurationViewController?
     
     //MARK: - LIFECYCLE METHODS
     
@@ -94,10 +96,10 @@ class HomePageViewController: UIViewController, TableViewDelegate {
     private func setupTableView() {
         tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { [weak self] indexPath in
             guard let self = self else { return }
-            self.connectionViewController = ConnectionViewController()
-            //self.connectionViewController?.delegate = self
-            self.connectionViewController?.modalPresentationStyle = .pageSheet
-            self.present(self.connectionViewController!, animated: true)
+            self.networkAdvancedSettingsViewController = NetworkAdvancedSettingsViewController()
+            self.networkAdvancedSettingsViewController?.delegate = self
+            self.networkAdvancedSettingsViewController?.modalPresentationStyle = .pageSheet
+            self.present(self.networkAdvancedSettingsViewController!, animated: true)
         })
         
         tableViewDataSource?.showAlertClosure = { [weak self] message in
@@ -117,5 +119,7 @@ extension HomePageViewController: ButtonDelegate {
         popUpView?.dismiss(animated: true, completion: nil)
         associateWallBoxViewController?.dismiss(animated: true, completion: nil)
         wiFiConnectionSelectorViewController?.dismiss(animated: true, completion: nil)
+        connectionViewController?.dismiss(animated: true, completion: nil)
+        networkAdvancedSettingsViewController?.dismiss(animated: true, completion: nil)
     }
 }

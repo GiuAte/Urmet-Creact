@@ -16,6 +16,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WiFiConnectionSelectorViewController" customModule="Urmet_Creact" customModuleProvider="target">
             <connections>
                 <outlet property="dismissButton" destination="3NL-tx-v9V" id="HSi-op-nlk"/>
+                <outlet property="selectWiFiLabel" destination="fdj-cm-0Dq" id="WS7-g7-nr4"/>
                 <outlet property="subtitleLabel" destination="rt9-NV-TWJ" id="MSV-cl-jU3"/>
                 <outlet property="tableView" destination="hDB-qS-ayF" id="QkF-Aq-lz7"/>
                 <outlet property="toggleButton" destination="h5O-EP-trz" id="HaD-sG-4Ig"/>
@@ -28,22 +29,21 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connettività tramite Wi-Fi" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40X-kb-fxi">
-                    <rect key="frame" x="16" y="102" width="251" height="79"/>
+                    <rect key="frame" x="16" y="102" width="251" height="89.333333333333314"/>
                     <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="30"/>
                     <color key="textColor" name="TextWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleziona la rete Wi-Fi a cui vuoi connettere il dispositivo associato a questo luogo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rt9-NV-TWJ">
-                    <rect key="frame" x="16" y="189" width="361" height="89"/>
+                    <rect key="frame" x="16" y="199.33333333333334" width="361" height="85.000000000000028"/>
                     <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="22"/>
                     <color key="textColor" name="TextWhite70"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NL-tx-v9V">
-                    <rect key="frame" x="353" y="102" width="24" height="24"/>
+                    <rect key="frame" x="353" y="102" width="24" height="34.333333333333343"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="24" id="0gk-lv-12d"/>
-                        <constraint firstAttribute="height" constant="24" id="Xx4-I9-3tr"/>
+                        <constraint firstAttribute="width" constant="24" id="rwh-69-TmG"/>
                     </constraints>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
@@ -53,19 +53,13 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleziona WiFi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdj-cm-0Dq">
-                    <rect key="frame" x="16" y="316" width="326" height="31"/>
+                    <rect key="frame" x="16" y="322.33333333333331" width="326" height="31"/>
                     <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
                     <color key="textColor" name="TextWhite70"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hDB-qS-ayF">
-                    <rect key="frame" x="16" y="296" width="361" height="260"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5O-EP-trz">
-                    <rect key="frame" x="333" y="319" width="44" height="35"/>
+                    <rect key="frame" x="333" y="325.33333333333331" width="44" height="35"/>
                     <color key="tintColor" name="TextWhite50"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" image="arrow.turn.left.down" catalog="system" imagePlacement="trailing" imagePadding="170"/>
@@ -73,29 +67,32 @@
                         <action selector="toggleTableView:" destination="-1" eventType="touchUpInside" id="5ay-1Q-aMk"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hDB-qS-ayF">
+                    <rect key="frame" x="16" y="368" width="361" height="284"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" name="Background"/>
-            <accessibility key="accessibilityConfiguration">
-                <bool key="isElement" value="YES"/>
-            </accessibility>
+            <accessibility key="accessibilityConfiguration" identifier="WiFiConnectionSelectorViewController"/>
             <constraints>
-                <constraint firstItem="40X-kb-fxi" firstAttribute="leading" secondItem="rt9-NV-TWJ" secondAttribute="leading" id="8Qg-Mg-Vzw"/>
-                <constraint firstItem="3NL-tx-v9V" firstAttribute="trailing" secondItem="rt9-NV-TWJ" secondAttribute="trailing" id="Caf-Mf-6Z0"/>
-                <constraint firstItem="fdj-cm-0Dq" firstAttribute="top" secondItem="rt9-NV-TWJ" secondAttribute="bottom" constant="38" id="F4d-cP-fZz"/>
-                <constraint firstItem="rt9-NV-TWJ" firstAttribute="trailing" secondItem="h5O-EP-trz" secondAttribute="trailing" id="GNN-25-pVd"/>
-                <constraint firstItem="rt9-NV-TWJ" firstAttribute="top" secondItem="3NL-tx-v9V" secondAttribute="bottom" constant="63" id="HJa-V8-rXg"/>
-                <constraint firstItem="40X-kb-fxi" firstAttribute="top" secondItem="3NL-tx-v9V" secondAttribute="top" id="HfM-d1-JIA"/>
-                <constraint firstItem="h5O-EP-trz" firstAttribute="top" secondItem="rt9-NV-TWJ" secondAttribute="bottom" constant="41" id="JIO-vi-pfe"/>
-                <constraint firstItem="rt9-NV-TWJ" firstAttribute="leading" secondItem="fdj-cm-0Dq" secondAttribute="leading" id="MP5-G5-yX1"/>
-                <constraint firstItem="h5O-EP-trz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="333" id="P6Z-ac-TBr"/>
-                <constraint firstItem="h5O-EP-trz" firstAttribute="trailing" secondItem="hDB-qS-ayF" secondAttribute="trailing" id="Vdm-Wp-Gfm"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fdj-cm-0Dq" secondAttribute="trailing" constant="51" id="bbN-47-nqE"/>
-                <constraint firstItem="rt9-NV-TWJ" firstAttribute="top" secondItem="40X-kb-fxi" secondAttribute="bottom" constant="8" symbolic="YES" id="it1-2R-2cP"/>
-                <constraint firstItem="hDB-qS-ayF" firstAttribute="top" secondItem="rt9-NV-TWJ" secondAttribute="bottom" constant="18" id="l0b-xq-bLa"/>
-                <constraint firstItem="3NL-tx-v9V" firstAttribute="leading" secondItem="40X-kb-fxi" secondAttribute="trailing" constant="86" id="o8b-k2-NmZ"/>
-                <constraint firstItem="40X-kb-fxi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="43" id="pzt-H9-Uws"/>
-                <constraint firstItem="fdj-cm-0Dq" firstAttribute="leading" secondItem="hDB-qS-ayF" secondAttribute="leading" id="x3w-3Q-cxl"/>
+                <constraint firstItem="40X-kb-fxi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="43" id="3b8-3P-hWb"/>
+                <constraint firstItem="hDB-qS-ayF" firstAttribute="top" secondItem="fdj-cm-0Dq" secondAttribute="bottom" constant="14.666666666666686" id="7yx-ju-gAB"/>
+                <constraint firstItem="3NL-tx-v9V" firstAttribute="trailing" secondItem="rt9-NV-TWJ" secondAttribute="trailing" id="BDq-fY-B71"/>
+                <constraint firstItem="fdj-cm-0Dq" firstAttribute="leading" secondItem="hDB-qS-ayF" secondAttribute="leading" id="GkN-gS-7me"/>
+                <constraint firstItem="h5O-EP-trz" firstAttribute="trailing" secondItem="hDB-qS-ayF" secondAttribute="trailing" id="K9g-bL-iJK"/>
+                <constraint firstItem="40X-kb-fxi" firstAttribute="top" secondItem="3NL-tx-v9V" secondAttribute="top" id="VPB-ng-5LT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fdj-cm-0Dq" secondAttribute="trailing" constant="51" id="WlM-HL-YqZ"/>
+                <constraint firstItem="rt9-NV-TWJ" firstAttribute="leading" secondItem="fdj-cm-0Dq" secondAttribute="leading" id="Xb7-Ld-rEh"/>
+                <constraint firstItem="rt9-NV-TWJ" firstAttribute="trailing" secondItem="h5O-EP-trz" secondAttribute="trailing" id="YQD-Uk-kEM"/>
+                <constraint firstItem="hDB-qS-ayF" firstAttribute="top" secondItem="h5O-EP-trz" secondAttribute="bottom" constant="7.6666666666666856" id="bJa-nN-8fw"/>
+                <constraint firstItem="40X-kb-fxi" firstAttribute="leading" secondItem="rt9-NV-TWJ" secondAttribute="leading" id="gha-4N-COR"/>
+                <constraint firstItem="3NL-tx-v9V" firstAttribute="leading" secondItem="40X-kb-fxi" secondAttribute="trailing" constant="86" id="q64-Nn-Vhu"/>
+                <constraint firstItem="rt9-NV-TWJ" firstAttribute="top" secondItem="3NL-tx-v9V" secondAttribute="bottom" constant="63.000000000000028" id="t1F-WX-iPH"/>
+                <constraint firstItem="h5O-EP-trz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="333" id="ywx-pc-xRj"/>
+                <constraint firstItem="rt9-NV-TWJ" firstAttribute="top" secondItem="40X-kb-fxi" secondAttribute="bottom" constant="8.0000000000000568" id="zPm-LE-n5l"/>
             </constraints>
             <point key="canvasLocation" x="252.67175572519082" y="-69.014084507042256"/>
         </view>
