@@ -15,13 +15,8 @@ class HomePageViewController: UIViewController, TableViewDelegate {
     @IBOutlet private var collectionView: UICollectionView!
     
     private var popUpView: PopUpViewController?
-    private var associateWallBoxViewController: AssociateWallBoxViewController?
     private var collectionViewDataSource: CollectionViewDataSource?
     private var tableViewDataSource: TableViewDataSource?
-    private var transferDataViewController: TransferDataViewController?
-    private var connectionViewController: ConnectionViewController?
-    private var wiFiConnectionSelectorViewController: WiFiConnectionSelectorViewController?
-    private var networkAdvancedSettingsViewController: NetworkAdvancedSettingsViewController?
     private var wallboxConfigurationViewController: WallboxConfigurationViewController?
     
     //MARK: - LIFECYCLE METHODS
@@ -96,10 +91,10 @@ class HomePageViewController: UIViewController, TableViewDelegate {
     private func setupTableView() {
         tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { [weak self] indexPath in
             guard let self = self else { return }
-            self.networkAdvancedSettingsViewController = NetworkAdvancedSettingsViewController()
-            self.networkAdvancedSettingsViewController?.delegate = self
-            self.networkAdvancedSettingsViewController?.modalPresentationStyle = .pageSheet
-            self.present(self.networkAdvancedSettingsViewController!, animated: true)
+            self.wallboxConfigurationViewController = WallboxConfigurationViewController()
+            //self.wallboxConfigurationViewController?.delegate = self
+            self.wallboxConfigurationViewController?.modalPresentationStyle = .fullScreen
+            self.present(self.wallboxConfigurationViewController!, animated: true)
         })
         
         tableViewDataSource?.showAlertClosure = { [weak self] message in
@@ -117,9 +112,5 @@ class HomePageViewController: UIViewController, TableViewDelegate {
 extension HomePageViewController: ButtonDelegate {
     func isClosingView() {
         popUpView?.dismiss(animated: true, completion: nil)
-        associateWallBoxViewController?.dismiss(animated: true, completion: nil)
-        wiFiConnectionSelectorViewController?.dismiss(animated: true, completion: nil)
-        connectionViewController?.dismiss(animated: true, completion: nil)
-        networkAdvancedSettingsViewController?.dismiss(animated: true, completion: nil)
     }
 }

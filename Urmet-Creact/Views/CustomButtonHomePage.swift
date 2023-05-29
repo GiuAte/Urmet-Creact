@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 public class CustomButtonHomePage: UITableViewCell {
     
     @IBOutlet private var firstLabel: UILabel!

@@ -10,6 +10,7 @@
 		A36632FDC9DF69DB72EC6699 /* Pods_Urmet_Creact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427B8621996967EA02F85906 /* Pods_Urmet_Creact.framework */; };
 		C30A1E0F2A13B9C4008F9A38 /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30A1E0E2A13B9C4008F9A38 /* TableViewDelegate.swift */; };
 		C31AB69A2A0B90DD00407B70 /* ButtonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31AB6992A0B90DD00407B70 /* ButtonData.swift */; };
+		C32E2F752A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32E2F742A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift */; };
 		C332D2552A0A9B1F005D4FD9 /* CustomButtonHomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = C332D2542A0A9B1F005D4FD9 /* CustomButtonHomePage.xib */; };
 		C332D2572A0A9D7B005D4FD9 /* CustomButtonHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */; };
 		C33583F32A1504700002517B /* AssociateWallBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */; };
@@ -45,6 +46,8 @@
 		C3E3751F2A09103E00D5B3BA /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E3751E2A09103E00D5B3BA /* CustomCell.swift */; };
 		C3E53A2F2A1CE4E400874D8F /* WallboxConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E53A2D2A1CE4E400874D8F /* WallboxConfigurationViewController.swift */; };
 		C3E53A302A1CE4E400874D8F /* WallboxConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E53A2E2A1CE4E400874D8F /* WallboxConfigurationViewController.xib */; };
+		C3E53A3B2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E53A392A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.swift */; };
+		C3E53A3C2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E53A3A2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,7 @@
 		80EB3BFACA3BD117F91454B6 /* Pods-Urmet-Creact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urmet-Creact.debug.xcconfig"; path = "Target Support Files/Pods-Urmet-Creact/Pods-Urmet-Creact.debug.xcconfig"; sourceTree = "<group>"; };
 		C30A1E0E2A13B9C4008F9A38 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		C31AB6992A0B90DD00407B70 /* ButtonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonData.swift; sourceTree = "<group>"; };
+		C32E2F742A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxConfigTableViewDataSource.swift; sourceTree = "<group>"; };
 		C332D2542A0A9B1F005D4FD9 /* CustomButtonHomePage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButtonHomePage.xib; sourceTree = "<group>"; };
 		C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonHomePage.swift; sourceTree = "<group>"; };
 		C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociateWallBoxViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		C3E3751E2A09103E00D5B3BA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C3E53A2D2A1CE4E400874D8F /* WallboxConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxConfigurationViewController.swift; sourceTree = "<group>"; };
 		C3E53A2E2A1CE4E400874D8F /* WallboxConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WallboxConfigurationViewController.xib; sourceTree = "<group>"; };
+		C3E53A392A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonTWWallboxTableViewCell.swift; sourceTree = "<group>"; };
+		C3E53A3A2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButtonTWWallboxTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 			children = (
 				C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */,
 				C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */,
+				C32E2F742A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift */,
 			);
 			path = "Data Source";
 			sourceTree = "<group>";
@@ -217,9 +224,11 @@
 				C3BF73552A16829900AC8F2E /* CustomWifiCell.xib */,
 				C3B3540A2A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.xib */,
 				C3E53A2E2A1CE4E400874D8F /* WallboxConfigurationViewController.xib */,
+				C3E53A3A2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.xib */,
 				C3E3751E2A09103E00D5B3BA /* CustomCell.swift */,
 				C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */,
 				C3DEEC932A166A0E0068FDCA /* CustomWifiCell.swift */,
+				C3E53A392A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,6 +322,7 @@
 				C3D95D172A0D34080058DA32 /* PopUpViewController.xib in Resources */,
 				C3E375092A08DDBA00D5B3BA /* Assets.xcassets in Resources */,
 				C3E375072A08DDB900D5B3BA /* Main.storyboard in Resources */,
+				C3E53A3C2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,12 +393,14 @@
 				C3DEEC942A166A0E0068FDCA /* CustomWifiCell.swift in Sources */,
 				C3B3540B2A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.swift in Sources */,
 				C33583F32A1504700002517B /* AssociateWallBoxViewController.swift in Sources */,
+				C32E2F752A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift in Sources */,
 				C3AA694B2A127EE200648BAF /* Array+Extensions.swift in Sources */,
 				C3AA69442A123CCA00648BAF /* CollectionViewDataSource.swift in Sources */,
 				C3E3751F2A09103E00D5B3BA /* CustomCell.swift in Sources */,
 				C3D95D032A0D1EB50058DA32 /* UIViewController.swift in Sources */,
 				C30A1E0F2A13B9C4008F9A38 /* TableViewDelegate.swift in Sources */,
 				C31AB69A2A0B90DD00407B70 /* ButtonData.swift in Sources */,
+				C3E53A3B2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
