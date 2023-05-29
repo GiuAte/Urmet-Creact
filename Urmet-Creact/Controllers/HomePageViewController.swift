@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Combine
+
+//Sistemare logica delle classi nei ViewModel. Tutta la logica va tutta nel ViewModel
 
 class HomePageViewController: UIViewController, TableViewDelegate {
     
@@ -18,6 +21,10 @@ class HomePageViewController: UIViewController, TableViewDelegate {
     private var collectionViewDataSource: CollectionViewDataSource?
     private var tableViewDataSource: TableViewDataSource?
     private var wallboxConfigurationViewController: WallboxConfigurationViewController?
+    private var energyViewController: EnergyViewController?
+    
+    private var viewModel: HomepageViewModel?
+    final var cancelBag = Set<AnyCancellable>()
     
     //MARK: - LIFECYCLE METHODS
     
@@ -26,6 +33,10 @@ class HomePageViewController: UIViewController, TableViewDelegate {
         setupUI()
         setDataSource()
         setupTableView()
+        self.viewModel = HomepageViewModel()
+        observer()
+        self.viewModel?.populateTableView()
+        
         overrideUserInterfaceStyle = .dark
     }
     
@@ -65,6 +76,14 @@ class HomePageViewController: UIViewController, TableViewDelegate {
         }
     }
     
+    private func observer() {
+        viewModel?.isLoading
+            .compactMap({$0})
+            .receive(on: DispatchQueue.main)
+            .sink{[weak self] in self?.collectionViewDataSource?.didSetValues(values: $0)}
+            .store(in: &cancelBag)
+    }
+    
     // MARK: - POPUP HANDLING
     
     private func actionForAddUserButton() {
@@ -83,7 +102,7 @@ class HomePageViewController: UIViewController, TableViewDelegate {
     //MARK: - SETUP COLLECTIONVIEW & TABLE VIEW
     
     private func setDataSource() {
-        collectionViewDataSource = CollectionViewDataSource(collectionView: collectionView, with: ["Giulio Aterno", "Silvio Fosso", "Luigi Marino", "Andrea Ferrentino", "Andreana Perla", "Fabiana Chiocca", "Yehia Itani"])
+        collectionViewDataSource = CollectionViewDataSource(collectionView: collectionView, with: nil)
     }
     
     //Creare func privata per indexPath
@@ -91,10 +110,10 @@ class HomePageViewController: UIViewController, TableViewDelegate {
     private func setupTableView() {
         tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { [weak self] indexPath in
             guard let self = self else { return }
-            self.wallboxConfigurationViewController = WallboxConfigurationViewController()
+            self.energyViewController = EnergyViewController()
             //self.wallboxConfigurationViewController?.delegate = self
-            self.wallboxConfigurationViewController?.modalPresentationStyle = .fullScreen
-            self.present(self.wallboxConfigurationViewController!, animated: true)
+            self.energyViewController?.modalPresentationStyle = .pageSheet
+            self.present(self.energyViewController!, animated: true)
         })
         
         tableViewDataSource?.showAlertClosure = { [weak self] message in

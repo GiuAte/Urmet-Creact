@@ -25,6 +25,12 @@ class CollectionViewDataSource: NSObject {
         setupCollectionView()
     }
     
+    public func didSetValues(values: [String]?) {
+        
+        self.values = values
+        self.collectionView?.reloadData()
+    }
+    
     private func setupCollectionView() {
         collectionView?.delegate = self
         collectionView?.dataSource = self
