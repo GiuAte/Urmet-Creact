@@ -131,6 +131,14 @@
             <point key="canvasLocation" x="102.29007633587786" y="-127.11267605633803"/>
         </view>
     </objects>
+    <designables>
+        <designable name="lRA-6W-urF">
+            <size key="intrinsicContentSize" width="80.333333333333329" height="34.333333333333336"/>
+        </designable>
+        <designable name="vFe-jG-gNr">
+            <size key="intrinsicContentSize" width="92.333333333333329" height="34.333333333333336"/>
+        </designable>
+    </designables>
     <resources>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <namedColor name="TextWhite">

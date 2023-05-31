@@ -47,11 +47,11 @@ class NetworkAdvancedSettingsViewController: UIViewController, UITextFieldDelega
        }
     
     @objc func keyboardWillShow(sender: NSNotification) {
-         self.view.frame.origin.y = -150 // Move view 150 points upward
+         self.view.frame.origin.y = -150
     }
 
     @objc func keyboardWillHide(sender: NSNotification) {
-         self.view.frame.origin.y = 0 // Move view to original position
+         self.view.frame.origin.y = 0
     }
     
     // MARK: - Setup

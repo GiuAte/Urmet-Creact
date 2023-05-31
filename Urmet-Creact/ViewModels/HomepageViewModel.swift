@@ -18,8 +18,9 @@ class HomepageViewModel {
         
     }
     
-    public func populateTableView(){
+    public func populateCollectionView(){
         
         isLoading.send(["Giulio Aterno", "Silvio Fosso", "Luigi Marino", "Andrea Ferrentino", "Andreana Perla", "Fabiana Chiocca", "Yehia Itani"])
     }
+    
 }

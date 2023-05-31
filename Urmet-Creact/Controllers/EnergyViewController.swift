@@ -10,23 +10,47 @@ import PlugUI
 
 class EnergyViewController: UIViewController {
     
+    // MARK: - Properties
+    
     let currencies = ["Euro", "Dollaro USA", "Sterline", "Yen", "Franchi"]
     
     @IBOutlet var textField: UITextField!
     @IBOutlet var pickerView: UIPickerView!
+    @IBOutlet var showPickerButton: UIButton!
+    var isPickerButtonOpen = false
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupKeyboardDismissal()
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        textField.addTarget(self, action: #selector(textFieldDidEndEditing), for: .editingDidEnd)
-    }
+    // MARK: - Lifecycle
+     
+     override func viewDidLoad() {
+         super.viewDidLoad()
+         setupUI()
+         setupKeyboardDismissal()
+         setupPickerView()
+         setupTextField()
+     }
+     
+     // MARK: - UI Setup
+     
+     private func setupUI() {
+         isPickerButtonOpen = false
+     }
+     
+     private func setupKeyboardDismissal() {
+         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+         view.addGestureRecognizer(tapGesture)
+     }
+     
+     private func setupPickerView() {
+         pickerView.delegate = self
+         pickerView.dataSource = self
+         pickerView.isHidden = !isPickerButtonOpen
+     }
+     
+     private func setupTextField() {
+         textField.addTarget(self, action: #selector(textFieldDidEndEditing), for: .editingDidEnd)
+     }
     
-    private func setupKeyboardDismissal() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tapGesture)
-    }
+    // MARK: - Actions
     
     @objc private func textFieldDidEndEditing() {
         textField.resignFirstResponder()
@@ -34,6 +58,19 @@ class EnergyViewController: UIViewController {
     
     @objc private func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    @IBAction func showPickerView(_ sender: Any) {
+        isPickerButtonOpen = !isPickerButtonOpen
+        
+        if isPickerButtonOpen {
+            pickerView.isHidden = false
+            showPickerButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        } else {
+            pickerView.isHidden = true
+            showPickerButton.transform = .identity
+        }
+        view.layoutIfNeeded()
     }
 }
 

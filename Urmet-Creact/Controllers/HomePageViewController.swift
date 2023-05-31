@@ -35,7 +35,7 @@ class HomePageViewController: UIViewController, TableViewDelegate {
         setupTableView()
         self.viewModel = HomepageViewModel()
         observer()
-        self.viewModel?.populateTableView()
+        self.viewModel?.populateCollectionView()
         
         overrideUserInterfaceStyle = .dark
     }
