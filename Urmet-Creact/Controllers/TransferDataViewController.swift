@@ -14,9 +14,9 @@ class TransferDataViewController: UIViewController {
     @IBOutlet private var buttonView: UIView!
     @IBOutlet private var dismissButton: UIButton!
     @IBOutlet private var checkButton: UIButton!
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var subTitleLabel: UILabel!
-    @IBOutlet var understandLabel: UILabel!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var subTitleLabel: UILabel!
+    @IBOutlet private var understandLabel: UILabel!
     
     public weak var delegate: TableViewDelegate?
     

@@ -12,10 +12,10 @@ class AssociateWallBoxViewController: UIViewController {
     
     // MARK: - Outlets
     
-    @IBOutlet var checkButtonView: UIView!
-    @IBOutlet var singleUserButton: UIButton!
-    @IBOutlet var multiUsersButton: UIButton!
-    @IBOutlet var saveButton: UIButton!
+    @IBOutlet private var checkButtonView: UIView!
+    @IBOutlet private var singleUserButton: UIButton!
+    @IBOutlet private var multiUsersButton: UIButton!
+    @IBOutlet private var saveButton: UIButton!
     
     public weak var delegate: ButtonDelegate?
     var blurredBackgroundView: UIImageView?

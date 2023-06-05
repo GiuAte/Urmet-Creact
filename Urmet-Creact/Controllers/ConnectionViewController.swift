@@ -9,12 +9,12 @@ import UIKit
 
 class ConnectionViewController: UIViewController {
     
-    @IBOutlet var button4G: UIButton!
-    @IBOutlet var ethernetButton: UIButton!
-    @IBOutlet var wiFiButton: UIButton!
-    @IBOutlet var modifyButton: UIButton!
-    @IBOutlet var setupNewConnection: UIView!
-    @IBOutlet var wiFiLabel: UILabel!
+    @IBOutlet private var button4G: UIButton!
+    @IBOutlet private var ethernetButton: UIButton!
+    @IBOutlet private var wiFiButton: UIButton!
+    @IBOutlet private var modifyButton: UIButton!
+    @IBOutlet private var setupNewConnection: UIView!
+    @IBOutlet private var wiFiLabel: UILabel!
     
     var wifiConnectionSelectorViewController: WiFiConnectionSelectorViewController?
     

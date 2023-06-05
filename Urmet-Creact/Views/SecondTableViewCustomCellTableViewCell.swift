@@ -10,8 +10,8 @@ import UIKit
 class SecondTableViewCustomCellTableViewCell: UITableViewCell {
     
     
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var subtitleLabel: UILabel!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var subtitleLabel: UILabel!
     
     var firstLabelText: String? {
         didSet {

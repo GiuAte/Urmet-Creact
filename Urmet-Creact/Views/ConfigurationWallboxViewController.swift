@@ -9,8 +9,8 @@ import UIKit
 
 class ConfigurationWallboxViewController: UIViewController {
     
-    @IBOutlet var firstTableView: UITableView!
-    @IBOutlet var secondTableView: UITableView!
+    @IBOutlet private var firstTableView: UITableView!
+    @IBOutlet private var secondTableView: UITableView!
     
     private var tableViewDataSource: SecondTVConfigurationWallbox?
 

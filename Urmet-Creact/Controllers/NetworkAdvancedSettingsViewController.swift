@@ -14,12 +14,12 @@ class NetworkAdvancedSettingsViewController: UIViewController, UITextFieldDelega
     
     // MARK: - Outlets
     
-    @IBOutlet var insertIPadress: UITextField!
-    @IBOutlet var insertSubnetMask: UITextField!
-    @IBOutlet var insertGatewayAddress: UITextField!
-    @IBOutlet var continueButton: PrimaryButton!
-    @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var keyboardHeightLayoutConstraint: NSLayoutConstraint?
+    @IBOutlet private var insertIPadress: UITextField!
+    @IBOutlet private var insertSubnetMask: UITextField!
+    @IBOutlet private var insertGatewayAddress: UITextField!
+    @IBOutlet private var continueButton: PrimaryButton!
+    @IBOutlet private var scrollView: UIScrollView!
+    @IBOutlet private var keyboardHeightLayoutConstraint: NSLayoutConstraint?
 
     @IBOutlet var insertDNS: UITextField!
     

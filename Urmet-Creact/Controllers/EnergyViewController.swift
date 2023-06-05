@@ -14,9 +14,9 @@ class EnergyViewController: UIViewController {
     
     let currencies = ["Euro", "Dollaro USA", "Sterline", "Yen", "Franchi"]
     
-    @IBOutlet var textField: UITextField!
-    @IBOutlet var pickerView: UIPickerView!
-    @IBOutlet var showPickerButton: UIButton!
+    @IBOutlet private var textField: UITextField!
+    @IBOutlet private var pickerView: UIPickerView!
+    @IBOutlet private var showPickerButton: UIButton!
     var isPickerButtonOpen = false
     
     // MARK: - Lifecycle

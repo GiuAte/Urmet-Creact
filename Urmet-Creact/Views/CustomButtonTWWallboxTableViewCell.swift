@@ -10,10 +10,10 @@ import PlugUI
 
 class CustomButtonTWWallboxTableViewCell: UITableViewCell {
 
-    @IBOutlet var circleButtonView: UIView!
-    @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var subtitleLabel: UILabel!
-    @IBOutlet var circleButtonImageView: UIImageView!
+    @IBOutlet private var circleButtonView: UIView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var subtitleLabel: UILabel!
+    @IBOutlet private var circleButtonImageView: UIImageView!
     
     var firstLabelText: String? {
         didSet {

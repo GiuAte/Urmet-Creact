@@ -13,8 +13,8 @@ import UIKit
 
 class WallboxConfigurationViewController: UIViewController {
     
-    @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet private var scrollView: UIScrollView!
+    @IBOutlet private var tableView: UITableView!
     
     private var wallboxTableViewDataSource: WallboxConfigTableViewDataSource?
     

@@ -10,7 +10,7 @@ import UIKit
 public class CustomCell: UICollectionViewCell {
     
     @IBOutlet private var usernameFirstLetters: UILabel!
-    @IBOutlet var customView: UIView!
+    @IBOutlet private var customView: UIView!
     @IBOutlet private var fullName: UILabel!
     
     public override func awakeFromNib() {

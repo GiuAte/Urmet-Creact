@@ -57,7 +57,6 @@ final class HomePageViewController: UIViewController, TableViewDelegate {
         addUserText.font = UIFont.systemFont(ofSize: 16)
         addUserText.text = "Aggiungi\nutente"
         addUserText.sizeToFit()
-        view.addSubview(addUserText)
     }
     
     private func showAlert(message: String) {

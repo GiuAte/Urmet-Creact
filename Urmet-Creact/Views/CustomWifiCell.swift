@@ -11,7 +11,7 @@ import UIKit
 
 class CustomWifiCell: UITableViewCell {
 
-    @IBOutlet var labelTest: UILabel!
+    @IBOutlet private var labelTest: UILabel!
     
     var cellClickedClosure: (() -> Void)?
       

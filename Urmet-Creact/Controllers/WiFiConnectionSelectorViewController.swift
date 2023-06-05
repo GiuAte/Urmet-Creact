@@ -9,11 +9,11 @@ import UIKit
 
 class WiFiConnectionSelectorViewController: UIViewController {
     
-    @IBOutlet var tableView: UITableView!
-    @IBOutlet var toggleButton: UIButton!
-    @IBOutlet var dismissButton: UIButton!
-    @IBOutlet var subtitleLabel: UILabel!
-    @IBOutlet var selectWiFiLabel: UILabel!
+    @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var toggleButton: UIButton!
+    @IBOutlet private var dismissButton: UIButton!
+    @IBOutlet private var subtitleLabel: UILabel!
+    @IBOutlet private var selectWiFiLabel: UILabel!
     
     // MARK: - Properties
     
