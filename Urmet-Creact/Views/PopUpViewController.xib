@@ -42,17 +42,17 @@
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
                             <connections>
-                                <action selector="dismissButton:" destination="-1" eventType="touchUpInside" id="N7N-Mp-551"/>
+                                <action selector="dismissButton" destination="-1" eventType="touchUpInside" id="cug-T9-68h"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aggiungi utente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5s-vG-CSa">
-                            <rect key="frame" x="8" y="19" width="184.33333333333334" height="39"/>
+                            <rect key="frame" x="8" y="18.999999999999996" width="184.33333333333334" height="38.666666666666657"/>
                             <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="30"/>
                             <color key="textColor" name="TextWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condividi questa WallBox con altri utenti mostrandogli questo QR code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KmK-nZ-mbf">
-                            <rect key="frame" x="8" y="66" width="352" height="76"/>
+                            <rect key="frame" x="8" y="65.666666666666629" width="352" height="76"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="76" id="hl7-aC-hoy"/>
                             </constraints>

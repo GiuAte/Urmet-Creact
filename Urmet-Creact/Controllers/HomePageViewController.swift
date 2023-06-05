@@ -8,9 +8,7 @@
 import UIKit
 import Combine
 
-//Sistemare logica delle classi nei ViewModel. Tutta la logica va tutta nel ViewModel
-
-class HomePageViewController: UIViewController, TableViewDelegate {
+final class HomePageViewController: UIViewController, TableViewDelegate {
     
     @IBOutlet private var tableView: UITableView!
     @IBOutlet private var addUserText: UILabel!
@@ -20,7 +18,7 @@ class HomePageViewController: UIViewController, TableViewDelegate {
     private var popUpView: PopUpViewController?
     private var collectionViewDataSource: CollectionViewDataSource?
     private var tableViewDataSource: TableViewDataSource?
-    private var wallboxConfigurationViewController: WallboxConfigurationViewController?
+    private var wallboxConfigurationViewController: ConfigurationWallboxViewController?
     private var energyViewController: EnergyViewController?
     
     private var viewModel: HomepageViewModel?
@@ -32,9 +30,9 @@ class HomePageViewController: UIViewController, TableViewDelegate {
         super.viewDidLoad()
         setupUI()
         setDataSource()
-        setupTableView()
+        setTableView()
         self.viewModel = HomepageViewModel()
-        observer()
+        setObservers()
         self.viewModel?.populateCollectionView()
         
         overrideUserInterfaceStyle = .dark
@@ -76,7 +74,7 @@ class HomePageViewController: UIViewController, TableViewDelegate {
         }
     }
     
-    private func observer() {
+    private func setObservers() {
         viewModel?.isLoading
             .compactMap({$0})
             .receive(on: DispatchQueue.main)
@@ -96,7 +94,6 @@ class HomePageViewController: UIViewController, TableViewDelegate {
         popUpView?.delegate = self
         guard let popUpView = popUpView else { return }
         self.present(popUpView, animated: true)
-        
     }
     
     //MARK: - SETUP COLLECTIONVIEW & TABLE VIEW
@@ -105,23 +102,22 @@ class HomePageViewController: UIViewController, TableViewDelegate {
         collectionViewDataSource = CollectionViewDataSource(collectionView: collectionView, with: nil)
     }
     
-    //Creare func privata per indexPath
-    
-    private func setupTableView() {
+    private func setTableView() {
         tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { [weak self] indexPath in
-            guard let self = self else { return }
-            self.energyViewController = EnergyViewController()
+            self?.wallboxConfigurationViewController = ConfigurationWallboxViewController()
             //self.wallboxConfigurationViewController?.delegate = self
-            self.energyViewController?.modalPresentationStyle = .pageSheet
-            self.present(self.energyViewController!, animated: true)
+            self?.wallboxConfigurationViewController?.modalPresentationStyle = .pageSheet
+            guard let configuration = self?.wallboxConfigurationViewController else { return }
+            self?.present(configuration, animated: true)
         })
         
         tableViewDataSource?.showAlertClosure = { [weak self] message in
             self?.showAlert(message: message)
         }
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         tableView.reloadData()
     }
 }

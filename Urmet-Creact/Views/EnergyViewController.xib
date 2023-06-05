@@ -114,7 +114,7 @@
                 <constraint firstItem="2pR-rp-20N" firstAttribute="trailing" secondItem="tP7-8b-hFX" secondAttribute="trailing" id="skE-hQ-QLI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hgd-ms-fLf" secondAttribute="trailing" constant="25" id="vpj-jc-ntl"/>
             </constraints>
-            <point key="canvasLocation" x="-11" y="-232"/>
+            <point key="canvasLocation" x="408" y="-254"/>
         </view>
     </objects>
     <designables>

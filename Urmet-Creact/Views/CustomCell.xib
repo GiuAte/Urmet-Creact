@@ -73,7 +73,7 @@
                 <outlet property="fullName" destination="E4g-Or-DSo" id="PBb-ZA-aQk"/>
                 <outlet property="usernameFirstLetters" destination="Iej-Hk-Iop" id="ELi-gy-NHe"/>
             </connections>
-            <point key="canvasLocation" x="-715.26717557251902" y="-130.28169014084509"/>
+            <point key="canvasLocation" x="-924" y="-173"/>
         </view>
     </objects>
 </document>

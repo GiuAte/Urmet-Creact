@@ -8,14 +8,14 @@
 import UIKit
 import QRCode
 
-class PopUpViewController: UIViewController {
+final class PopUpViewController: UIViewController {
     
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var subTitleLabel: UILabel!
     @IBOutlet private var qrCodeView: UIView!
-    @IBOutlet var qrCodeImage: UIImageView!
+    @IBOutlet private var qrCodeImage: UIImageView!
     
-    public weak var delegate: ButtonDelegate?
+    weak var delegate: ButtonDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class PopUpViewController: UIViewController {
         }
     }
     
-    @IBAction func dismissButton(_ sender: UIButton) {
+    @IBAction private func dismissButton() {
         delegate?.isClosingView()
         
     }

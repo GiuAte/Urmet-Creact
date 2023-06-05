@@ -7,6 +7,10 @@
 
 import UIKit
 
+// Sistemare cone TableView e celle, modello codice utilizzare view separata
+// Modello + codice = view separata con relativo ViewModel
+// Table view + componente come connettività ecc.
+
 class WallboxConfigurationViewController: UIViewController {
     
     @IBOutlet var scrollView: UIScrollView!

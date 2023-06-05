@@ -1,19 +1,17 @@
 //
-//  CustomButtonTWWallboxTableViewCell.swift
+//  SecondTableViewCustomCellTableViewCell.swift
 //  Urmet-Creact
 //
-//  Created by Giulio Aterno on 23/05/23.
+//  Created by Giulio Aterno on 31/05/23.
 //
 
 import UIKit
-import PlugUI
 
-class CustomButtonTWWallboxTableViewCell: UITableViewCell {
-
-    @IBOutlet var circleButtonView: UIView!
+class SecondTableViewCustomCellTableViewCell: UITableViewCell {
+    
+    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var subtitleLabel: UILabel!
-    @IBOutlet var circleButtonImageView: UIImageView!
     
     var firstLabelText: String? {
         didSet {
@@ -28,8 +26,16 @@ class CustomButtonTWWallboxTableViewCell: UITableViewCell {
     }
     
     override func awakeFromNib() {
-        super.awakeFromNib()
+     
     }
 
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+    }
+    
+    @IBAction func modifyButton(_ sender: Any) {
+        
+    }
     
 }
