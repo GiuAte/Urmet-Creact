@@ -17,5 +17,7 @@ class Constants {
     
     public static let setupCellTVConfigurationWallbox = [("Connettività", "Seleziona la modalità di connessione ad internet della WallBox"), ("Indirizzamento IP", "Modificare parametri di connessione avanzati del device alla rete"), ("Parametri Energia", "Imposta i parametri di costo energia"), ("Opzioni avanzate", "Configura le funzionalità avanzate")]
     
+    public static let powerSharingTextCell = [("TA", "Usa TA disponibile sulla WallBox"), ("MID", "Usa un meter esterno"), ("Device Esterno", "Usa un device esterno"), ("Chain 2", "Attivo solo in Italia")]
+    
     
 }

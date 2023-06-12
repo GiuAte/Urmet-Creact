@@ -1,13 +1,13 @@
 //
-//  WallboxConfigTableViewDataSource.swift
+//  PowerSharingTableViewDataSource.swift
 //  Urmet-Creact
 //
-//  Created by Giulio Aterno on 24/05/23.
+//  Created by Giulio Aterno on 08/06/23.
 //
 
 import UIKit
 
-class WallboxConfigTableViewDataSource: NSObject {
+class PowerSharingTableVieDataSource: NSObject {
     
     // MARK: - Properties
     
@@ -15,12 +15,11 @@ class WallboxConfigTableViewDataSource: NSObject {
     var showAlertClosure: ((String) -> Void)?
     var onRowSelected: ((IndexPath) -> Void)?
     
-    var cellViewModels: [CustomButtonTWWallboxTableViewCell]? {
+    var cellViewModels: [PowerSharingTableViewCell]? {
         didSet {
             tableView?.reloadData()
         }
     }
-    
     
     // MARK: - Initialization
     
@@ -31,48 +30,56 @@ class WallboxConfigTableViewDataSource: NSObject {
         setupTableView()
         
     }
-
+    
+    // MARK: - METHODS
+    
     private func setupTableView() {
         tableView?.dataSource = self
         tableView?.delegate = self
         
-        let cellNib = UINib(nibName: "CustomButtonTWWallboxTableViewCell", bundle: nil)
-        tableView?.register(cellNib, forCellReuseIdentifier: "cell")
+        let cellNib = UINib(nibName: "PowerSharingTableViewCell", bundle: nil)
+        tableView?.register(cellNib, forCellReuseIdentifier: "customCell")
         tableView?.showsHorizontalScrollIndicator = false
         tableView?.showsVerticalScrollIndicator = false
         tableView?.separatorStyle = .none
         tableView?.reloadData()
+        tableView?.isScrollEnabled = false
+    }
+    
+    func showAlert(message: String) {
+        showAlertClosure?(message)
     }
 }
 
 // MARK: - UITableViewDataSource
 
-extension WallboxConfigTableViewDataSource: UITableViewDataSource {
+extension PowerSharingTableVieDataSource: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Constants.textCustomButtonWallbox.count
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! PowerSharingTableViewCell
+        cell.selectionStyle = .none
+        
+        cell.firstLabelText = Constants.powerSharingTextCell[indexPath.row].0
+        cell.secondLabelText = Constants.powerSharingTextCell[indexPath.row].1
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           return 110.0
-       }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomButtonTWWallboxTableViewCell
-        cell.selectionStyle = .none
-        
-        cell.firstLabelText = Constants.textCustomButtonWallbox[indexPath.row].0
-        cell.secondLabelText = Constants.textCustomButtonWallbox[indexPath.row].1
-        
-        return cell
+        80
     }
 }
 
 // MARK: - UITableViewDelegate
 
-extension WallboxConfigTableViewDataSource: UITableViewDelegate {
+extension PowerSharingTableVieDataSource: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         onRowSelected?(indexPath)
     }
 }
+

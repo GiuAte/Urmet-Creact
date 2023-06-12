@@ -18,6 +18,10 @@
 		C33B054B2A24B80B00EBAC75 /* EnergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B05492A24B80B00EBAC75 /* EnergyViewController.swift */; };
 		C33B054C2A24B80B00EBAC75 /* EnergyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33B054A2A24B80B00EBAC75 /* EnergyViewController.xib */; };
 		C33B054F2A24FEB400EBAC75 /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B054E2A24FEB400EBAC75 /* HomepageViewModel.swift */; };
+		C3475CCE2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3475CCC2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift */; };
+		C3475CCF2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3475CCD2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib */; };
+		C36EA2262A3705D50081E310 /* OCPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EA2242A3705D50081E310 /* OCPPViewController.swift */; };
+		C36EA2272A3705D50081E310 /* OCPPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36EA2252A3705D50081E310 /* OCPPViewController.xib */; };
 		C37C990B2A0D41BE004B21EF /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37C990A2A0D41BE004B21EF /* ButtonDelegate.swift */; };
 		C3AA69442A123CCA00648BAF /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */; };
 		C3AA69462A123E2A00648BAF /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */; };
@@ -27,6 +31,18 @@
 		C3B2902D2A14BEC400D06037 /* TransferDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B2902B2A14BEC400D06037 /* TransferDataViewController.xib */; };
 		C3B3540B2A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B354092A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.swift */; };
 		C3B3540C2A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B3540A2A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.xib */; };
+		C3B78C952A320C7F00A90621 /* PowerSharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78C932A320C7F00A90621 /* PowerSharingViewController.swift */; };
+		C3B78C962A320C7F00A90621 /* PowerSharingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B78C942A320C7F00A90621 /* PowerSharingViewController.xib */; };
+		C3B78C9B2A3213C900A90621 /* PowerSharingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78C992A3213C900A90621 /* PowerSharingTableViewCell.swift */; };
+		C3B78C9C2A3213C900A90621 /* PowerSharingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B78C9A2A3213C900A90621 /* PowerSharingTableViewCell.xib */; };
+		C3B78C9E2A32196900A90621 /* PowerSharingTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78C9D2A32196900A90621 /* PowerSharingTableViewDataSource.swift */; };
+		C3B78CA02A32263700A90621 /* PowerSharingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78C9F2A32263700A90621 /* PowerSharingViewModel.swift */; };
+		C3B78CA22A32267D00A90621 /* TypedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78CA12A32267D00A90621 /* TypedRow.swift */; };
+		C3B78CA42A3226A800A90621 /* FormRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78CA32A3226A800A90621 /* FormRow.swift */; };
+		C3B78CA62A3226FF00A90621 /* FormInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78CA52A3226FF00A90621 /* FormInputCell.swift */; };
+		C3B78CA82A32273D00A90621 /* TypedInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78CA72A32273D00A90621 /* TypedInputCell.swift */; };
+		C3B78CAA2A32279200A90621 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78CA92A32279200A90621 /* InsetTextField.swift */; };
+		C3B78CAD2A3228AB00A90621 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B78CAC2A3228AB00A90621 /* CellType.swift */; };
 		C3BF73562A16829900AC8F2E /* CustomWifiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3BF73552A16829900AC8F2E /* CustomWifiCell.xib */; };
 		C3D95CFD2A0D1A7A0058DA32 /* PopupDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95CFC2A0D1A7A0058DA32 /* PopupDisplayer.swift */; };
 		C3D95D032A0D1EB50058DA32 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D95D022A0D1EB50058DA32 /* UIViewController.swift */; };
@@ -66,44 +82,59 @@
 		C32E2F742A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxConfigTableViewDataSource.swift; sourceTree = "<group>"; };
 		C332D2542A0A9B1F005D4FD9 /* CustomButtonHomePage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButtonHomePage.xib; sourceTree = "<group>"; };
 		C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonHomePage.swift; sourceTree = "<group>"; };
-		C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AssociateWallBoxViewController.swift; path = ../../AssociateWallBoxViewController.swift; sourceTree = "<group>"; };
+		C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociateWallBoxViewController.swift; sourceTree = "<group>"; };
 		C33583F22A1504700002517B /* AssociateWallBoxViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssociateWallBoxViewController.xib; sourceTree = "<group>"; };
-		C33B05492A24B80B00EBAC75 /* EnergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnergyViewController.swift; path = ../../EnergyViewController.swift; sourceTree = "<group>"; };
+		C33B05492A24B80B00EBAC75 /* EnergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyViewController.swift; sourceTree = "<group>"; };
 		C33B054A2A24B80B00EBAC75 /* EnergyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnergyViewController.xib; sourceTree = "<group>"; };
 		C33B054E2A24FEB400EBAC75 /* HomepageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewModel.swift; sourceTree = "<group>"; };
+		C3475CCC2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedOptionsViewController.swift; sourceTree = "<group>"; };
+		C3475CCD2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvancedOptionsViewController.xib; sourceTree = "<group>"; };
+		C36EA2242A3705D50081E310 /* OCPPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCPPViewController.swift; sourceTree = "<group>"; };
+		C36EA2252A3705D50081E310 /* OCPPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OCPPViewController.xib; sourceTree = "<group>"; };
 		C37C990A2A0D41BE004B21EF /* ButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
-		C3926F7E2A2F81A200F45BD1 /* Urmet-Creact */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Urmet-Creact"; sourceTree = "<group>"; };
 		C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		C3AA69472A12679B00648BAF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3AA694A2A127EE200648BAF /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
-		C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransferDataViewController.swift; path = ../../TransferDataViewController.swift; sourceTree = "<group>"; };
+		C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDataViewController.swift; sourceTree = "<group>"; };
 		C3B2902B2A14BEC400D06037 /* TransferDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferDataViewController.xib; sourceTree = "<group>"; };
-		C3B354092A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkAdvancedSettingsViewController.swift; path = ../../NetworkAdvancedSettingsViewController.swift; sourceTree = "<group>"; };
+		C3B354092A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdvancedSettingsViewController.swift; sourceTree = "<group>"; };
 		C3B3540A2A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetworkAdvancedSettingsViewController.xib; sourceTree = "<group>"; };
+		C3B78C932A320C7F00A90621 /* PowerSharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSharingViewController.swift; sourceTree = "<group>"; };
+		C3B78C942A320C7F00A90621 /* PowerSharingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PowerSharingViewController.xib; sourceTree = "<group>"; };
+		C3B78C992A3213C900A90621 /* PowerSharingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSharingTableViewCell.swift; sourceTree = "<group>"; };
+		C3B78C9A2A3213C900A90621 /* PowerSharingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PowerSharingTableViewCell.xib; sourceTree = "<group>"; };
+		C3B78C9D2A32196900A90621 /* PowerSharingTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSharingTableViewDataSource.swift; sourceTree = "<group>"; };
+		C3B78C9F2A32263700A90621 /* PowerSharingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerSharingViewModel.swift; sourceTree = "<group>"; };
+		C3B78CA12A32267D00A90621 /* TypedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypedRow.swift; sourceTree = "<group>"; };
+		C3B78CA32A3226A800A90621 /* FormRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRow.swift; sourceTree = "<group>"; };
+		C3B78CA52A3226FF00A90621 /* FormInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInputCell.swift; sourceTree = "<group>"; };
+		C3B78CA72A32273D00A90621 /* TypedInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypedInputCell.swift; sourceTree = "<group>"; };
+		C3B78CA92A32279200A90621 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		C3B78CAC2A3228AB00A90621 /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
 		C3BF73552A16829900AC8F2E /* CustomWifiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomWifiCell.xib; sourceTree = "<group>"; };
 		C3D95CFC2A0D1A7A0058DA32 /* PopupDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDisplayer.swift; sourceTree = "<group>"; };
-		C3D95D022A0D1EB50058DA32 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = ../../UIViewController.swift; sourceTree = "<group>"; };
+		C3D95D022A0D1EB50058DA32 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C3D95D0A2A0D22300058DA32 /* Present.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Present.swift; sourceTree = "<group>"; };
 		C3D95D0C2A0D22D90058DA32 /* UIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIController.swift; sourceTree = "<group>"; };
-		C3D95D142A0D34080058DA32 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = ../../PopUpViewController.swift; sourceTree = "<group>"; };
+		C3D95D142A0D34080058DA32 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		C3D95D152A0D34080058DA32 /* PopUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpViewController.xib; sourceTree = "<group>"; };
-		C3DEEC892A162DF10068FDCA /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectionViewController.swift; path = ../../ConnectionViewController.swift; sourceTree = "<group>"; };
+		C3DEEC892A162DF10068FDCA /* ConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
 		C3DEEC8A2A162DF10068FDCA /* ConnectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectionViewController.xib; sourceTree = "<group>"; };
-		C3DEEC8D2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WiFiConnectionSelectorViewController.swift; path = ../../WiFiConnectionSelectorViewController.swift; sourceTree = "<group>"; };
+		C3DEEC8D2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiConnectionSelectorViewController.swift; sourceTree = "<group>"; };
 		C3DEEC8E2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WiFiConnectionSelectorViewController.xib; sourceTree = "<group>"; };
 		C3DEEC932A166A0E0068FDCA /* CustomWifiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWifiCell.swift; sourceTree = "<group>"; };
 		C3E374FC2A08DDB900D5B3BA /* Urmet-Creact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urmet-Creact.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E374FF2A08DDB900D5B3BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E375012A08DDB900D5B3BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3E375032A08DDB900D5B3BA /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = ../../HomePageViewController.swift; sourceTree = "<group>"; };
+		C3E375032A08DDB900D5B3BA /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		C3E375062A08DDB900D5B3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3E375082A08DDBA00D5B3BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3E3750B2A08DDBA00D5B3BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3E3750D2A08DDBA00D5B3BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3E3751C2A090F1300D5B3BA /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		C3E3751E2A09103E00D5B3BA /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		C3E53A2D2A1CE4E400874D8F /* WallboxConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WallboxConfigurationViewController.swift; path = ../../WallboxConfigurationViewController.swift; sourceTree = "<group>"; };
+		C3E53A2D2A1CE4E400874D8F /* WallboxConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallboxConfigurationViewController.swift; sourceTree = "<group>"; };
 		C3E53A392A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonTWWallboxTableViewCell.swift; sourceTree = "<group>"; };
 		C3E53A3A2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButtonTWWallboxTableViewCell.xib; sourceTree = "<group>"; };
 		C3F5FE1A2A27846E0099B2E6 /* ConfigurationWallboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationWallboxViewController.swift; sourceTree = "<group>"; };
@@ -142,9 +173,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3338D4D2A2F825200CC6783 /* Old */ = {
+		C3338D4E2A2F837900CC6783 /* OLD */ = {
 			isa = PBXGroup;
 			children = (
+				C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */,
+				C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */,
+				C32E2F742A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift */,
+				C3FA6C7B2A2893FA00110B4E /* SecondTVConfigurationWallbox.swift */,
+				C3D95D022A0D1EB50058DA32 /* UIViewController.swift */,
+				C3D95D142A0D34080058DA32 /* PopUpViewController.swift */,
+				C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */,
+				C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */,
+				C3DEEC892A162DF10068FDCA /* ConnectionViewController.swift */,
+				C3DEEC8D2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift */,
+				C3B354092A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.swift */,
+				C3E53A2D2A1CE4E400874D8F /* WallboxConfigurationViewController.swift */,
+				C33B05492A24B80B00EBAC75 /* EnergyViewController.swift */,
 				C3E3750A2A08DDBA00D5B3BA /* LaunchScreen.storyboard */,
 				C3E375052A08DDB900D5B3BA /* Main.storyboard */,
 				C3D95D152A0D34080058DA32 /* PopUpViewController.xib */,
@@ -159,16 +203,24 @@
 				C33B054A2A24B80B00EBAC75 /* EnergyViewController.xib */,
 				C3E3751E2A09103E00D5B3BA /* CustomCell.swift */,
 				C3DEEC932A166A0E0068FDCA /* CustomWifiCell.swift */,
+				C3E53A3A2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.xib */,
+				C3F5FE1B2A27846E0099B2E6 /* ConfigurationWallboxViewController.xib */,
+				C3F5FE212A279C410099B2E6 /* SecondTableViewCustomCellTableViewCell.xib */,
 				C332D2562A0A9D7B005D4FD9 /* CustomButtonHomePage.swift */,
+				C3E53A392A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.swift */,
+				C3F5FE1A2A27846E0099B2E6 /* ConfigurationWallboxViewController.swift */,
 				C3F5FE202A279C410099B2E6 /* SecondTableViewCustomCellTableViewCell.swift */,
+				C3475CCC2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift */,
+				C3475CCD2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib */,
 			);
-			path = Old;
+			path = OLD;
 			sourceTree = "<group>";
 		};
 		C33B054D2A24FE7C00EBAC75 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				C33B054E2A24FEB400EBAC75 /* HomepageViewModel.swift */,
+				C3B78C9F2A32263700A90621 /* PowerSharingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -185,12 +237,32 @@
 		C3AA69422A123C9900648BAF /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
-				C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */,
-				C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */,
-				C32E2F742A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift */,
-				C3FA6C7B2A2893FA00110B4E /* SecondTVConfigurationWallbox.swift */,
+				C3B78C9D2A32196900A90621 /* PowerSharingTableViewDataSource.swift */,
 			);
 			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		C3B78CAB2A3227A400A90621 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C3AA69472A12679B00648BAF /* Constants.swift */,
+				C3D95D0A2A0D22300058DA32 /* Present.swift */,
+				C3B78CA12A32267D00A90621 /* TypedRow.swift */,
+				C3B78CA32A3226A800A90621 /* FormRow.swift */,
+				C3B78CA52A3226FF00A90621 /* FormInputCell.swift */,
+				C3B78CA72A32273D00A90621 /* TypedInputCell.swift */,
+				C3B78CA92A32279200A90621 /* InsetTextField.swift */,
+				C3B78CAC2A3228AB00A90621 /* CellType.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C3B78CAE2A322E4000A90621 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C3E375082A08DDBA00D5B3BA /* Assets.xcassets */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		C3D95D122A0D30D00058DA32 /* Extensions */ = {
@@ -213,8 +285,8 @@
 		C3E374F32A08DDB900D5B3BA = {
 			isa = PBXGroup;
 			children = (
+				C3338D4E2A2F837900CC6783 /* OLD */,
 				C3E374FE2A08DDB900D5B3BA /* Urmet-Creact */,
-				C3926F7E2A2F81A200F45BD1 /* Urmet-Creact */,
 				C3E374FD2A08DDB900D5B3BA /* Products */,
 				754FC51B42EEB6DE7D443150 /* Pods */,
 				83E242C3AF33E048421AF544 /* Frameworks */,
@@ -232,7 +304,6 @@
 		C3E374FE2A08DDB900D5B3BA /* Urmet-Creact */ = {
 			isa = PBXGroup;
 			children = (
-				C3338D4D2A2F825200CC6783 /* Old */,
 				C3E374FF2A08DDB900D5B3BA /* AppDelegate.swift */,
 				C3E375012A08DDB900D5B3BA /* SceneDelegate.swift */,
 				C3E375172A08DE8400D5B3BA /* Controllers */,
@@ -243,10 +314,9 @@
 				C3AA693F2A12368700648BAF /* Delegates */,
 				C3AA69422A123C9900648BAF /* Data Source */,
 				C33B054D2A24FE7C00EBAC75 /* ViewModels */,
-				C3E375082A08DDBA00D5B3BA /* Assets.xcassets */,
+				C3B78CAE2A322E4000A90621 /* Data */,
 				C3E3750D2A08DDBA00D5B3BA /* Info.plist */,
-				C3D95D0A2A0D22300058DA32 /* Present.swift */,
-				C3AA69472A12679B00648BAF /* Constants.swift */,
+				C3B78CAB2A3227A400A90621 /* Support */,
 			);
 			path = "Urmet-Creact";
 			sourceTree = "<group>";
@@ -262,11 +332,10 @@
 		C3E375162A08DE7F00D5B3BA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C3E53A3A2A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.xib */,
-				C3F5FE1B2A27846E0099B2E6 /* ConfigurationWallboxViewController.xib */,
-				C3F5FE212A279C410099B2E6 /* SecondTableViewCustomCellTableViewCell.xib */,
-				C3E53A392A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.swift */,
-				C3F5FE1A2A27846E0099B2E6 /* ConfigurationWallboxViewController.swift */,
+				C3B78C942A320C7F00A90621 /* PowerSharingViewController.xib */,
+				C3B78C9A2A3213C900A90621 /* PowerSharingTableViewCell.xib */,
+				C3B78C992A3213C900A90621 /* PowerSharingTableViewCell.swift */,
+				C36EA2252A3705D50081E310 /* OCPPViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,15 +344,8 @@
 			isa = PBXGroup;
 			children = (
 				C3E375032A08DDB900D5B3BA /* HomePageViewController.swift */,
-				C3D95D022A0D1EB50058DA32 /* UIViewController.swift */,
-				C3D95D142A0D34080058DA32 /* PopUpViewController.swift */,
-				C3B2902A2A14BEC400D06037 /* TransferDataViewController.swift */,
-				C33583F12A1504700002517B /* AssociateWallBoxViewController.swift */,
-				C3DEEC892A162DF10068FDCA /* ConnectionViewController.swift */,
-				C3DEEC8D2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift */,
-				C3B354092A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.swift */,
-				C3E53A2D2A1CE4E400874D8F /* WallboxConfigurationViewController.swift */,
-				C33B05492A24B80B00EBAC75 /* EnergyViewController.swift */,
+				C3B78C932A320C7F00A90621 /* PowerSharingViewController.swift */,
+				C36EA2242A3705D50081E310 /* OCPPViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -354,12 +416,16 @@
 				C332D2552A0A9B1F005D4FD9 /* CustomButtonHomePage.xib in Resources */,
 				C3DEEC902A164DFE0068FDCA /* WiFiConnectionSelectorViewController.xib in Resources */,
 				C3E3751D2A090F1300D5B3BA /* CustomCell.xib in Resources */,
+				C3B78C9C2A3213C900A90621 /* PowerSharingTableViewCell.xib in Resources */,
 				C3F5FE1D2A27846E0099B2E6 /* ConfigurationWallboxViewController.xib in Resources */,
 				C33583F42A1504700002517B /* AssociateWallBoxViewController.xib in Resources */,
+				C3475CCF2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib in Resources */,
 				C3F5FE232A279C410099B2E6 /* SecondTableViewCustomCellTableViewCell.xib in Resources */,
 				C3B3540C2A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.xib in Resources */,
+				C36EA2272A3705D50081E310 /* OCPPViewController.xib in Resources */,
 				C3DEEC8C2A162DF10068FDCA /* ConnectionViewController.xib in Resources */,
 				C3E3750C2A08DDBA00D5B3BA /* LaunchScreen.storyboard in Resources */,
+				C3B78C962A320C7F00A90621 /* PowerSharingViewController.xib in Resources */,
 				C3D95D172A0D34080058DA32 /* PopUpViewController.xib in Resources */,
 				C3E375092A08DDBA00D5B3BA /* Assets.xcassets in Resources */,
 				C3E375072A08DDB900D5B3BA /* Main.storyboard in Resources */,
@@ -418,11 +484,15 @@
 			files = (
 				C3D95CFD2A0D1A7A0058DA32 /* PopupDisplayer.swift in Sources */,
 				C3D95D0B2A0D22300058DA32 /* Present.swift in Sources */,
+				C3B78CA22A32267D00A90621 /* TypedRow.swift in Sources */,
+				C3B78CA82A32273D00A90621 /* TypedInputCell.swift in Sources */,
 				C3E375042A08DDB900D5B3BA /* HomePageViewController.swift in Sources */,
 				C3D95D162A0D34080058DA32 /* PopUpViewController.swift in Sources */,
+				C3B78C952A320C7F00A90621 /* PowerSharingViewController.swift in Sources */,
 				C3F5FE222A279C410099B2E6 /* SecondTableViewCustomCellTableViewCell.swift in Sources */,
 				C3DEEC8F2A164DFE0068FDCA /* WiFiConnectionSelectorViewController.swift in Sources */,
 				C3B2902C2A14BEC400D06037 /* TransferDataViewController.swift in Sources */,
+				C3B78CAA2A32279200A90621 /* InsetTextField.swift in Sources */,
 				C3E375002A08DDB900D5B3BA /* AppDelegate.swift in Sources */,
 				C3AA69482A12679B00648BAF /* Constants.swift in Sources */,
 				C37C990B2A0D41BE004B21EF /* ButtonDelegate.swift in Sources */,
@@ -437,12 +507,20 @@
 				C3B3540B2A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.swift in Sources */,
 				C3F5FE1C2A27846E0099B2E6 /* ConfigurationWallboxViewController.swift in Sources */,
 				C33B054B2A24B80B00EBAC75 /* EnergyViewController.swift in Sources */,
+				C3B78CAD2A3228AB00A90621 /* CellType.swift in Sources */,
+				C36EA2262A3705D50081E310 /* OCPPViewController.swift in Sources */,
 				C33583F32A1504700002517B /* AssociateWallBoxViewController.swift in Sources */,
+				C3B78CA42A3226A800A90621 /* FormRow.swift in Sources */,
 				C32E2F752A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift in Sources */,
+				C3475CCE2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift in Sources */,
 				C3AA694B2A127EE200648BAF /* Array+Extensions.swift in Sources */,
+				C3B78C9B2A3213C900A90621 /* PowerSharingTableViewCell.swift in Sources */,
 				C3AA69442A123CCA00648BAF /* CollectionViewDataSource.swift in Sources */,
 				C3E3751F2A09103E00D5B3BA /* CustomCell.swift in Sources */,
+				C3B78C9E2A32196900A90621 /* PowerSharingTableViewDataSource.swift in Sources */,
+				C3B78CA62A3226FF00A90621 /* FormInputCell.swift in Sources */,
 				C3D95D032A0D1EB50058DA32 /* UIViewController.swift in Sources */,
+				C3B78CA02A32263700A90621 /* PowerSharingViewModel.swift in Sources */,
 				C33B054F2A24FEB400EBAC75 /* HomepageViewModel.swift in Sources */,
 				C30A1E0F2A13B9C4008F9A38 /* TableViewDelegate.swift in Sources */,
 				C31AB69A2A0B90DD00407B70 /* ButtonData.swift in Sources */,

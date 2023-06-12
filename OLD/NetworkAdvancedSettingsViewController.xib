@@ -139,7 +139,7 @@
                 <constraint firstItem="60w-fx-Oqw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pdk-FZ-hNb"/>
                 <constraint firstItem="3cA-AD-0kz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uFg-Tg-zec"/>
             </constraints>
-            <point key="canvasLocation" x="-13" y="-2"/>
+            <point key="canvasLocation" x="-228" y="-20"/>
         </view>
     </objects>
     <designables>

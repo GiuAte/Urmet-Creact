@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bariol_regular.ttf">
+            <string>Bariol-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PowerSharingViewController" customModule="Urmet_Creact" customModuleProvider="target">
+            <connections>
+                <outlet property="switchButton" destination="cfV-mB-kQd" id="sNA-3E-Hv3"/>
+                <outlet property="tableView" destination="A4A-ZW-z8e" id="FoN-Ue-uJN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="O6L-uT-nlj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opzioni Avanzate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbI-NH-i48">
+                    <rect key="frame" x="16" y="59" width="324" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="hXn-NO-FCY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="36"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imposta la gestione combinata di diverse WallBox e carichi di casa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOL-kL-kqH">
+                    <rect key="frame" x="16" y="115" width="361" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="eOl-x9-myT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Sharing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYi-Zb-YY9">
+                    <rect key="frame" x="16" y="251" width="277" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="qva-C6-6pa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Bariol-Regular" family="Bariol" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cfV-mB-kQd">
+                    <rect key="frame" x="328" y="251" width="51" height="31"/>
+                    <connections>
+                        <action selector="switchButtonToggled:" destination="-1" eventType="valueChanged" id="WDF-ps-N5R"/>
+                    </connections>
+                </switch>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="A4A-ZW-z8e">
+                    <rect key="frame" x="16" y="357" width="361" height="358"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvq-6f-VmH" customClass="PrimaryButton" customModule="PlugUI">
+                    <rect key="frame" x="196" y="749" width="181" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="181" id="JBa-cQ-P3V"/>
+                        <constraint firstAttribute="height" constant="56" id="qRL-bB-Yl6"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" imagePlacement="trailing" title="Continua" imagePadding="5"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76c-Nq-KcD" customClass="SecondaryButton" customModule="PlugUI">
+                    <rect key="frame" x="16" y="749" width="136" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="3vm-ch-6i8"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="lIC-Sp-u89"/>
+                        <constraint firstAttribute="width" constant="136" id="t1o-14-epa"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Annulla"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GYi-Zb-YY9" firstAttribute="top" secondItem="MOL-kL-kqH" secondAttribute="bottom" constant="50" id="188-A0-xzK"/>
+                <constraint firstItem="MOL-kL-kqH" firstAttribute="top" secondItem="gbI-NH-i48" secondAttribute="bottom" constant="8" id="1xS-4e-E5b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="76c-Nq-KcD" secondAttribute="bottom" constant="13" id="1yD-nQ-IbP"/>
+                <constraint firstItem="gbI-NH-i48" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2wl-uD-nzI"/>
+                <constraint firstItem="kvq-6f-VmH" firstAttribute="leading" secondItem="76c-Nq-KcD" secondAttribute="trailing" constant="44" id="7Mn-CU-roy"/>
+                <constraint firstItem="MOL-kL-kqH" firstAttribute="leading" secondItem="GYi-Zb-YY9" secondAttribute="leading" id="CC8-gS-8vw"/>
+                <constraint firstItem="76c-Nq-KcD" firstAttribute="top" secondItem="A4A-ZW-z8e" secondAttribute="bottom" constant="34" id="DWX-LV-DJB"/>
+                <constraint firstItem="kvq-6f-VmH" firstAttribute="top" secondItem="A4A-ZW-z8e" secondAttribute="bottom" constant="34" id="GZv-QW-RAP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gbI-NH-i48" secondAttribute="trailing" constant="53" id="Lt5-zq-UtD"/>
+                <constraint firstItem="GYi-Zb-YY9" firstAttribute="leading" secondItem="A4A-ZW-z8e" secondAttribute="leading" id="NND-9q-aH0"/>
+                <constraint firstItem="cfV-mB-kQd" firstAttribute="leading" secondItem="GYi-Zb-YY9" secondAttribute="trailing" constant="35" id="P2R-xr-URh"/>
+                <constraint firstItem="gbI-NH-i48" firstAttribute="leading" secondItem="MOL-kL-kqH" secondAttribute="leading" id="SUn-Ps-H7d"/>
+                <constraint firstItem="A4A-ZW-z8e" firstAttribute="leading" secondItem="76c-Nq-KcD" secondAttribute="leading" id="U1g-v0-CkA"/>
+                <constraint firstItem="gbI-NH-i48" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="Ur4-0R-Zuy"/>
+                <constraint firstItem="MOL-kL-kqH" firstAttribute="trailing" secondItem="cfV-mB-kQd" secondAttribute="trailing" id="qTI-WP-pQM"/>
+                <constraint firstItem="GYi-Zb-YY9" firstAttribute="top" secondItem="cfV-mB-kQd" secondAttribute="top" id="rx6-ns-36B"/>
+                <constraint firstItem="cfV-mB-kQd" firstAttribute="trailing" secondItem="A4A-ZW-z8e" secondAttribute="trailing" id="sJT-gD-h7b"/>
+                <constraint firstItem="MOL-kL-kqH" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="tbw-QW-14f"/>
+                <constraint firstItem="76c-Nq-KcD" firstAttribute="baseline" secondItem="kvq-6f-VmH" secondAttribute="baseline" id="uJ0-Xu-lla"/>
+                <constraint firstItem="A4A-ZW-z8e" firstAttribute="top" secondItem="cfV-mB-kQd" secondAttribute="bottom" constant="75" id="vqQ-yT-fX3"/>
+                <constraint firstItem="A4A-ZW-z8e" firstAttribute="trailing" secondItem="kvq-6f-VmH" secondAttribute="trailing" id="wyf-Io-dnC"/>
+            </constraints>
+            <point key="canvasLocation" x="-621" y="-256"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="76c-Nq-KcD">
+            <size key="intrinsicContentSize" width="80.333333333333329" height="34.333333333333336"/>
+        </designable>
+        <designable name="kvq-6f-VmH">
+            <size key="intrinsicContentSize" width="122.66666666666667" height="34.333333333333336"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
