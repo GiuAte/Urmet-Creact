@@ -47,7 +47,7 @@
                                 <rect key="frame" x="64" y="5" width="253" height="108"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rinomina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VjS-Xv-ikO">
-                                        <rect key="frame" x="121.66666666666666" y="13" width="96.333333333333343" height="29"/>
+                                        <rect key="frame" x="8" y="23" width="96.333333333333329" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="3si-ke-APa"/>
                                         </constraints>
@@ -56,7 +56,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rinomina la Wallbox" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsi-zo-0LH">
-                                        <rect key="frame" x="81.666666666666643" y="41" width="151.33333333333337" height="47"/>
+                                        <rect key="frame" x="8" y="41" width="151.33333333333334" height="47"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="TextWhite70"/>
                                         <nil key="highlightedColor"/>
@@ -64,13 +64,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Nsi-zo-0LH" firstAttribute="top" secondItem="VjS-Xv-ikO" secondAttribute="bottom" constant="-1" id="4QP-RU-vgv"/>
-                                    <constraint firstItem="VjS-Xv-ikO" firstAttribute="leading" secondItem="q2a-As-iyv" secondAttribute="leading" constant="121.67" id="DMQ-l4-rAN"/>
-                                    <constraint firstAttribute="trailing" secondItem="VjS-Xv-ikO" secondAttribute="trailing" constant="35" id="MA3-XD-p4O"/>
-                                    <constraint firstItem="VjS-Xv-ikO" firstAttribute="top" secondItem="q2a-As-iyv" secondAttribute="top" constant="13" id="Nfa-go-5pV"/>
-                                    <constraint firstAttribute="bottom" secondItem="Nsi-zo-0LH" secondAttribute="bottom" constant="20" symbolic="YES" id="hGR-x0-hyh"/>
-                                    <constraint firstItem="Nsi-zo-0LH" firstAttribute="leading" secondItem="q2a-As-iyv" secondAttribute="leading" constant="81.670000000000002" id="lf7-eL-L2f"/>
-                                    <constraint firstAttribute="trailing" secondItem="Nsi-zo-0LH" secondAttribute="trailing" constant="20" symbolic="YES" id="mdJ-fK-srG"/>
+                                    <constraint firstItem="Nsi-zo-0LH" firstAttribute="top" secondItem="q2a-As-iyv" secondAttribute="top" constant="41" id="0MO-ax-lju"/>
+                                    <constraint firstItem="VjS-Xv-ikO" firstAttribute="leading" secondItem="q2a-As-iyv" secondAttribute="leading" constant="8" id="DMQ-l4-rAN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nsi-zo-0LH" secondAttribute="bottom" constant="20" id="HB1-Mr-eMR"/>
+                                    <constraint firstAttribute="trailing" secondItem="VjS-Xv-ikO" secondAttribute="trailing" constant="148.66666666666666" id="MA3-XD-p4O"/>
+                                    <constraint firstItem="VjS-Xv-ikO" firstAttribute="top" secondItem="q2a-As-iyv" secondAttribute="top" constant="23" id="Nfa-go-5pV"/>
+                                    <constraint firstItem="Nsi-zo-0LH" firstAttribute="leading" secondItem="VjS-Xv-ikO" secondAttribute="leading" id="cGy-NC-R0D"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="108" id="yCl-um-HFU"/>
                                 </constraints>
                             </view>
@@ -91,7 +90,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="5"/>
+                                <real key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -99,6 +98,8 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="mmp-mB-4M1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EAS-A0-xgm"/>
+                    <constraint firstItem="mmp-mB-4M1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KPd-2u-PlE"/>
+                    <constraint firstItem="mmp-mB-4M1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="TbV-Jc-QDk"/>
                     <constraint firstItem="mmp-mB-4M1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kda-RR-SaG"/>
                 </constraints>
             </tableViewCellContentView>
@@ -106,6 +107,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <accessibility key="accessibilityConfiguration" identifier="cell"/>
             <connections>
+                <outlet property="buttonView" destination="mmp-mB-4M1" id="8Xz-vO-kxK"/>
                 <outlet property="circleButtonImageView" destination="Dq3-VE-a64" id="DZN-jh-tCW"/>
                 <outlet property="circleButtonView" destination="B9b-RP-aBv" id="zhx-72-Ip7"/>
                 <outlet property="subtitleLabel" destination="Nsi-zo-0LH" id="QvT-Px-7ay"/>

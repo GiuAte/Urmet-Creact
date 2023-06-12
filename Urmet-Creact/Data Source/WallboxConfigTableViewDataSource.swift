@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Foundation
 
 class WallboxConfigTableViewDataSource: NSObject {
     
@@ -53,6 +52,10 @@ extension WallboxConfigTableViewDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Constants.textCustomButtonWallbox.count
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 110.0
+       }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomButtonTWWallboxTableViewCell
