@@ -20,8 +20,6 @@
 		C33B054F2A24FEB400EBAC75 /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B054E2A24FEB400EBAC75 /* HomepageViewModel.swift */; };
 		C3475CCE2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3475CCC2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift */; };
 		C3475CCF2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3475CCD2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib */; };
-		C36EA2262A3705D50081E310 /* OCPPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36EA2242A3705D50081E310 /* OCPPViewController.swift */; };
-		C36EA2272A3705D50081E310 /* OCPPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36EA2252A3705D50081E310 /* OCPPViewController.xib */; };
 		C37C990B2A0D41BE004B21EF /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37C990A2A0D41BE004B21EF /* ButtonDelegate.swift */; };
 		C3AA69442A123CCA00648BAF /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */; };
 		C3AA69462A123E2A00648BAF /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */; };
@@ -89,8 +87,6 @@
 		C33B054E2A24FEB400EBAC75 /* HomepageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewModel.swift; sourceTree = "<group>"; };
 		C3475CCC2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedOptionsViewController.swift; sourceTree = "<group>"; };
 		C3475CCD2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvancedOptionsViewController.xib; sourceTree = "<group>"; };
-		C36EA2242A3705D50081E310 /* OCPPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCPPViewController.swift; sourceTree = "<group>"; };
-		C36EA2252A3705D50081E310 /* OCPPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OCPPViewController.xib; sourceTree = "<group>"; };
 		C37C990A2A0D41BE004B21EF /* ButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
 		C3AA69432A123CCA00648BAF /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		C3AA69452A123E2A00648BAF /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
@@ -210,8 +206,6 @@
 				C3E53A392A1CFFAB00874D8F /* CustomButtonTWWallboxTableViewCell.swift */,
 				C3F5FE1A2A27846E0099B2E6 /* ConfigurationWallboxViewController.swift */,
 				C3F5FE202A279C410099B2E6 /* SecondTableViewCustomCellTableViewCell.swift */,
-				C3475CCC2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift */,
-				C3475CCD2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib */,
 			);
 			path = OLD;
 			sourceTree = "<group>";
@@ -333,9 +327,9 @@
 			isa = PBXGroup;
 			children = (
 				C3B78C942A320C7F00A90621 /* PowerSharingViewController.xib */,
+				C3475CCD2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib */,
 				C3B78C9A2A3213C900A90621 /* PowerSharingTableViewCell.xib */,
 				C3B78C992A3213C900A90621 /* PowerSharingTableViewCell.swift */,
-				C36EA2252A3705D50081E310 /* OCPPViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,8 +338,8 @@
 			isa = PBXGroup;
 			children = (
 				C3E375032A08DDB900D5B3BA /* HomePageViewController.swift */,
+				C3475CCC2A30BEDE0017EB6A /* AdvancedOptionsViewController.swift */,
 				C3B78C932A320C7F00A90621 /* PowerSharingViewController.swift */,
-				C36EA2242A3705D50081E310 /* OCPPViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -422,7 +416,6 @@
 				C3475CCF2A30BEDE0017EB6A /* AdvancedOptionsViewController.xib in Resources */,
 				C3F5FE232A279C410099B2E6 /* SecondTableViewCustomCellTableViewCell.xib in Resources */,
 				C3B3540C2A1BA3D600C0F114 /* NetworkAdvancedSettingsViewController.xib in Resources */,
-				C36EA2272A3705D50081E310 /* OCPPViewController.xib in Resources */,
 				C3DEEC8C2A162DF10068FDCA /* ConnectionViewController.xib in Resources */,
 				C3E3750C2A08DDBA00D5B3BA /* LaunchScreen.storyboard in Resources */,
 				C3B78C962A320C7F00A90621 /* PowerSharingViewController.xib in Resources */,
@@ -508,7 +501,6 @@
 				C3F5FE1C2A27846E0099B2E6 /* ConfigurationWallboxViewController.swift in Sources */,
 				C33B054B2A24B80B00EBAC75 /* EnergyViewController.swift in Sources */,
 				C3B78CAD2A3228AB00A90621 /* CellType.swift in Sources */,
-				C36EA2262A3705D50081E310 /* OCPPViewController.swift in Sources */,
 				C33583F32A1504700002517B /* AssociateWallBoxViewController.swift in Sources */,
 				C3B78CA42A3226A800A90621 /* FormRow.swift in Sources */,
 				C32E2F752A1E4B97004FE069 /* WallboxConfigTableViewDataSource.swift in Sources */,

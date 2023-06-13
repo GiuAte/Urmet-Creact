@@ -207,7 +207,7 @@
                 <constraint firstItem="vxB-VW-F5x" firstAttribute="leading" secondItem="fgN-MB-hFb" secondAttribute="leading" id="zKV-nc-YVZ"/>
                 <constraint firstItem="6sf-4I-J8n" firstAttribute="top" secondItem="TRO-MI-EaG" secondAttribute="bottom" constant="7.9999999999999432" id="zdt-XZ-56S"/>
             </constraints>
-            <point key="canvasLocation" x="1879" y="37"/>
+            <point key="canvasLocation" x="30" y="42"/>
         </view>
     </objects>
     <designables>

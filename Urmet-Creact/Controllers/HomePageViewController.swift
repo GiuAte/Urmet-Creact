@@ -105,10 +105,10 @@ final class HomePageViewController: UIViewController, TableViewDelegate {
     
     private func setTableView() {
         tableViewDataSource = TableViewDataSource(tableView: tableView, clousure: { [weak self] indexPath in
-            self?.powerSharing = PowerSharingViewController()
+            self?.advancedOptions = AdvancedOptionsViewController()
             //self.wallboxConfigurationViewController?.delegate = self
-            self?.powerSharing?.modalPresentationStyle = .fullScreen
-            guard let configuration = self?.powerSharing else { return }
+            self?.advancedOptions?.modalPresentationStyle = .fullScreen
+            guard let configuration = self?.advancedOptions else { return }
             self?.present(configuration, animated: true)
         })
         

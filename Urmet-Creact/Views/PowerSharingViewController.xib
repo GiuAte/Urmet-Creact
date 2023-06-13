@@ -25,7 +25,7 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opzioni Avanzate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbI-NH-i48">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opzioni Avanzate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gbI-NH-i48">
                     <rect key="frame" x="16" y="59" width="324" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="hXn-NO-FCY"/>
@@ -109,7 +109,7 @@
                 <constraint firstItem="A4A-ZW-z8e" firstAttribute="top" secondItem="cfV-mB-kQd" secondAttribute="bottom" constant="75" id="vqQ-yT-fX3"/>
                 <constraint firstItem="A4A-ZW-z8e" firstAttribute="trailing" secondItem="kvq-6f-VmH" secondAttribute="trailing" id="wyf-Io-dnC"/>
             </constraints>
-            <point key="canvasLocation" x="-621" y="-256"/>
+            <point key="canvasLocation" x="182" y="-262"/>
         </view>
     </objects>
     <designables>
